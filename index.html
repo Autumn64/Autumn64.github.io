@@ -33,43 +33,70 @@
         .img:hover{
             box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
         }
+        .twrap {
+        width: 100%;
+        overflow-x: auto; 
+        }
+        #nav{
+            height: 35px;
+            flex-flow: row wrap;
+            margin-bottom:150px;
+        }
+        #nav ul{
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            text-align: center;
+        }
+        #nav li{
+            display: inline;
+            padding: 2px;
+            vertical-align: middle;
+        }
+        .announcements{
+            margin-left: auto;
+            margin-right: auto;
+        }
     </style>
 <body>
     <style>
         body{
             background-image: url('bg.jpg');
             background-size: cover;
+            text-align:center;
         }
     </style>
     <p><br><br></p>
-    <center><font size=5 color="#FFEBBE"><h1>WELCOME TO AUTUMN'S WEBSITE</h1></font>
-        <style>
-            @font-face { font-family: rubikmedium; src: url('fonts/Rubik-ExtraBold.ttf'); } 
-            h1 {
-                font-family: rubikmedium;
-                -webkit-text-stroke: 1px black;
-            }
-        </style>
-        <font size=3><h2>With a kind of retro style</h2></font>
-        <style>
-            @font-face{font-family: bloggerlight; src: url('fonts/Blogger-Sans-Light.ttf')}
-            h2{
-                font-family: bloggerlight;
-            }
-        </style>
-        <br><br><br><br>
-        <table>
-            <tr><td><a href="https://www.youtube.com/@gisele64/playlists" target="_blank" rel="noopener noreferrer"><button class="button button1">My Music</button></a></td>
-                <td><a href="https://www.instagram.com/aug._64/" target="_blank" rel="noopener noreferrer"><button class="button button2">My Instagram</button></a></td>
-                <td><a href="https://pronouns.page/@aug64" target="_blank" rel="noopener noreferrer"><button class="button button3">My Pronouns Page</button></a></td>
-                <td><a href="https://github.com/TWICEbiased" target="_blank" rel="noopener noreferrer"><button class="button button4">My GitHub</button></a></td>
-                <td><button class="button button5">Autumn's Lab</button></td></tr>
-        </table>
-        <br><br><br><br>
+    <font size=5 color="#FFEBBE"><h1>WELCOME TO AUTUMN'S WEBSITE</h1></font>
+    <style>
+        @font-face { font-family: rubikmedium; src: url('fonts/Rubik-ExtraBold.ttf'); } 
+        h1 {
+            font-family: rubikmedium;
+            -webkit-text-stroke: 1px black;
+        }
+    </style>
+    <font size=3><h2>With a kind of retro style</h2></font>
+    <style>
+        @font-face{font-family: bloggerlight; src: url('fonts/Blogger-Sans-Light.ttf')}
+        h2{
+            font-family: bloggerlight;
+        }
+    </style>
+    <br><br><br><br>
+    <div id="nav">
+        <ul>
+            <li><a href="https://www.youtube.com/@gisele64/playlists" target="_blank" rel="noopener noreferrer"><button class="button button1">My Music</button></a></li>
+            <li><a href="https://www.instagram.com/aug._64/" target="_blank" rel="noopener noreferrer"><button class="button button2">My Instagram</button></a></li>
+            <li><a href="https://pronouns.page/@aug64" target="_blank" rel="noopener noreferrer"><button class="button button3">My Pronouns Page</button></a></li>
+            <li><a href="https://github.com/TWICEbiased" target="_blank" rel="noopener noreferrer"><button class="button button4">My GitHub</button></a></td></li>
+            <li><button class="button button5">Autumn's Lab</button></li>
+        </ul></div>
+    <div id="ann">
         <font size=3.5><h2>Announcements</h2></font>
-        <table style="width:50%">
+        <table class="announcements" style="width:50%">
             <tr><td><font size=2><h2>Gisèle's 4th EP 『Dagdrømmer』 featuring Main Track 「BLOSSOM」 and Extra 「Caramelldansen DnB Remix」 Available on Youtube from April 10th at 9 AM CST!!!</h2></font></td><td><a href="https://www.youtube.com/playlist?list=PL-KRnyDid77wKOnQDfly2otVy06eW6dqh" target="_blank" rel="noopener noreferrer"><img class="img img1" src="covert.png" width=200 height=200></img></a></td></tr>
+            <tr><td><font size=2><h2>'MOONSTAR', Autumn's Discord Bot is shutting down on April 20th. Bot's functionalities will be moved to "Autumn's Lab" section.</h2></font></td><td><img class="img img2" src="moonstar.jpg" width=158 height=200></img></td></tr>
         </table>
-    </center>
+    </div>
 </body>
 </html>
