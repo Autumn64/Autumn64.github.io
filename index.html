@@ -3,6 +3,28 @@
     <head>
         <title>Autumn's Website</title>
     </head>
+    <style>
+        @font-face{font-family: bloggermedium; src: url('fonts/Blogger-Sans-Medium.ttf')}
+        .button {
+            font-family: bloggermedium;
+            border-radius: 10px;
+            border: 2px solid black;
+            color: black;
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            background-color:#FFEBBE;
+            transition-duration: 0.4s;
+        }
+        .button:hover{
+            background-color:#e1d0a8;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+    </style>
 <body>
     <style>
         body{
@@ -10,7 +32,7 @@
             background-size: cover;
         }
     </style>
-    <p><br><br><br></p>
+    <p><br><br><br><br></p>
     <center><font color="#FFEBBE"><h1>WELCOME TO AUTUMN'S WEBSITE</h1></font>
         <style>
             @font-face { font-family: rubikmedium; src: url('fonts/Rubik-ExtraBold.ttf'); } 
@@ -26,6 +48,9 @@
                 font-family: bloggerlight;
             }
         </style>
+        <table>
+            <tr><td><button class="button button1" onclick="alert('Hi!')" onmouseover="">Example 1</button></td></tr>
+        </table>
     </center>
 </body>
 </html>
