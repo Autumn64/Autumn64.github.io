@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Autumn's Website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @font-face{font-family: bloggermedium; src: url('fonts/Blogger-Sans-Medium.ttf')}
+            input{
+                font-family: bloggermedium;
+                resize:horizontal;
+                border: 2px solid black;
+                border-radius: 5px;
+                padding: 5px 5px;
+            }
+            #chat{
+                display: block;
+                position: relative;
+                display:inline-block;
+                overflow: auto;
+                width:95%;
+                height: calc(65vh - 100px);
+                margin-left: auto;
+                margin-right: auto;
+                text-align: left;
+                margin-top: 35px;
+                flex: 0 1 auto;
+            }
+            #inp{
+                position: fixed;
+                width: 95%;
+                bottom: 5px;
+                text-align: center;
+            }
+            @font-face{font-family: bloggermedium; src: url('fonts/Blogger-Sans-Medium.ttf')}
+            .button {
+            font-family: bloggermedium;
+            border: 2px solid black;
+            border-radius: 5px;
+            color: black;
+            padding: 5px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            background-color:#FFEBBE;
+            transition-duration: 0.4s;
+        }
+        </style>
+    </head>
+    <body>
+        <style>
+            @font-face{font-family: bloggerlight; src: url('fonts/Blogger-Sans-Light.ttf')}
+            body{
+                background-image: url('bg.jpg');
+                background-size: cover;
+                text-align:center;
+                font-family: bloggerlight;
+            }
+        </style>
+        <font size=5 color="#FFEBBE"><h1>AUTUMN'S WEBSITE</h1></font>
+        <style>
+            @font-face { font-family: rubikmedium; src: url('fonts/Rubik-ExtraBold.ttf'); } 
+            h1 {
+                font-family: rubikmedium;
+                -webkit-text-stroke: 1px black;
+            }
+        </style>
+        <font size=3><h2>With a kind of retro style</h2></font>
+        <div id="chat">
+            <center>
+            <h3>This is where your chat with MOONSTAR's 8ball begins.</h3></center>
+        </div>
+        <div id="inp">
+            <input id="message" type="text" style="width:50%" placeholder="Say something." autofocus onkeypress="clickPress(event)"/> 
+            <button class="button send" onclick="doFunction();">Send</button>
+        </div>
+    </body>
+    <script>
+        let person = prompt("Please enter a username");
+        function doFunction(){
+            const responses = [
+                "Ofc :)",
+                "Yes.",
+                "No.",
+                "Omg yesss.",
+                "Ofc what kind of question is that lmao.",
+                "Yeah",
+                "Nah.",
+                "No XD.",
+                "Yup.",
+                "I don't think so.",
+                "Haven't you realized it? lmao.",
+                "There's no way it can be xD.",
+                "There's no way it cannot be XD.",
+                "Go ask them.",
+                "Didn't get it, try again lmao.",
+                "Sure.",
+                "Wdym by that.",
+                "Ew are you wahhabist.",
+                "Viva Mexico carbones XD.",
+                "I guess.",
+                "Halal.",
+                "Haraam.",
+                "Be careful...",
+                "Be careful about what you ask 'cause it can become true...",
+                "Yesterday I bought it for you dw.",
+                "Tomorrow.",
+                "Imma tell you tomorrow.",
+                "Idk go ask them lmao.",
+                "google.com",
+                "bing.com",
+                "yandex.com",
+                "I told you yes.",
+                "I told you no.",
+                "Lemme ask Assim al Hakeem lmfao.",
+                "._.XD",
+                "zao shang hao zhongguo xian zai wo you bing qilin wo hen xihuan bing qilin",
+                "xue hua piao piao bei feng xiao xiao tian di yi pian cang mang",
+                "Pakistan Zindabad.",
+                "Die Erdoğan.",
+                "Nooooooooo no debiste pasar por Ecatepec, ahora estás en una bolsa en un río de Chihuahua.",
+                "Nooooooooo no debiste pasar por Sinaloa, ahora estás sin cabeza en un cerro.",
+                "Mexicanos al grito de guerra el acero a prestad y el bridón y retiemble en sus centros la tierra al sonoro rujir del cañón...",
+                "...",
+                "No te vayas a meter a Ecatepec, te van a meter a una bolsa y te van a dejar en un río de Chihuahua.",
+                "The worst thing could happen to STEM is Al-Khwarizmi. /hj",
+                "早上好中国现在我有冰淇淋我很喜欢冰淇淋",
+                "雪花飘飘北风潇潇天地一片苍茫",
+                "雪花喵喵北风喵喵天地一片苍茫",
+                "puntangina /j",
+                "내가 뭘 어쩌겠니? 사랑이 그런 거지, 마음이 마음을 버린다는 게 다 이렇니? Baby don`t cry for me, 내게 잊으라고 말하지 마, 이별이 그래 다 그런 거니까~"
+                ]
+            var mess = document.getElementById("message").value;
+            if(mess.trim() != "" && mess != null){
+                var randElement = responses[Math.floor(Math.random() * responses.length)];
+                document.getElementById("chat").innerHTML += "<br>" + person + ": " + mess;
+                setTimeout(function() {document.getElementById("chat").innerHTML += "<br>MOONSTAR: " + randElement;}, 1000);
+                document.getElementById("chat").scrollTop = document.getElementById("chat").scrollHeight;
+                document.getElementById('message').value = "";
+                document.getElementById("message").focus();
+            }
+        }
+        function clickPress(event) {
+            if (event.key == "Enter") {
+                doFunction();
+            }
+        }
+    </script>
+</html>
