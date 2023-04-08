@@ -49,7 +49,7 @@ function doFunction(){
         "Die Erdoğan.",
         "Nooooooooo no debiste pasar por Ecatepec, ahora estás en una bolsa en un río de Chihuahua.",
         "Nooooooooo no debiste pasar por Sinaloa, ahora estás sin cabeza en un cerro.",
-        "Mexicanos al grito de guerra el acero a prestad y el bridón y retiemble en sus centros la tierra al sonoro rujir del cañón...",
+        "Mexicanos al grito de guerra el acero a prestad y el bridón y retiemble en sus centros la tierra al sonoro rugir del cañón...",
         "...",
         "No te vayas a meter a Ecatepec, te van a meter a una bolsa y te van a dejar en un río de Chihuahua.",
         "The worst thing could happen to STEM is Al-Khwarizmi. /hj",
