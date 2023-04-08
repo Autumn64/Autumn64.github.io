@@ -1,11 +1,15 @@
-let person = prompt("Please enter a username.");
-checkuser();
-function checkuser(){
-    if(person.trim() === "" || person === null){
-        person = prompt("Please enter a username.");
-        checkuser();
+let person;
+
+function getperson(){
+    try{
+        do{
+            person = prompt("Please enter a username.");
+        }while(person.trim() === "" || person === null);
+    }catch(e){
+        getperson();
     }
 }
+
 function doFunction(){
     const responses = [
         "Ofc :)",
@@ -69,8 +73,11 @@ function doFunction(){
         document.getElementById('message').value = "";
     }
 }
+
 function clickPress(event) {
     if (event.key == "Enter") {
         doFunction();
     }
 }
+
+getperson();
