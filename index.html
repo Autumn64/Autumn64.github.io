@@ -26,6 +26,7 @@
             background-color:#e1d0a8;
             box-shadow: 0 10px 15px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
         }
+        .button button2:hover .dropdown-content {display: block;}
         .img{
             border-radius: 10px;
             border: 2px solid black;
@@ -57,6 +58,23 @@
             margin-left: auto;
             margin-right: auto;
         }
+        .dropdown-content {
+            display: none;
+            position: relative;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {background-color: #ddd;}
+
     </style>
 <body>
     <style>
@@ -80,10 +98,15 @@
         }
     </style>
     <br><br>
+    <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </div>
     <div id="nav">
         <ul>
             <li><a href="music.html"><button class="button button1">My Music</button></a></li>
-            <li><a href="https://www.instagram.com/aug._64/" target="_blank" rel="noopener noreferrer"><button class="button button2">My Instagram</button></a></li>
+            <li><a href="https://linktr.ee/aug64" target="_blank" rel="noopener noreferrer"><button class="button button2">My Social Media</button></a></li>
             <li><a href="https://pronouns.page/@aug64" target="_blank" rel="noopener noreferrer"><button class="button button3">My Pronouns Page</button></a></li>
             <li><a href="https://github.com/Autumn64" target="_blank" rel="noopener noreferrer"><button class="button button4">My GitHub</button></a></td></li>
             <li><a href="autumnslab.html"><button class="button button5">Autumn's Lab</button></a></li>
