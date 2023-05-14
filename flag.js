@@ -391,6 +391,7 @@ let countriesdic = {
     "Zimbabwe":"zw"
 }
 
+var responded = false;
 var randflag = countries[Math.floor(Math.random() * countries.length)];
 
 let answers = [
@@ -410,9 +411,9 @@ document.getElementsByName("bttn")[0].innerHTML += answerss[0];
 document.getElementsByName("bttn")[1].innerHTML += answerss[1];
 document.getElementsByName("bttn")[2].innerHTML += answerss[2];
 document.getElementsByName("bttn")[3].innerHTML += answerss[3];
-console.log(document.getElementsByName("bttn"));
 
 function check(btn){
+    responded = true;
     if(btn.innerHTML == randflag){
         document.getElementById("result").innerHTML += "<h3>You got it right!</h3>";
         for(let i = 0; i < 4; i++){
@@ -426,6 +427,10 @@ function check(btn){
             document.getElementsByName("bttn")[i].style.backgroundColor = "#C7B894";
         }
     }
+    createrb();
+}
+
+function createrb(){
     var reboot = document.createElement("button");
     reboot.className = "button reboot";
     reboot.innerHTML = "Try Again";
@@ -437,3 +442,14 @@ function check(btn){
         }
     });
 }
+
+setTimeout(function(){
+    if(responded == false){
+        for(let i = 0; i < 4; i++){
+            document.getElementsByName("bttn")[i].disabled = true;
+            document.getElementsByName("bttn")[i].style.backgroundColor = "#C7B894";
+        }
+        document.getElementById("result").innerHTML += "<h3>Whoops! Time is up. Correct answer is: " + randflag + "</h3>";
+        createrb();
+    }
+}, 5000);
