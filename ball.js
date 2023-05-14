@@ -84,7 +84,13 @@ function doFunction(){
         "近前看其詳 上寫著 秦香蓮那三十二歲 那狀告當朝駙馬郎 他欺君王啊瞞皇上 那悔兒孫那狀子登朝 /ly",
         "putangina /j",
         "tremendo putanga que sos /j /nbr",
-        "내가 뭘 어쩌겠니? 사랑이 그런 거지, 마음이 마음을 버린다는 게 다 이렇니? Baby don`t cry for me, 내게 잊으라고 말하지 마, 이별이 그래 다 그런 거니까~ /ly"
+        "내가 뭘 어쩌겠니? 사랑이 그런 거지, 마음이 마음을 버린다는 게 다 이렇니? Baby don`t cry for me, 내게 잊으라고 말하지 마, 이별이 그래 다 그런 거니까~ /ly",
+        "Have you played my Flag Quiz Game yet?",
+        "我妈妈Autumn在学中文所以她会明白我说的话哈哈哈哈 /pos /proud",
+        "그게 안 돼...",
+        "뭐라고..?",
+        "아아아아아 안 할래 진짜.",
+        "cope /j"
     ]
     var mess = document.getElementById("message").value;
     var chatt = document.getElementById('chat');
