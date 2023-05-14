@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Autumn's Lab</title>
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @font-face{font-family: bloggermedium; src: url('fonts/Blogger-Sans-Medium.ttf')}
+            #flag{
+                margin-top: 50px;
+                text-align: center;
+            }
+            #result{
+                text-align: center;
+            }
+            img {
+                
+                width: 225px;
+                border: 1px solid black;
+            }
+            .button {
+                font-family: bloggermedium;
+                border: 2px solid black;
+                border-radius: 5px;
+                color: black;
+                padding: 11px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                background-color:#FFEBBE;
+                transition-duration: 0.4s;
+            }
+            #but ul{
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+                text-align: center;
+            }
+            #but li{
+                display: inline;
+                padding: 2px;
+                vertical-align: middle;
+            }
+        </style>
+    </head>
+    <body>
+        <style>
+            @font-face{font-family: bloggerlight; src: url('fonts/Blogger-Sans-Light.ttf')}
+            body{
+                background-image: url('bg.jpg');
+                background-size: cover;
+                text-align:center;
+                font-family: bloggerlight;
+            }
+        </style>
+        <p></p>
+        <a href="index.html" style="text-decoration:none"><font size=5 color="#FFEBBE"><h1>AUTUMN'S LAB</h1></font></a>
+        <style>
+            @font-face { font-family: rubikmedium; src: url('fonts/Rubik-ExtraBold.ttf'); } 
+            h1 {
+                font-family: rubikmedium;
+                -webkit-text-stroke: 1px black;
+            }
+        </style>
+        <div id="flag">
+            <h3>Which country does this flag belong to?</h3>
+            <br>
+        </div>
+        <div id="but">
+            <br>
+            <ul>
+                <li><button class="button button1" name = "bttn" onclick="check(this)"></button></li>
+                <li><button class="button button2" name = "bttn" onclick="check(this)"></button></li>
+                <li><button class="button button3" name = "bttn" onclick="check(this)"></button></li>
+                <li><button class="button button4" name = "bttn" onclick="check(this)"></button></td></li>
+            </ul>
+        </div>
+        <div id="result">
+            <br>
+        </div>
+    </body>
+    <script src="flag.js?2"></script>
+</html>
