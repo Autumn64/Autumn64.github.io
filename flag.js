@@ -421,7 +421,7 @@ function check(btn){
             document.getElementsByName("bttn")[i].style.backgroundColor = "#C7B894";
         }
     }else{
-        document.getElementById("result").innerHTML += "<h3>Whoops! You got it wrong. The correct answer was: <b>" + randflag + "</b>.</h3>";
+        document.getElementById("result").innerHTML += "<h3>Whoops! You got it wrong. The correct answer is: <b>" + randflag + "</b>.</h3>";
         for(let i = 0; i < 4; i++){
             document.getElementsByName("bttn")[i].disabled = true;
             document.getElementsByName("bttn")[i].style.backgroundColor = "#C7B894";
