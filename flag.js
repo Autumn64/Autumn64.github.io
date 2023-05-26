@@ -19,7 +19,7 @@ let answers = [
 let answerss = answers
     .map(value => ({ value, sort: Math.random() }))
     .sort((a, b) => a.sort - b.sort)
-    .map(({ value }) => value)
+    .map(({ value }) => value);
 
 document.getElementById("flag").innerHTML += '<img src="https://flagpedia.net/data/flags/w702/' + countriesdic[randflag] + '.webp">';
 document.getElementsByName("bttn")[0].innerHTML += answerss[0];

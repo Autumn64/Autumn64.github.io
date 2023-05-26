@@ -1,6 +1,12 @@
 let person;
 let user = document.cookie;
 
+xhr = new XMLHttpRequest();
+xhr.open('GET', './ball.json', false);
+xhr.send();
+var json = JSON.parse(xhr.responseText);
+var responses = json.responses;
+
 function getperson(){
     try{
         if(user != ""){
@@ -26,11 +32,6 @@ function changeUser(){
 }
 
 function doFunction(){
-    xhr = new XMLHttpRequest();
-    xhr.open('GET', './ball.json', false);
-    xhr.send();
-    var json = JSON.parse(xhr.responseText);
-    const responses = json.responses;
     var mess = document.getElementById("message").value;
     var chatt = document.getElementById('chat');
     if(mess.trim() != "" && mess != null){
