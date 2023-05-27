@@ -30,7 +30,7 @@ document.getElementsByName("bttn")[3].innerHTML += answerss[3];
 function check(btn){
     responded = true;
     if(btn.innerHTML == randflag){
-        document.getElementById("result").innerHTML += "<h3>You got it right!</h3>";
+        document.getElementById("result").innerHTML += "<h3>You got it right! The correct answer is: <b>" + randflag + "</b>.</h3>";
         for(let i = 0; i < 4; i++){
             document.getElementsByName("bttn")[i].disabled = true;
             document.getElementsByName("bttn")[i].style.backgroundColor = "#C7B894";
