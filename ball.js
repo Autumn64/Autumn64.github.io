@@ -51,7 +51,7 @@ function displayHistory(){
 }
 
 function choose(){
-    var choice = window.confirm("Choose an option:\n\n  - Change username.\n  - Clear chat history.")
+    var choice = window.confirm("Choose an option:\n\n  - Accept: Change username.\n  - Cancel: Clear chat history.")
     if(choice){ // If user clicks accept
         user="";
         getperson();
