@@ -66,7 +66,7 @@ function choose(){
 function doFunction(){
     var mess = document.getElementById("message").value;
     var chatt = document.getElementById('chat');
-    if(mess.trim() != "" && mess != null){
+    if(mess.trim() !== "" && mess !== null){
         var randElement = responses[Math.floor(Math.random() * responses.length)];
         var message = "<br>" + person + ": " + mess
         document.getElementById("chat").innerHTML += message;
@@ -83,7 +83,7 @@ function doFunction(){
 }
 
 function clickPress(event) {
-    if (event.key == "Enter") {
+    if (event.key === "Enter") {
         doFunction();
     }
 }

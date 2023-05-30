@@ -29,20 +29,34 @@ document.getElementsByName("bttn")[3].innerHTML += answerss[3];
 
 function check(btn){
     responded = true;
-    if(btn.innerHTML == randflag){
+    let correct;
+    if(btn.innerHTML === randflag){
+        correct = true;
         document.getElementById("result").innerHTML += "<h3>You got it right! The correct answer is: <b>" + randflag + "</b>.</h3>";
-        for(let i = 0; i < 4; i++){
-            document.getElementsByName("bttn")[i].disabled = true;
-            document.getElementsByName("bttn")[i].style.backgroundColor = "#C7B894";
-        }
     }else{
+        correct = false;
         document.getElementById("result").innerHTML += "<h3>Whoops! You got it wrong. The correct answer is: <b>" + randflag + "</b>.</h3>";
-        for(let i = 0; i < 4; i++){
-            document.getElementsByName("bttn")[i].disabled = true;
-            document.getElementsByName("bttn")[i].style.backgroundColor = "#C7B894";
-        }
     }
     createrb();
+    for(let i = 0; i < 4; i++){
+        document.getElementsByName("bttn")[i].disabled = true;
+        if (correct === false){
+            if (document.getElementsByName("bttn")[i].innerHTML === btn.innerHTML){
+                document.getElementsByName("bttn")[i].style.backgroundColor = "#FFA1A1";
+            }else if (document.getElementsByName("bttn")[i].innerHTML === randflag){
+                document.getElementsByName("bttn")[i].style.backgroundColor = "#A1EB90";
+            }else{
+                document.getElementsByName("bttn")[i].style.backgroundColor = "#C7B894";
+            }
+        }
+        else{
+            if (document.getElementsByName("bttn")[i].innerHTML === btn.innerHTML){
+                document.getElementsByName("bttn")[i].style.backgroundColor = "#A1EB90";
+            }else{
+                document.getElementsByName("bttn")[i].style.backgroundColor = "#C7B894";
+            }
+        }
+    }
 }
 
 function createrb(){
@@ -52,14 +66,14 @@ function createrb(){
     document.getElementById("result").appendChild(reboot);
     window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
     reboot.addEventListener("click", function(){
-        if(this.className == "button reboot"){
+        if(this.className === "button reboot"){
             history.go(0);
         }
     });
 }
 
 setTimeout(function(){
-    if(responded == false){
+    if(responded === false){
         for(let i = 0; i < 4; i++){
             document.getElementsByName("bttn")[i].disabled = true;
             document.getElementsByName("bttn")[i].style.backgroundColor = "#C7B894";
