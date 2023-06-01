@@ -7,6 +7,8 @@ const countries = flags.countries;
 const countriesdic = flags.countriesdic;
 
 var responded = false;
+var ii = 4; //Seconds
+var timeout = false;
 var randflag = countries[Math.floor(Math.random() * countries.length)];
 
 let answers = [
@@ -30,12 +32,13 @@ document.getElementsByName("bttn")[3].innerHTML += answerss[3];
 function check(btn){
     responded = true;
     let correct;
+    clearInterval(count);
     if(btn.innerHTML === randflag){
         correct = true;
-        document.getElementById("result").innerHTML += "<h3>You got it right! The correct answer is: <b>" + randflag + "</b>.</h3>";
+        document.getElementById("result").innerHTML += `<h3>You got it right! The correct answer is: <b>${randflag}</b>.</h3>`;
     }else{
         correct = false;
-        document.getElementById("result").innerHTML += "<h3>Whoops! You got it wrong. The correct answer is: <b>" + randflag + "</b>.</h3>";
+        document.getElementById("result").innerHTML += `<h3>Whoops! You got it wrong. The correct answer is: <b>${randflag}</b>.</h3>`;
     }
     createrb();
     for(let i = 0; i < 4; i++){
@@ -72,13 +75,19 @@ function createrb(){
     });
 }
 
-setTimeout(function(){
-    if(responded === false){
+var count = setInterval(() => { //It'll be executed each second until the timer gets to zero.
+    if (ii === 0){
+        timeout = true
+        clearInterval(count);
+    }
+    document.getElementById('count').innerHTML = `<br>You have ${ii} seconds to answer.`;
+    ii--; //Reduce timer by one.
+    if(timeout === true && responded === false){
         for(let i = 0; i < 4; i++){
             document.getElementsByName("bttn")[i].disabled = true;
             document.getElementsByName("bttn")[i].style.backgroundColor = "#C7B894";
         }
-        document.getElementById("result").innerHTML += "<h3>Whoops! Time is up. Correct answer is: " + randflag + "</h3>";
+        document.getElementById("result").innerHTML += `<h3>Whoops! Time is up. Correct answer is: ${randflag}</h3>`;
         createrb();
     }
-}, 5000);
+}, 1000);
