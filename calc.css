@@ -81,7 +81,7 @@ table{
     #calculator{
         width: 70%;
     }
-    .button, .button2, .button3, .bequal, .bnegate{
+    .button, .button2, .button3, .bequal{
         padding: 10px 4vw;
     }
 }
