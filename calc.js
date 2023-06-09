@@ -33,7 +33,7 @@ function write(event){
             }
             break;
         case 'ANS':
-            display.innerHTML += `${temp}`; //Get the value stores
+            display.innerHTML += `${temp}`; //Get the value stored
             break;
         default:
             display.innerHTML += event.target.innerHTML;
@@ -43,7 +43,7 @@ function write(event){
 
 function cdisplay(event){
     let display = document.getElementById('display');
-    if (event.target.classList[1] === 'clear'){ //Clear will crear the screen
+    if (event.target.classList[1] === 'clear'){ //Clear will clear the screen
         display.innerHTML = "&nbsp;";
     }else{ //Back will just remove one element
         if (display.innerHTML.length > 1 && clear === false){ //1 and 0 aren't greater than 1
