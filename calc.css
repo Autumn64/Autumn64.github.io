@@ -85,7 +85,7 @@ table{
         padding: 10px 4vw;
     }
 }
-@media (max-width: 360px){
+@media (max-width: 400px){
     #calculator{
         width: 95%;
     }
