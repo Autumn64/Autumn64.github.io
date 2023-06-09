@@ -51,8 +51,7 @@ h1 {
     width: 70%;
     font-family: bloggermedium;
     font-size: 14;
-    resize:horizontal;
-    overflow: slice;
+    overflow: auto;
     border: 2px solid black;
     border-radius: 5px;
     padding: 12px 12px;
