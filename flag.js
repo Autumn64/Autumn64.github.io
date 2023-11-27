@@ -7,7 +7,7 @@ const countries = flags.countries;
 const countriesdic = flags.countriesdic;
 
 var responded = false;
-var ii = 4; //Seconds
+var ii = 5; //Seconds
 var timeout = false;
 var randflag = countries[Math.floor(Math.random() * countries.length)];
 
