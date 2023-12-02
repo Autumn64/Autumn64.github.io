@@ -14,7 +14,7 @@ var randflag = countries[Math.floor(Math.random() * countries.length)];
 let answers = [];
 
 for (let i = 0; i < 5; i++){
-    country = Math.floor(Math.random() * countries.length);
+    let country = Math.floor(Math.random() * countries.length);
     if (!answers.includes(countries[country]) && country !== randflag){
         answers.push(countries[country]);
     }
