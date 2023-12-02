@@ -17,7 +17,7 @@ let i = 0;
 
 while(i < 3){
     let country = Math.floor(Math.random() * countries.length);
-    if (answers.includes(countries[country]) || country === randflag){
+    if (answers.includes(countries[country]) || countries[country] === randflag){
         continue;
     }
     answers.push(countries[country]);
