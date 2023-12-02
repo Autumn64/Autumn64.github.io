@@ -13,13 +13,15 @@ var randflag = countries[Math.floor(Math.random() * countries.length)];
 
 let answers = [];
 
-for (let i = 0; i < 3; i++){
+let i = 0;
+
+while(i < 3){
     let country = Math.floor(Math.random() * countries.length);
     if (answers.includes(countries[country]) || country === randflag){
-        i--;
         continue;
     }
     answers.push(countries[country]);
+    i++;
 }
 
 answers.push(randflag);
