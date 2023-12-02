@@ -15,9 +15,11 @@ let answers = [];
 
 for (let i = 0; i < 3; i++){
     let country = Math.floor(Math.random() * countries.length);
-    if (!answers.includes(countries[country]) && country !== randflag){
-        answers.push(countries[country]);
+    if (answers.includes(countries[country]) || country === randflag){
+        i--;
+        continue;
     }
+    answers.push(countries[country]);
 }
 
 answers.push(randflag);
