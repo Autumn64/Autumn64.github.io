@@ -11,23 +11,28 @@ var ii = 5; //Seconds
 var timeout = false;
 var randflag = countries[Math.floor(Math.random() * countries.length)];
 
-let answers = [
-    countries[Math.floor(Math.random() * countries.length)],
-    randflag,
-    countries[Math.floor(Math.random() * countries.length)],
-    countries[Math.floor(Math.random() * countries.length)]
-]
+let answers = [];
 
-let answerss = answers
+for (let i = 0; i < 5; i++){
+    country = Math.floor(Math.random() * countries.length);
+    if (!answers.includes(country) && country !== randflag){
+        answers.push(country);
+    }
+}
+
+answers.push(randflag);
+
+
+answers = answers
     .map(value => ({ value, sort: Math.random() }))
     .sort((a, b) => a.sort - b.sort)
     .map(({ value }) => value);
 
 document.getElementById("flag").innerHTML += '<img src="https://flagpedia.net/data/flags/w702/' + countriesdic[randflag] + '.webp">';
-document.getElementsByName("bttn")[0].innerHTML += answerss[0];
-document.getElementsByName("bttn")[1].innerHTML += answerss[1];
-document.getElementsByName("bttn")[2].innerHTML += answerss[2];
-document.getElementsByName("bttn")[3].innerHTML += answerss[3];
+document.getElementsByName("bttn")[0].innerHTML += answers[0];
+document.getElementsByName("bttn")[1].innerHTML += answers[1];
+document.getElementsByName("bttn")[2].innerHTML += answers[2];
+document.getElementsByName("bttn")[3].innerHTML += answers[3];
 
 function check(btn){
     responded = true;
