@@ -1,5 +1,5 @@
 var xhr = new XMLHttpRequest(); //Para pedir los datos del JSON
-xhr.open('GET', './flag.json', false);  // Configura la solicitud como síncrona
+xhr.open('GET', './js/flag.json', false);  // Configura la solicitud como síncrona
 xhr.send();
 
 var flags = JSON.parse(xhr.responseText);
