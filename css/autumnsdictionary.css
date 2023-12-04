@@ -5,9 +5,9 @@
     border-left: 2px solid black;
     padding-left: 5px;
 }
-@font-face{font-family: bloggerlight; src: url('fonts/Blogger-Sans-Light.ttf')}
+@font-face{font-family: bloggerlight; src: url('../fonts/Blogger-Sans-Light.ttf')}
 body{
-    background-image: url('bg.jpg');
+    background-image: url('../res/bg.jpg');
     background-size: cover;
     text-align:center;
     font-family: bloggerlight;
@@ -15,7 +15,7 @@ body{
 h2{
     font-family: bloggerlight;
 }
-@font-face { font-family: rubikmedium; src: url('fonts/Rubik-ExtraBold.ttf'); } 
+@font-face { font-family: rubikmedium; src: url('../fonts/Rubik-ExtraBold.ttf'); } 
 h1 {
     font-family: rubikmedium;
     -webkit-text-stroke: 1px black;

@@ -22,7 +22,7 @@ function getperson(){
             document.cookie = cookie_string;
         }
     }catch(e){
-        if (person === null) window.location.href = 'autumnslab.html';
+        if (person === null) window.location.href = '../autumnslab.html';
     }
 }
 
