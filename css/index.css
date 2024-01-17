@@ -76,3 +76,9 @@ h4{
 h5{
     font-family: bloggerlight;
 }
+
+@media (max-width: 510px){
+    #fsf_pics img{
+        width: 90%;
+    }
+}

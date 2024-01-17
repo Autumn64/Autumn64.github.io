@@ -2,8 +2,8 @@ body{
     background-image: url('../res/bg.jpg');
     background-size: cover;
     text-align: center;
-    margin-left: 25%;
-    margin-right: 25%;
+    align-items: center;
+    justify-content: center;
 }
 
 @font-face { font-family: rubikmedium; src: url('../fonts/Rubik-ExtraBold.ttf'); } 
@@ -19,4 +19,13 @@ h1 {
 @font-face{font-family: bloggerlight; src: url('../fonts/Blogger-Sans-Light.ttf')}
 h3{
     font-family: bloggerlight;
+}
+
+#key, #head{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: break-word;
+    width: 80%;
+    margin: 0 auto;
 }
