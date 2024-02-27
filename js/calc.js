@@ -1,4 +1,4 @@
-// @license magnet:?xt=urn:btih:c80d50af7d3db9be66a4d0a86db0286e4fd33292&dn=bsd-3-clause.txt BSD-3-Clause
+// @license magnet:?xt=urn:btih:0b31508aeb0634b347b8270c7bee4d411b5d4109&dn=agpl-3.0.txt AGPL-3.0
 
 buttons1 = document.getElementsByClassName('button');
 buttons2 = document.getElementsByClassName('button2');

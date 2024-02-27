@@ -19,4 +19,8 @@ h2{
 h1 {
     font-family: rubikmedium;
     -webkit-text-stroke: 1px black;
+    transition-duration: 0.4s;
+}
+h1:hover{
+    text-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
