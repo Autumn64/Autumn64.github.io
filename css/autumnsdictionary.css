@@ -8,7 +8,7 @@
 @font-face{font-family: bloggerlight; src: url('../fonts/Blogger-Sans-Light.ttf')}
 body{
     background-image: url('../res/bg.jpg');
-    background-size: cover;
+    background-size: contain;
     text-align:center;
     font-family: bloggerlight;
 }

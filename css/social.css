@@ -25,7 +25,7 @@
 
 body{
     background-image: url('../res/bg.jpg');
-    background-size: cover;
+    background-size: contain;
     text-align:center;
 }
 @font-face { font-family: rubikmedium; src: url('../fonts/Rubik-ExtraBold.ttf'); } 
