@@ -43,6 +43,10 @@ h2{
     font-family: bloggerlight;
 }
 
+h5{
+    font-family: bloggerlight;
+}
+
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
