@@ -48,6 +48,9 @@
 #ann{
     position: relative;
 }
+#notbyai img{
+	width: 200px;
+}
 .announcements{
     margin-left: auto;
     margin-right: auto;
