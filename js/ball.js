@@ -4,7 +4,7 @@ let person;
 let user = document.cookie;
 
 xhr = new XMLHttpRequest();
-xhr.open('GET', './js/ball.json', false);
+xhr.open('GET', '../../js/ball.json', false);
 xhr.send();
 var json = JSON.parse(xhr.responseText);
 var responses = json.responses;
