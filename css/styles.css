@@ -1,0 +1,234 @@
+/*
+Autumn64's pages
+Copyright (C) 2023-2024 Mónica Gómez (Autumn64)
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+@font-face {
+    font-family: heart;
+    src: url('../fonts/theheart.ttf');
+}
+
+@font-face {
+    font-family: rubik;
+    src: url('../fonts/Rubik-Bold.ttf');
+}
+
+body{
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    background-image: url(../res/pattern-white.png);
+    background-repeat: repeat;
+    overflow-y: auto;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.main {
+    width: 60vw;
+    border: 3px ridge var(--border-color);
+    border-radius: 25px;
+    background-color: var(--content-color);
+    word-wrap: break-word;
+    font-family: heart;
+    font-size: 20pt;
+    text-align: center;
+    color: var(--text-color);
+}
+
+#mode {
+    display: flex;
+    justify-content: right;
+}
+
+#mode svg {
+    fill: var(--border-color);
+}
+
+#mode svg:first-child{
+    display: none;
+}
+
+#mode select {
+    align-self: flex-start;
+    margin-top: 15px;
+    appearance: none;
+    background-color: var(--content-color);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-family: heart;
+    font-size: 16pt;
+    text-align: center;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+#theme {
+    background-color: transparent;
+    border: none;
+    height: 60px;
+}
+
+#header{
+    border-bottom: 2px ridge var(--mid-color);
+    font-family: rubik;
+    font-size: 50pt;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    background-image: linear-gradient(var(--title-color-1), var(--title-color-2));
+    background-size: 100%;
+    background-clip: text;
+}
+
+#nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 2px ridge var(--mid-color);
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#content {
+    padding: 20px;
+}
+
+#recommended {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#badges img {
+    height: 50px;
+    width: auto;
+}
+
+#footer {
+    border-top: 2px ridge var(--mid-color);
+    font-size: 15px;
+}
+
+.item {
+	margin-top: 25px;
+	margin-left: 10px;
+	margin-right: 10px;
+	max-width: 250px;
+	text-align: center;
+    color: var(--text-color);
+}
+
+.item img {
+	width: 95%;
+	height: auto;
+}
+
+.navbtn{
+    border-left: 3px solid var(--mid-color);
+    border-right: 3px solid var(--mid-color);
+    border-top: none;
+    border-bottom: none;
+    background-color: var(--content-color);
+    font-family: heart;
+    color: var(--border-color);
+    font-size: 21pt;
+    margin-right: -3px;
+}
+
+.navbtn:hover{
+    background-image: linear-gradient(var(--content-color) 75%, var(--accent-color-2));
+    cursor: pointer;
+}
+
+.genbtn {
+    max-width: 350px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 3px ridge var(--mid-color);
+    background-color: var(--bg-color);
+    font-family: heart;
+    color: var(--border-color);
+    font-size: 21pt;
+}
+
+.genbtn:hover{
+    background-image: linear-gradient(var(--bg-color) 75%, var(--accent-color-2));
+    cursor: pointer;
+}
+
+#theme:hover{
+    cursor: pointer;
+}
+
+.item:hover {
+    cursor: pointer;
+    color: var(--accent-color);
+}
+
+.darkmode {
+    --title-color-1: #f8e3ec;
+    --title-color-2: #ff8dc8;
+    --bg-color: #1e222b;
+    --border-color: #b07a9d;
+    --text-color: #db8eb6;
+    --content-color: #242934;
+    --mid-color: #3a4354;
+    --accent-color: #3d88a6;
+    --accent-color-2: #6ca2b7;
+    background-image: url(../res/pattern-dark.png);
+}
+
+.darkmode #theme svg:first-child{
+    display: block;
+}
+
+.darkmode #theme svg:last-child{
+    display: none;
+}
+
+:root {
+    --title-color-1: #f8e3ec;
+    --title-color-2: #ff8dc8;
+    --bg-color: #ffdaed;
+    --border-color: #f896c8;
+    --text-color: #ff8dc8;
+    --content-color: #f8e3ec;
+    --mid-color: #ffbfe0;
+    --accent-color: #5acefa;
+    --accent-color-2: #99e2ff;
+}
+
+@media(max-width: 600px){
+    .main{
+        width: 85vw;
+    }
+    #header{
+        font-size: 40pt;
+    }
+}
