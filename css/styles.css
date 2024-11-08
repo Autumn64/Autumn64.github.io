@@ -88,17 +88,12 @@ a {
 
 #header{
     border-bottom: 2px ridge var(--mid-color);
-    font-family: rubik;
-    font-size: 50pt;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-text-fill-color: transparent;
-    background-image: linear-gradient(var(--title-color-1), var(--title-color-2));
-    background-size: 100%;
-    background-clip: text;
+    padding-bottom: 20px;
+}
+
+#header img{
+    max-width: 90%;
+    height: auto;
 }
 
 #nav {
@@ -156,7 +151,7 @@ a {
     border-bottom: none;
     background-color: var(--content-color);
     font-family: heart;
-    color: var(--border-color);
+    color: var(--text-color);
     font-size: 21pt;
     margin-right: -3px;
 }
@@ -173,7 +168,7 @@ a {
     border: 3px ridge var(--mid-color);
     background-color: var(--bg-color);
     font-family: heart;
-    color: var(--border-color);
+    color: var(--text-color);
     font-size: 21pt;
 }
 
@@ -214,10 +209,10 @@ a {
 
 :root {
     --title-color-1: #f8e3ec;
-    --title-color-2: #ff8dc8;
+    --title-color-2: #e06fb1;
     --bg-color: #ffdaed;
     --border-color: #f896c8;
-    --text-color: #ff8dc8;
+    --text-color: #e06fb1;
     --content-color: #f8e3ec;
     --mid-color: #ffbfe0;
     --accent-color: #5acefa;
@@ -228,7 +223,7 @@ a {
     .main{
         width: 85vw;
     }
-    #header{
-        font-size: 40pt;
+    #header img{
+        max-width: 95%;
     }
 }
