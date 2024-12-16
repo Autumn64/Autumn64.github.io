@@ -4,7 +4,7 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1734321050|4176046789';
+const CACHE_VERSION = '1734321327|4453143387';
 /** @type {string} */
 const CACHE_PREFIX = 'Alcanzalos Huesi-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
