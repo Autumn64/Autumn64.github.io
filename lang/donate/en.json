@@ -2,7 +2,7 @@
     "about": "About",
     "social": "Social media",
     "contact": "Contact",
-    "shutimiyah": "Shutimiyah",
+    "services": "Services",
     "key": "PGP Key",
     "donate": "Donate",
     "extras": "Extras",
@@ -11,5 +11,5 @@
     "kofi": "Donate with Ko-fi",
     "monero_header": "Donate with Monero",
     "monero_add": "Address:",
-    "footer": "Autumn64 2023-2024<br>Licensed under the CC BY-SA. <a href='https://codeberg.org/Autumn64/pages' target='_blank'>Source</a>"
+    "footer": "Autumn64 2023-2025<br>Licensed under the CC BY-SA. <a href='https://codeberg.org/Autumn64/pages' target='_blank'>Source</a>"
 }

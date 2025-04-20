@@ -6,7 +6,6 @@
     "key": "Clave PGP",
     "donate": "Donar",
     "extras": "Extras",
-    "contact_header": "Contacto",
-    "email": "Correo electrónico<br>autumn64@disroot.org",
+    "services_header": "Los servicios que autohosteo",
     "footer": "Autumn64 2023-2025<br>Bajo licencia CC BY-SA. <a href='https://codeberg.org/Autumn64/pages' target='_blank'>Fuente</a>"
 }
