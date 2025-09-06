@@ -9,6 +9,7 @@
         "index.main.h11": "Principales actividades",
         "index.table.td1": "<a href=\"foss.html\">Activismo por el Software Libre</a>",
         "index.table.td2": "<a href=\"drawings.html\">Dibujos</a>",
+        "index.table.td6": "<a href=\"https://linktr.ee/autumn64_music\" target=\"_blank\">Música independiente</a>",
         "index.table.td3": "<a href=\"https://yazhouradio.autumn64.xyz/\" target=\"_blank\">Estación de radio online de K-Pop</a>",
         "index.table.td4": "Blog en Esperanto (en construcción)",
         "index.table.td5": "<a href=\"huesitos.html\">Juego arcade en estilo 8-bit</a>",
@@ -21,7 +22,7 @@
         "about.main.h21": "Datos rápidos",
         "about.main.ul.li1": "Mi cumpleaños es el 11 de junio.",
         "about.main.ul.li2": "Soy una mujer trans, y uso pronombres femeninos.",
-        "about.main.ul.li3": "Hablo español, inglés, esperanto y francés, y actualmente aprendo coreano.",
+        "about.main.ul.li3": "Hablo español, inglés, esperanto y un poco de francés, y actualmente aprendo coreano.",
         "about.main.ul.li4": "Me gustan la espiritualidad y el neopaganismo, pero me considero más bien irreligiosa.",
         "about.main.ul.li5": "Soy algo parecido a lo que se le llamaría \"marxista liberal\", pero las únicas etiquetas que realmente me representan son \"marxista\" y \"comunista\".",
         "about.main.ul.li6": "Me importa mucho el medio ambiente. Sólo tenemos una Tierra!",
@@ -42,7 +43,7 @@
     },
     "contact": {
         "contact.main.h11": "Contacto",
-        "contact.main.p1": "Ya sea que desees trabajar conmigo, hacer una colaboración, darme un feedback o simplemente enviarme un mensaje, puedes hacerlo desde cualquiera de los medios de contacto proporcionados más abajo. ¡Gracias!",
+        "contact.main.p1": "Ya sea que desees trabajar conmigo, hacer una colaboración, darme un feedback o simplemente enviarme un mensaje, puedes hacerlo desde cualquiera de los medios de contacto proporcionados abajo. ¡Gracias!",
         "contact.main.p2": "Correo electrónico"
     },
     "donate": {
