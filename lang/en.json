@@ -1,0 +1,86 @@
+{
+    "nav": {
+        "nav.about": "About",
+        "nav.donate": "Donate",
+        "nav.contact": "Contact"
+    },
+    "index": {
+        "index.main.p": "Hi! I'm Autumn64, a <a href=\"https://en.wikipedia.org/wiki/Computer_engineering\" target=\"_blank\">CE major</a> from México. This is the place where I share my hobbies.",
+        "index.main.h11": "Main activities",
+        "index.table.td1": "<a href=\"foss.html\">Free Software activism</a>",
+        "index.table.td2": "<a href=\"drawings.html\">Drawings</a>",
+        "index.table.td3": "<a \"https://yazhouradio.autumn64.xyz/\" target=\"_blank\">Online K-pop radio station</a>",
+        "index.table.td4": "Esperanto blog (under construction)",
+        "index.table.td5": "<a href=\"huesitos.html\">8-bit style arcade game</a>",
+        "index.main.h12": "Follow me on my social media"
+    },
+    "about": {
+        "about.main.h11": "About me",
+        "about.main.p1": "I'm Mónica, and I was born in 2004 in Mexico City. My main interests are technology (especially Free Software), science, music, history, and linguistics. I'm currently working as a freelancer web developer, and I also sometimes do sysadmin.",
+        "about.main.p2": "My hobbies include digital drawing, making music, learning new languages, and basically making and writing useless but funny stuff!",
+        "about.main.h21": "Quick facts",
+        "about.main.ul.li1": "My birthday is on June 11th.",
+        "about.main.ul.li2": "I'm a trans woman, and my pronouns are she/her.",
+        "about.main.ul.li3": "I speak Spanish, English, Esperanto and some French, and I'm currently learning Korean.",
+        "about.main.ul.li4": "I'm into spirituality and neopaganism, but I consider myself as rather irreligious.",
+        "about.main.ul.li5": "I'm something similar to what you'd call a \"liberal marxist\", but the only labels that really represent me are \"marxist\" and \"communist\".",
+        "about.main.ul.li6": "I care about the environment. We only got one Earth!",
+        "about.main.ul.li7": "I prefer to eat halal or vegan when possible (because finding such kinds of food is rather difficult or expensive in my country).",
+        "about.main.ul.li8": "I like the Fediverse, though I don't use my Fediverse accounts that much (which is basically the point of not having a so called \"algorithm\").",
+        "about.main.ul.li9": "I'm a Free Software activist, and sometimes upload long and short videos about it on the Internet.",
+        "about.main.ul.li10": "I'm currently using Linux Mint (after 4 years of using Arch btw).",
+        "about.main.h22": "My top 3...",
+        "about.main.ul.li11": "Foods: Ramen, Pozole, Bread.",
+        "about.main.ul.li12": "Colours: Pink, Yellow, Purple.",
+        "about.main.ul.li13": "Movies: Interstellar, K-Pop Demon Hunters, the Star Wars saga.",
+        "about.main.ul.li14": "Genres: K-Pop, DnB, R&B.",
+        "about.main.ul.li15": "Songs: GOLDEN by HUNTR/X, CACTUS by TWICE, Aldrig vågat by Melissa Horn.",
+        "about.main.ul.li16": "K-Pop groups: TWICE, MAMAMOO, QWER.",
+        "about.main.ul.li17": "Artists: Dua Lipa, Silvio Rodríguez, The Beatles.",
+        "about.main.ul.li18": "Programming Languages: C, Python, Go.",
+        "about.main.ul.li19": "Linux distros: Arch Linux btw, Linux Mint, Debian."
+    },
+    "contact": {
+        "contact.main.h11": "Contact",
+        "contact.main.p1": "Whether you wish to work with me, make a collab, give some feedback or simply send me a message, you can do it by any of the means of contact provided below. Thanks!",
+        "contact.main.p2": "E-mail"
+    },
+    "donate": {
+        "donate.main.p1": "If you like my work and want to donate, this is the place. It's not necessary, but greatly appreciated!",
+        "donate.main.h11": "Donate with Liberapay",
+        "donate.main.h12": "Donate with Monero",
+        "donate.main.h31": "Address:",
+        "donate.main.h13": "Donate in another way?",
+        "donate.main.p2": "Contact"
+    },
+    "drawings": {
+        "drawings.main.h11": "Drawings",
+        "drawings.main.p1": "Sometimes I like to make digital drawings. I'm still learning and my style isn't too good, but I still do it with love! <3",
+        "drawings.main.h12": "Featured drawings",
+        "drawings.main.p2": "(click to see on insta)"
+    },
+    "foss": {
+        "foss.main.h11": "FOSS activism",
+        "foss.main.p1": "I sometimes upload long and short videos about Free Software and GNU/Linux.",
+        "foss.main.h12": "Featured long video (in Spanish)",
+        "foss.main.h13": "Featured short video (in Spanish)",
+        "foss.main.h14": "Follow me on my social media"
+    },
+    "huesitos": {
+        "huesitos.main.h11": "¡Alcánzalos, Huesitos!",
+        "huesitos.main.h21": "Game made as a project for the UVM National Engineering Forum 2024. (In Spanish)",
+        "huesitos.main.h22": "Controls:",
+        "huesitos.main.p1": "Run: Arrows, A, D",
+        "huesitos.main.p2": "Jump: Space",
+        "huesitos.main.p3": "Options and pause: Return",
+        "huesitos.main.p4": "Credit screen: Backspace",
+        "huesitos.main.h23": "Support for Xbox, Playstation and Nintendo Switch controllers, and touch screens (EXPERIMENTAL) included.",
+        "huesitos.main.h31": "Easter egg: MINUS1",
+        "huesitos.main.p5": "<a href=\"./huesitos/alcanzalos_huesitos.html\">Play</a>",
+        "huesitos.main.p6": "<a href=\"https://codeberg.org/Autumn64/alcanzalos_huesitos\" target=\"_blank\">Source code</a>",
+        "huesitos.main.h24": "Code licensed under the AGPLv3. Sprites, tiles and scenarios licensed under the CC BY-NC-SA, music licensed under the CC BY."
+    },
+    "footer": {
+        "footer.p": "Autumn64 &copy; 2023-2025. <a href=\"https://codeberg.org/Autumn64/pages\" target=\"_blank\">Source code</a></p>"
+    }
+}

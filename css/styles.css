@@ -1,229 +1,135 @@
-/*
-Autumn64's pages
-Copyright (C) 2023-2025 Mónica Gómez (Autumn64)
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU Affero General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU Affero General Public License for more details.
-
-You should have received a copy of the GNU Affero General Public License
-along with this program.  If not, see <https://www.gnu.org/licenses/>.
-*/
-
 @font-face {
-    font-family: heart;
-    src: url('../fonts/theheart.ttf');
+    font-family: "GochiHand";
+    src: url("../res/fonts/GochiHand-Regular.ttf");
 }
 
 @font-face {
-    font-family: rubik;
-    src: url('../fonts/Rubik-Bold.ttf');
+    font-family: "NanumPenScript";
+    src: url("../res/fonts/NanumPenScript-Regular.ttf");
 }
 
-body{
-    background-color: var(--bg-color);
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-family: "GochiHand";
+    font-size: 22px;
+    background-color: var(--bg-color-1);
+    background-image: url("../res/topography.svg");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    cursor: url("../res/hachiware/hachiware_cursor.png"), auto;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    background-color: var(--bg-color-1);
+}
+
+a, button {
+    cursor: url("../res/hachiware/hachiware_link.png"), auto;
+}
+
+#lang-select {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
-    background-image: url(../res/pattern-white.png);
-    background-repeat: repeat;
-    overflow-y: auto;
 }
 
-a {
-    color: var(--accent-color);
-    text-decoration: none;
-}
-
-.main {
-    width: 60vw;
-    border: 3px ridge var(--border-color);
-    border-radius: 25px;
-    background-color: var(--content-color);
-    word-wrap: break-word;
-    font-family: heart;
-    font-size: 20pt;
-    text-align: center;
-    color: var(--text-color);
-}
-
-#mode {
-    display: flex;
-    justify-content: right;
-}
-
-#mode svg {
-    fill: var(--border-color);
-}
-
-#mode svg:first-child{
-    display: none;
-}
-
-#mode select {
-    align-self: flex-start;
-    margin-top: 15px;
-    appearance: none;
-    background-color: var(--content-color);
-    border: 1px solid var(--border-color);
+#lang {
+    margin-top: 20px;
+    background-color: var(--bg-color-1);
+    border: 1px #ff9bb6 solid;
     border-radius: 5px;
-    font-family: heart;
-    font-size: 16pt;
-    text-align: center;
-    color: var(--text-color);
-    cursor: pointer;
+    font-family: "GochiHand";
+    font-size: 18px;
+    cursor: url("../res/hachiware/hachiware_link.png"), auto;
 }
 
-#theme {
-    background-color: transparent;
-    border: none;
-    height: 60px;
+#site-logo {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
 }
 
-#header{
-    border-bottom: 2px ridge var(--mid-color);
-    padding-bottom: 20px;
-}
-
-#header img{
-    max-width: 90%;
+#site-logo img{
+    max-width: 500px;
+    width: 100%;
     height: auto;
 }
 
-#nav {
+#main-menu {
     display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: var(--bg-color-2);
+}
+
+#main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     flex-wrap: wrap;
-    justify-content: center;
-    border-bottom: 2px ridge var(--mid-color);
-    padding-left: 5px;
-    padding-right: 5px;
+    max-width: 500px;
+    width: 100%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#content {
-    padding: 20px;
+a:link{
+    color: var(--link-color);
 }
 
-#recommended {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 150px;
+a:active, a:visited:active {
+    color: var(--link-active-color); 
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    display: inline-block;
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+}
+
+#badges, #notbyai{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
+    overflow: auto;
 }
 
-#badges img {
-    height: 50px;
-    width: auto;
+#badges img{
+    max-height: 30px;
+    margin: 5px;
 }
 
-#footer {
-    border-top: 2px ridge var(--mid-color);
-    font-size: 15px;
-}
-
-.item {
-	margin-top: 25px;
-	margin-left: 10px;
-	margin-right: 10px;
-	max-width: 250px;
-	text-align: center;
-    color: var(--text-color);
-}
-
-.item img {
-	width: 95%;
-	height: auto;
-}
-
-.navbtn{
-    border-left: 3px solid var(--mid-color);
-    border-right: 3px solid var(--mid-color);
-    border-top: none;
-    border-bottom: none;
-    background-color: var(--content-color);
-    font-family: heart;
-    color: var(--text-color);
-    font-size: 21pt;
-    margin-right: -3px;
-}
-
-.navbtn:hover{
-    background-image: linear-gradient(var(--content-color) 75%, var(--accent-color-2));
-    cursor: pointer;
-}
-
-.genbtn {
-    max-width: 350px;
-    width: 100%;
-    margin-bottom: 10px;
-    border: 3px ridge var(--mid-color);
-    background-color: var(--bg-color);
-    font-family: heart;
-    color: var(--text-color);
-    font-size: 21pt;
-}
-
-.genbtn:hover{
-    background-image: linear-gradient(var(--bg-color) 75%, var(--accent-color-2));
-    cursor: pointer;
-}
-
-#theme:hover{
-    cursor: pointer;
-}
-
-.item:hover {
-    cursor: pointer;
-    color: var(--accent-color);
-}
-
-.darkmode {
-    --title-color-1: #f8e3ec;
-    --title-color-2: #ff8dc8;
-    --bg-color: #1e222b;
-    --border-color: #b07a9d;
-    --text-color: #db8eb6;
-    --content-color: #242934;
-    --mid-color: #3a4354;
-    --accent-color: #3d88a6;
-    --accent-color-2: #6ca2b7;
-    background-image: url(../res/pattern-dark.png);
-}
-
-.darkmode #theme svg:first-child{
-    display: block;
-}
-
-.darkmode #theme svg:last-child{
-    display: none;
+#notbyai img{
+    max-height: 40px;
+    margin: 5px;
 }
 
 :root {
-    --title-color-1: #f8e3ec;
-    --title-color-2: #e06fb1;
-    --bg-color: #ffdaed;
-    --border-color: #f896c8;
-    --text-color: #e06fb1;
-    --content-color: #f8e3ec;
-    --mid-color: #ffbfe0;
-    --accent-color: #5acefa;
-    --accent-color-2: #99e2ff;
-}
-
-@media(max-width: 600px){
-    .main{
-        width: 85vw;
-    }
-    #header img{
-        max-width: 95%;
-    }
+    --bg-color-1: #fff0f4;
+    --bg-color-2: #ffcdda;
+    --link-color: #551A8B;
+    --link-active-color: #FF0000;
 }

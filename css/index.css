@@ -1,0 +1,50 @@
+table {
+    max-width: 500px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table img {
+    width: 100px;
+}
+
+td a:link, td a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+td a:hover, td a:visited:hover {
+    color: var(--link-color); 
+    text-decoration: underline;
+}
+
+td a:active, td a:visited:active {
+    color: var(--link-active-color); 
+}
+
+#social-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+.social-icon img{
+    margin-top: 8px;
+    width: 30px;
+    height: auto;
+}
+
+.social-icon:hover {
+    filter: brightness(0.8);
+}

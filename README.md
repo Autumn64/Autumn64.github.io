@@ -1,3 +1,5 @@
-# pages
+# Autumn64's Page
 
-Experimental software and cool sites in my webpage! 
+## My official webiste.
+
+Made with HTML, CSS, JS, and lots of love <3.

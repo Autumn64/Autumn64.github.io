@@ -1,0 +1,13 @@
+iframe {
+  width: 100vw;
+  aspect-ratio: 16 / 9;
+  max-width: 80%;
+  height: auto;
+  border: 0;
+}
+
+#linktree-img {
+    max-width: 600px;
+    width: 80%;
+    height: auto;
+}

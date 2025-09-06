@@ -1,0 +1,86 @@
+{
+    "nav": {
+        "nav.about": "Acerca de",
+        "nav.donate": "Donar",
+        "nav.contact": "Contacto"
+    },
+    "index": {
+        "index.main.p": "¡Hola! Soy Autumn64, una estudiante de <a href=\"https://es.wikipedia.org/wiki/Ingenier%C3%ADa_de_sistemas\" target=\"_blank\">Ingeniería en Sistemas</a> mexicana. Este es el lugar en el que comparto mis hobbies.",
+        "index.main.h11": "Principales actividades",
+        "index.table.td1": "<a href=\"foss.html\">Activismo por el Software Libre</a>",
+        "index.table.td2": "<a href=\"drawings.html\">Dibujos</a>",
+        "index.table.td3": "<a href=\"https://yazhouradio.autumn64.xyz/\" target=\"_blank\">Estación de radio online de K-Pop</a>",
+        "index.table.td4": "Blog en Esperanto (en construcción)",
+        "index.table.td5": "<a href=\"huesitos.html\">Juego arcade en estilo 8-bit</a>",
+        "index.main.h12": "Sígueme en mis redes sociales"
+    },
+    "about": {
+        "about.main.h11": "Sobre mí",
+        "about.main.p1": "Soy Mónica, y nací en el 2004 en la Ciudad de México. Mis principales intereses son la tecnología (especialmente el Software Libre), la ciencia, la música, la historia y la lingüística. Actualmente trabajo como desarrolladora web freelancer, y también a veces hago sysadmin.",
+        "about.main.p2": "Mis hobbies incluyen al dibujo digital, a hacer música, a aprender nuevos idiomas, y básicamente hacer y escribir cosas inútiles pero divertidas!",
+        "about.main.h21": "Datos rápidos",
+        "about.main.ul.li1": "Mi cumpleaños es el 11 de junio.",
+        "about.main.ul.li2": "Soy una mujer trans, y uso pronombres femeninos.",
+        "about.main.ul.li3": "Hablo español, inglés, esperanto y francés, y actualmente aprendo coreano.",
+        "about.main.ul.li4": "Me gustan la espiritualidad y el neopaganismo, pero me considero más bien irreligiosa.",
+        "about.main.ul.li5": "Soy algo parecido a lo que se le llamaría \"marxista liberal\", pero las únicas etiquetas que realmente me representan son \"marxista\" y \"comunista\".",
+        "about.main.ul.li6": "Me importa mucho el medio ambiente. Sólo tenemos una Tierra!",
+        "about.main.ul.li7": "Prefiero comer halal o vegano cuando se pueda (porque encontrar comida así en México está complicado o es caro).",
+        "about.main.ul.li8": "I like the Fediverse, though I don't use my Fediverse accounts that much (which is basically the point of not having a so called \"algorithm\").",
+        "about.main.ul.li9": "Soy activista por el Software Libre, y a veces subo videos largos y cortos sobre ello en la Internet.",
+        "about.main.ul.li10": "Actualmente uso Linux Mint (después de 4 años de usar Arch btw).",
+        "about.main.h22": "Mi top 3...",
+        "about.main.ul.li11": "De comidas: Ramen, Pozole, Pan.",
+        "about.main.ul.li12": "De colores: Rosa, Amarillo, Morado.",
+        "about.main.ul.li13": "De películas: Interstellar, K-Pop Demon Hunters, la saga de Star Wars.",
+        "about.main.ul.li14": "De géneros: K-Pop, DnB, R&B.",
+        "about.main.ul.li15": "De canciones: GOLDEN de HUNTR/X, CACTUS de TWICE, Aldrig vågat de Melissa Horn.",
+        "about.main.ul.li16": "De grupos de K-Pop: TWICE, MAMAMOO, QWER.",
+        "about.main.ul.li17": "De artistas: Dua Lipa, Silvio Rodríguez, The Beatles.",
+        "about.main.ul.li18": "De lenguajes de programación: C, Python, Go.",
+        "about.main.ul.li19": "De distribuciones Linux: Arch Linux btw, Linux Mint, Debian."
+    },
+    "contact": {
+        "contact.main.h11": "Contacto",
+        "contact.main.p1": "Ya sea que desees trabajar conmigo, hacer una colaboración, darme un feedback o simplemente enviarme un mensaje, puedes hacerlo desde cualquiera de los medios de contacto proporcionados más abajo. ¡Gracias!",
+        "contact.main.p2": "Correo electrónico"
+    },
+    "donate": {
+        "donate.main.p1": "Si te gusta mi trabajo y quieres donar, este es el lugar. No es obligatorio, pero todas las donaciones son bienvenidas. ¡Gracias!",
+        "donate.main.h11": "Donar con Liberapay",
+        "donate.main.h12": "Donar con Monero",
+        "donate.main.h31": "Dirección:",
+        "donate.main.h13": "¿Donar de otra manera?",
+        "donate.main.p2": "Contacto"
+    },
+    "drawings": {
+        "drawings.main.h11": "Dibujos",
+        "drawings.main.p1": "Me gusta hacer ocasionalmente dibujos digitales. Aún estoy aprendiendo y mi estilo no es tan bueno, pero lo hago con el corazón! <3",
+        "drawings.main.h12": "Dibujos destacados",
+        "drawings.main.p2": "(click para ver en insta)"
+    },
+    "foss": {
+        "foss.main.h11": "Activismo FOSS",
+        "foss.main.p1": "A veces subo videos largos y cortos sobre el Software Libre y GNU/Linux.",
+        "foss.main.h12": "Video largo destacado",
+        "foss.main.h13": "Video corto destacado",
+        "foss.main.h14": "Sígueme en mis redes sociales"
+    },
+    "huesitos": {
+        "huesitos.main.h11": "¡Alcánzalos, Huesitos!",
+        "huesitos.main.h21": "Juego hecho como proyecto para el Foro Nacional de Ingeniería de UVM 2024.",
+        "huesitos.main.h22": "Controles:",
+        "huesitos.main.p1": "Correr: Flechas, A, D",
+        "huesitos.main.p2": "Saltar: Espacio",
+        "huesitos.main.p3": "Selección y pausa: Enter",
+        "huesitos.main.p4": "Pantalla de créditos: Backspace",
+        "huesitos.main.h23": "Soporte para controles de Xbox, Playstation y Nintendo Switch, y pantallas táctiles (EXPERIMENTAL) incluido.",
+        "huesitos.main.h31": "Easter egg: MINUS1",
+        "huesitos.main.p5": "<a href=\"./huesitos/alcanzalos_huesitos.html\">Jugar</a>",
+        "huesitos.main.p6": "<a href=\"https://codeberg.org/Autumn64/alcanzalos_huesitos\" target=\"_blank\">Código fuente</a>",
+        "huesitos.main.h24": "Código bajo licencia AGPLv3. Sprites, tiles y escenarios bajo licencia CC BY-NC-SA, música bajo licencia CC BY."
+    },
+    "footer": {
+        "footer.p": "Autumn64 &copy; 2023-2025. <a href=\"https://codeberg.org/Autumn64/pages\" target=\"_blank\">Código fuente</a></p>"
+    }
+}
