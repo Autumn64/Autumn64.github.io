@@ -1,0 +1,87 @@
+{
+    "nav": {
+        "nav.about": "정보",
+        "nav.donate": "기부",
+        "nav.contact": "연락"
+    },
+    "index": {
+        "index.main.p": "안녕하세요! 저는 멕시코사람, <a href=\"https://ko.wikipedia.org/wiki/%EC%BB%B4%ED%93%A8%ED%84%B0_%EA%B3%B5%ED%95%99\" target=\"_blank\">컴퓨터공학</a> 학생 Autumn64이에요. 여기는 제 취미를 공유하는 거예요.",
+        "index.main.h11": "주요 활동",
+        "index.table.td1": "<a href=\"foss.html\">자유 소프트웨어 운동</a>",
+        "index.table.td2": "<a href=\"drawings.html\">그림</a>",
+        "index.table.td6": "<a href=\"https://linktr.ee/autumn64_music\" target=\"_blank\">인디 음악</a>",
+        "index.table.td3": "<a \"https://yazhouradio.autumn64.xyz/\" target=\"_blank\">케이팝 온라인 라디오</a>",
+        "index.table.td4": "에스페란토 블로그 (준비 중)",
+        "index.table.td5": "<a href=\"huesitos.html\">8-비트방식의 아케이드 게임</a>",
+        "index.main.h12": "소셜 미디어에서 팔로우해주세요"
+    },
+    "about": {
+        "about.main.h11": "저에 대한 소개",
+        "about.main.p1": "2004년에 멕시코시티에서 태어난 안은별이에요. 기술 (특히 자유 소프트웨어), 과학, 음악, 역사 및 언어학에 관심이 있고 현재는 프리랜서 웹 개발자로 일하며 가끔 sysadmin으로 일하는 거예요.",
+        "about.main.p2": "제 취미는 디지털 드로잉, 음악 만들기, 새로운 언어 배우기, 그리고 쓸모없지만 재미있는 것들을 만들거나 쓰는 거예요!",
+        "about.main.h21": "간단한 정보",
+        "about.main.ul.li1": "생일: 6월 11일.",
+        "about.main.ul.li2": "트랜스여성예요.",
+        "about.main.ul.li3": "스페인어, 영어, 에스페란토어, 그리고 조금은 프랑스어를 할 수 있고 지금은 한국말을 배우는 거예요.",
+        "about.main.ul.li4": "정신성과 신이교를 좋아하는데 자신을 반종교적이라고 생각해요.",
+        "about.main.ul.li5": "I'm something similar to what you'd call a \"liberal marxist\", but the only labels that really represent me are \"marxist\" and \"communist\".",
+        "about.main.ul.li6": "I care about the environment. We only got one Earth!",
+        "about.main.ul.li7": "I prefer to eat halal or vegan when possible (because finding such kinds of food is rather difficult or expensive in my country).",
+        "about.main.ul.li8": "I like the Fediverse, though I don't use my Fediverse accounts that much (which is basically the point of not having a so called \"algorithm\").",
+        "about.main.ul.li9": "I'm a Free Software activist, and sometimes upload long and short videos about it on the Internet.",
+        "about.main.ul.li10": "I'm currently using Linux Mint (after 4 years of using Arch btw).",
+        "about.main.h22": "My top 3...",
+        "about.main.ul.li11": "Foods: Ramen, Pozole, Bread.",
+        "about.main.ul.li12": "Colours: Pink, Yellow, Purple.",
+        "about.main.ul.li13": "Movies: Interstellar, K-Pop Demon Hunters, the Star Wars saga.",
+        "about.main.ul.li14": "Genres: K-Pop, DnB, R&B.",
+        "about.main.ul.li15": "Songs: GOLDEN by HUNTR/X, CACTUS by TWICE, Aldrig vågat by Melissa Horn.",
+        "about.main.ul.li16": "K-Pop groups: TWICE, MAMAMOO, QWER.",
+        "about.main.ul.li17": "Artists: AURORA, Silvio Rodríguez, The Beatles.",
+        "about.main.ul.li18": "Programming Languages: C, Python, Go.",
+        "about.main.ul.li19": "Linux distros: Arch Linux btw, Linux Mint, Debian."
+    },
+    "contact": {
+        "contact.main.h11": "연락",
+        "contact.main.p1": "저와 함께 일하시거나, 콜라보하시거나, 피드백을 주시거나 간단히 메시지를 보내고 싶으시다면 아래에 제공된 연락 수단을 통해 하실 수 있습니다. 감사합니다!",
+        "contact.main.p2": "이메일"
+    },
+    "donate": {
+        "donate.main.p1": "제 작업은 좋아하시고 기부하고 싶으시다면 여기에서 하실 수 있습니다. 필요한 건 아니지만 정말 감사드립니다!",
+        "donate.main.h11": "Liberapay로 기부",
+        "donate.main.h12": "Monero로 기부",
+        "donate.main.h31": "어드레스:",
+        "donate.main.h13": "다른 방법으로 기부하시겠습니까?",
+        "donate.main.p2": "연락"
+    },
+    "drawings": {
+        "drawings.main.h11": "그림",
+        "drawings.main.p1": "가끔 디지털 드로잉을 하는 것을 좋아해요. 아직도 배우고 있고 제 스타일은 좋지 않는데 즐겁게 하고 있어요! <3.",
+        "drawings.main.h12": "추천 그림",
+        "drawings.main.p2": "(인스타그램에서 보려면 클릭)"
+    },
+    "foss": {
+        "foss.main.h11": "FOSS 운동",
+        "foss.main.p1": "가끔 자유 소프트웨어와 GNU/Linux관련 길고 짧은 비디오를 업로드해요.",
+        "foss.main.h12": "추천 길은 비디오 (스페인어로)",
+        "foss.main.h13": "추천 짧은 비디오 (스페인어로)",
+        "foss.main.h14": "소셜 미디어에서 팔로우해주세요"
+    },
+    "huesitos": {
+        "huesitos.main.h11": "¡Alcánzalos, Huesitos!",
+        "huesitos.main.h21": "Game made as a project for the UVM National Engineering Forum 2024. (In Spanish)",
+        "huesitos.main.h22": "Controls:",
+        "huesitos.main.p1": "Run: Arrows, A, D",
+        "huesitos.main.p2": "Jump: Space",
+        "huesitos.main.p3": "Options and pause: Return",
+        "huesitos.main.p4": "Credit screen: Backspace",
+        "huesitos.main.h23": "Support for Xbox, Playstation and Nintendo Switch controllers, and touch screens (EXPERIMENTAL) included.",
+        "huesitos.main.h31": "Easter egg: MINUS1",
+        "huesitos.main.p5": "<a href=\"./huesitos/alcanzalos_huesitos.html\">게임하기</a>",
+        "huesitos.main.p6": "<a href=\"https://codeberg.org/Autumn64/alcanzalos_huesitos\" target=\"_blank\">원시 코드</a>",
+        "huesitos.main.h24": "Code licensed under the AGPLv3. Sprites, tiles and scenarios licensed under the CC BY-NC-SA, music licensed under the CC BY."
+    },
+    "footer": {
+        "footer.p": "Autumn64 &copy; 2023-2025. <a href=\"https://codeberg.org/Autumn64/pages\" target=\"_blank\">원시 코드</a></p>"
+    }
+}

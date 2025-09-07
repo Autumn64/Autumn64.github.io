@@ -45,6 +45,18 @@ function setLanguage(page){
             element.innerHTML = langData["footer"][key];
         });
     });
+
+    setFont(language);
+}
+
+setFont = lang =>{
+    if (lang == "kr") {
+        document.body.style.fontFamily = "'NanumPenScript', sans-serif";
+        document.body.style.fontSize = "30px";
+    }else {
+        document.body.style.fontFamily = "'GochiHand', sans-serif";
+        document.body.style.fontSize = "22px";
+    }
 }
 
 // @license-end
