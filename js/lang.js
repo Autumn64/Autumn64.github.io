@@ -51,8 +51,8 @@ function setLanguage(page){
 
 setFont = lang =>{
     if (lang == "kr") {
-        document.body.style.fontFamily = "'NanumPenScript', sans-serif";
-        document.body.style.fontSize = "30px";
+        document.body.style.fontFamily = "'GamjaFlower', sans-serif";
+        document.body.style.fontSize = "28px";
     }else {
         document.body.style.fontFamily = "'GochiHand', sans-serif";
         document.body.style.fontSize = "22px";

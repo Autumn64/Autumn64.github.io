@@ -1,3 +1,0 @@
-Here is a partial korean translation of this website. My level is still too basic though, and I greatly struggle to form long sentences because I'm not used to the word order yet + there's a lot of vocabulary (especially words related to technology) I still don't know.
-
-I wouldn't like to give the impression that I speak Korean fluently, so that's why the language is disabled in the website even if the translation file is available. When I achieve at least an intermediate level I'll re-enable it!
