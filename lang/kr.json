@@ -5,19 +5,19 @@
         "nav.contact": "연락"
     },
     "index": {
-        "index.main.p": "안녕하세요! 저는 멕시코사람, <a href=\"https://ko.wikipedia.org/wiki/%EC%BB%B4%ED%93%A8%ED%84%B0_%EA%B3%B5%ED%95%99\" target=\"_blank\">컴퓨터공학</a> 학생 Autumn64이에요. 여기에서 제 취미를 공유하는 거예요. 아직도 한국어를 배우고 있고 그렇게 말을 잘 못해서 좀 문법 잘못을 하면 죄송합니다!",
-        "index.main.h11": "주요 활동",
+        "index.main.p": "안녕하세요! 저는 멕시코사람, <a href=\"https://ko.wikipedia.org/wiki/%EC%BB%B4%ED%93%A8%ED%84%B0_%EA%B3%B5%ED%95%99\" target=\"_blank\">컴퓨터공학</a> 학생 Autumn64이에요. 여기에서 제 취미를 공유하는 거예요. 아직도 한국어를 배우고 있고 그렇게 말을 잘 못해요, 그러니까 좀 문법 잘못을 하면 죄송합니다!",
+        "index.main.h11": "취미",
         "index.table.td1": "<a href=\"foss.html\">자유 소프트웨어 활동</a>",
         "index.table.td2": "<a href=\"drawings.html\">그림</a>",
         "index.table.td6": "<a href=\"https://linktr.ee/autumn64_music\" target=\"_blank\">인디 음악</a>",
         "index.table.td3": "<a href=\"https://yazhouradio.autumn64.xyz/\" target=\"_blank\">케이팝 온라인 라디오</a>",
         "index.table.td4": "에스페란토 블로그 (준비 중)",
         "index.table.td5": "<a href=\"huesitos.html\">8-비트스타일 아케이드 게임</a>",
-        "index.main.h12": "소셜 미디어에서 팔로우해주세요"
+        "index.main.h12": "소셜 미디어에서 팔로우해주세요!"
     },
     "about": {
         "about.main.h11": "저에 대한 소개",
-        "about.main.p1": "2004년에 멕시코시티에서 태어난 안은별이라고 합니다. 기술 (특히 자유 소프트웨어), 과학, 음악, 역사 및 언어학에 관심이 있어요. 그리고 현재는 프리랜서 웹 개발자로 일하며 가끔 sysadmin도 해요.",
+        "about.main.p1": "2004년에 멕시코시티에서 태어난 안은별이라고 합니다. 기술 (특히 자유 소프트웨어), 과학, 음악, 역사 및 언어학에 관심이 있어요. 그리고 현재는 프리랜서 웹 개발자로 일하고 가끔 sysadmin도 해요.",
         "about.main.p2": "디지털 드로잉, 음악 만들기, 새로운 언어 배우기, 그리고 쓸모없지만 재미있는 것들을 쓰거나 만드는 걸 많이 좋아해요!",
         "about.main.h21": "간단한 정보",
         "about.main.ul.li1": "생일: 6월 11일.",
@@ -25,9 +25,9 @@
         "about.main.ul.li3": "스페인어, 영어, 에스페란토어, 그리고 조금 프랑스어를 할 수 있고 지금은 한국말을 배우고 있어요.",
         "about.main.ul.li4": "\"Spirituality\"과 \"neopaganism\"을 좋아하는데 자신을 \"irreligious\"이라고 차라리 생각해요.",
         "about.main.ul.li5": "저는 \"자유주의 마르크스주의자\"와 비슷한데 저를 정말 대표하는 라벨은 \"마르크스주의자\"와 \"공산주의자\" 뿐이에요.",
-        "about.main.ul.li6": "저는 환경이 너무 중요해요. 우리는 지구가 하나밖에 없거든요!",
+        "about.main.ul.li6": "저는 환경이 너무 중요해요. 지구는 단 하나 뿐이에요!",
         "about.main.ul.li7": "할랄음식 아니면 비건음식을 먹는 걸 더 좋아하는데 멕시코에서 그런 음식을 찾을 것이 좀 어렵거나 비싸요",
-        "about.main.ul.li8": "페디버스가 너무 좋아요! 근데 제 페디버스 계정을 자주 안 로그인해요 (그게 \"알고리즘\"이 없으면 그냥 평범해요).",
+        "about.main.ul.li8": "<a href=\"https://ko.wikipedia.org/wiki/%ED%8E%98%EB%94%94%EB%B2%84%EC%8A%A4\" target=\"_blank\">페디버스</a>가 너무 좋아요! 근데 제 페디버스 계정을 자주 안 로그인해요 (그게 \"알고리즘\"이 없으면 그냥 평범해요).",
         "about.main.ul.li9": "자유 소프트웨어 활동가예요. 가끔은 인터넷에서 그것에 관한 길고 짧은 비디오를 업로드하는 거예요.",
         "about.main.ul.li10": "4년 동안 Arch Linux을 사용했고 지금은 Linux Mint을 사용하는 거예요.",
         "about.main.h22": "제가 가장 좋아하는 3가지...",
@@ -57,15 +57,15 @@
     "drawings": {
         "drawings.main.h11": "그림",
         "drawings.main.p1": "가끔 디지털 드로잉을 하는 것을 좋아해요. 아직도 배우고 있고 제 스타일은 좋지 않는데 즐겁게 하고 있어요! <3.",
-        "drawings.main.h12": "추천 그림",
+        "drawings.main.h12": "그림 추천",
         "drawings.main.p2": "(인스타그램에서 보려면 클릭)"
     },
     "foss": {
         "foss.main.h11": "FOSS 활동",
         "foss.main.p1": "가끔 자유 소프트웨어와 GNU/Linux에 관한 길고 짧은 비디오를 업로드해요.",
-        "foss.main.h12": "추천 길은 비디오 (스페인어로)",
-        "foss.main.h13": "추천 짧은 비디오 (스페인어로)",
-        "foss.main.h14": "소셜 미디어에서 팔로우해주세요"
+        "foss.main.h12": "길은 비디오 추천 (스페인어로)",
+        "foss.main.h13": "짧은 비디오 추천 (스페인어로)",
+        "foss.main.h14": "소셜 미디어에서 팔로우해주세요!"
     },
     "huesitos": {
         "huesitos.main.h11": "¡Alcanzalos, Huesitos!",
