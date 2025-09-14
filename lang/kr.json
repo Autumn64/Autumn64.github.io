@@ -84,7 +84,7 @@
     "services": {
         "services.main.h11": "서비스",
         "services.main.p1": "이 서비스들은 자유 소프트웨어로 집에서 Raspberry Pi 4B를 통해 호스팅되는 거예요.",
-        "services.main.p2": "집에서 전기가 자주 끊으니까 100% 업타임을 보장하지 않아요. 응원해 주셔서 감사합니다!",
+        "services.main.p2": "집에서 전기가 자주 끊으니까 100% 업타임을 보장할 수 없어요. 응원해 주셔서 감사합니다!",
         "services.main.section.div1.p1": "개인정보를 존중하는 메타 검색 엔진",
         "services.main.section.div2.p1": "개인정보 존중하는 Reddit의 대체 프론트엔드",
         "services.main.h12": "서비스가 작동하지 않습니까?",
