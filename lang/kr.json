@@ -5,14 +5,14 @@
         "nav.contact": "연락"
     },
     "index": {
-        "index.main.p": "안녕하세요! 저는 멕시코사람, <a href=\"https://ko.wikipedia.org/wiki/%EC%BB%B4%ED%93%A8%ED%84%B0_%EA%B3%B5%ED%95%99\" target=\"_blank\">컴퓨터공학</a> 학생 Autumn64이에요. 여기에서 제 취미를 공유하는 거예요. 아직도 한국어를 배우고 있고 그렇게 말을 잘 못해요, 그러니까 좀 문법 잘못을 하면 죄송합니다!",
+        "index.main.p1": "안녕하세요! 저는 멕시코사람, <a href=\"https://ko.wikipedia.org/wiki/%EC%BB%B4%ED%93%A8%ED%84%B0_%EA%B3%B5%ED%95%99\" target=\"_blank\">컴퓨터공학</a> 학생 Autumn64이에요. 여기에서 제 취미를 공유하는 거예요. 아직도 한국어를 배우고 있고 그렇게 말을 잘 못해요, 그러니까 좀 문법 잘못을 하면 죄송합니다!",
         "index.main.h11": "취미",
-        "index.table.td1": "<a href=\"foss.html\">자유 소프트웨어 활동</a>",
-        "index.table.td2": "<a href=\"drawings.html\">그림</a>",
-        "index.table.td6": "<a href=\"https://linktr.ee/autumn64_music\" target=\"_blank\">인디 음악</a>",
-        "index.table.td3": "<a href=\"https://yazhouradio.autumn64.xyz/\" target=\"_blank\">케이팝 온라인 라디오</a>",
-        "index.table.td4": "에스페란토 블로그 (준비 중)",
-        "index.table.td5": "<a href=\"huesitos.html\">8-비트스타일 아케이드 게임</a>",
+        "index.main.table.p1": "자유 소프트웨어 웹 서비스",
+        "index.main.table.p2": "자유 소프트웨어 활동",
+        "index.main.table.p3": "그림",
+        "index.main.table.p4": "인디 음악",
+        "index.main.table.p5": "에스페란토 블로그 (준비 중)",
+        "index.main.table.p6": "8-비트스타일 아케이드 게임",
         "index.main.h12": "소셜 미디어에서 팔로우해주세요!"
     },
     "about": {
@@ -58,7 +58,7 @@
         "drawings.main.h11": "그림",
         "drawings.main.p1": "가끔 디지털 드로잉을 하는 것을 좋아해요. 아직도 배우고 있고 제 스타일은 좋지 않는데 즐겁게 하고 있어요! <3.",
         "drawings.main.h12": "그림 추천",
-        "drawings.main.p2": "(인스타그램에서 보려면 클릭)"
+        "drawings.main.p2": "(인스타에서 보려면 클릭)"
     },
     "foss": {
         "foss.main.h11": "FOSS 활동",
@@ -77,11 +77,21 @@
         "huesitos.main.p4": "크레딧 화면: 백스페이스키",
         "huesitos.main.h23": "Xbox, Playstation, Nintendo Switch 컨트롤러와 터치스크린 (준비 중) 지원이 있음.",
         "huesitos.main.h31": "숨은 기능: MINUS1",
-        "huesitos.main.p5": "<a href=\"./huesitos/alcanzalos_huesitos.html\">게임하기</a>",
-        "huesitos.main.p6": "<a href=\"https://codeberg.org/Autumn64/alcanzalos_huesitos\" target=\"_blank\">원시 코드</a>",
+        "huesitos.main.p5": "게임하기",
+        "huesitos.main.p6": "소스 코드",
         "huesitos.main.h24": "AGPLv3에 라이선스된 코드. CC BY-NC-SA에 라이선스된 스프라이트, 타일 및 시나리오, CC BY에 라이선스된 음악."
     },
+    "services": {
+        "services.main.h11": "서비스",
+        "services.main.p1": "이 서비스들은 자유 소프트웨어로 집에서 Raspberry Pi 4B를 통해 호스팅되는 거예요.",
+        "services.main.p2": "집에서 전기가 자주 끊으니까 100% 업타임을 보장하지 않아요. 응원해 주셔서 감사합니다!",
+        "services.main.section.div1.p1": "개인정보를 존중하는 메타 검색 엔진",
+        "services.main.section.div2.p1": "개인정보 존중하는 Reddit의 대체 프론트엔드",
+        "services.main.h12": "서비스가 작동하지 않습니까?",
+        "services.main.p3": "서비스 상태",
+        "services.main.p4": "연락"
+    },
     "footer": {
-        "footer.p": "Autumn64 &copy; 2023-2025. <a href=\"https://codeberg.org/Autumn64/pages\" target=\"_blank\">원시 코드</a></p>"
+        "footer.p": "Autumn64 &copy; 2023-2025. <a href=\"https://codeberg.org/Autumn64/pages\" target=\"_blank\">소스 코드</a></p>"
     }
 }

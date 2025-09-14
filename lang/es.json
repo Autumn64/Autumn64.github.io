@@ -5,14 +5,14 @@
         "nav.contact": "Contacto"
     },
     "index": {
-        "index.main.p": "¡Hola! Soy Autumn64, una estudiante de <a href=\"https://es.wikipedia.org/wiki/Ingenier%C3%ADa_de_sistemas\" target=\"_blank\">Ingeniería en Sistemas</a> mexicana. Este es el lugar en el que comparto mis hobbies.",
+        "index.main.p1": "¡Hola! Soy Autumn64, una estudiante de <a href=\"https://es.wikipedia.org/wiki/Ingenier%C3%ADa_de_sistemas\" target=\"_blank\">Ingeniería en Sistemas</a> mexicana. Este es el lugar en el que comparto mis hobbies.",
         "index.main.h11": "Principales actividades",
-        "index.table.td1": "<a href=\"foss.html\">Activismo por el Software Libre</a>",
-        "index.table.td2": "<a href=\"drawings.html\">Dibujos</a>",
-        "index.table.td6": "<a href=\"https://linktr.ee/autumn64_music\" target=\"_blank\">Música independiente</a>",
-        "index.table.td3": "<a href=\"https://yazhouradio.autumn64.xyz/\" target=\"_blank\">Estación de radio online de K-Pop</a>",
-        "index.table.td4": "Blog en Esperanto (en construcción)",
-        "index.table.td5": "<a href=\"huesitos.html\">Juego arcade en estilo 8-bit</a>",
+        "index.main.table.p1": "Servicios web basados en Software Libre",
+        "index.main.table.p2": "Activismo por el Software Libre",
+        "index.main.table.p3": "Dibujos",
+        "index.main.table.p4": "Música independiente",
+        "index.main.table.p5": "Blog en Esperanto (en construcción)",
+        "index.main.table.p6": "Juego arcade en estilo 8-bit",
         "index.main.h12": "Sígueme en mis redes sociales"
     },
     "about": {
@@ -77,9 +77,19 @@
         "huesitos.main.p4": "Pantalla de créditos: Backspace",
         "huesitos.main.h23": "Soporte para controles de Xbox, Playstation y Nintendo Switch, y pantallas táctiles (EXPERIMENTAL) incluido.",
         "huesitos.main.h31": "Easter egg: MINUS1",
-        "huesitos.main.p5": "<a href=\"./huesitos/alcanzalos_huesitos.html\">Jugar</a>",
-        "huesitos.main.p6": "<a href=\"https://codeberg.org/Autumn64/alcanzalos_huesitos\" target=\"_blank\">Código fuente</a>",
+        "huesitos.main.p5": "Jugar",
+        "huesitos.main.p6": "Código fuente",
         "huesitos.main.h24": "Código bajo licencia AGPLv3. Sprites, tiles y escenarios bajo licencia CC BY-NC-SA, música bajo licencia CC BY."
+    },
+    "services": {
+        "services.main.h11": "Servicios",
+        "services.main.p1": "Estos servicios están basados en Software Libre, y los hosteo en casa desde mi Raspberry Pi 4B.",
+        "services.main.p2": "A menudo hay cortes de energía, por lo que no puedo garantizar un uptime del 100%. ¡Gracias por todo el apoyo!",
+        "services.main.section.div1.p1": "Metabuscador libre y privado",
+        "services.main.section.div2.p1": "Frontend alternativo para Reddit, enfocado en la privacidad",
+        "services.main.h12": "¿Fallas en el servicio?",
+        "services.main.p3": "Estatus",
+        "services.main.p4": "Contacto"
     },
     "footer": {
         "footer.p": "Autumn64 &copy; 2023-2025. <a href=\"https://codeberg.org/Autumn64/pages\" target=\"_blank\">Código fuente</a></p>"

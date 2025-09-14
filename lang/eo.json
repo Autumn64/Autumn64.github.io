@@ -5,14 +5,14 @@
         "nav.contact": "Kontakto"
     },
     "index": {
-        "index.main.p": "Saluton! Mi estas Autumn64, studantino de <a href=\"https://en.wikipedia.org/wiki/Computer_engineering\" target=\"_blank\">Ingxenierarto en Komputilaj Sistemoj</a> el Meksiko. Cxi tie mi kunhavigas miajn sxatokupojn.",
+        "index.main.p1": "Saluton! Mi estas Autumn64, studantino de <a href=\"https://en.wikipedia.org/wiki/Computer_engineering\" target=\"_blank\">Ingxenierarto en Komputilaj Sistemoj</a> el Meksiko. Cxi tie mi kunhavigas miajn sxatokupojn.",
         "index.main.h11": "Precipaj aktivecoj",
-        "index.table.td1": "<a href=\"foss.html\">Libersoftvara aktivismo</a>",
-        "index.table.td2": "<a href=\"drawings.html\">Desegnajxoj</a>",
-        "index.table.td6": "<a href=\"https://linktr.ee/autumn64_music\" target=\"_blank\">Sendependa muziko</a>",
-        "index.table.td3": "<a href=\"https://yazhouradio.autumn64.xyz/\" target=\"_blank\">Enreta radiostacio de K-Pop</a>",
-        "index.table.td4": "Esperanta blogo (konstruigxante)",
-        "index.table.td5": "<a href=\"huesitos.html\">Ludo \"arcade\" kun 8-bita stilo</a>",
+        "index.main.table.p1": "Enretaj servoj bazataj je Libera Softvaro",
+        "index.main.table.p2": "Libersoftvara aktivismo",
+        "index.main.table.p3": "Desegnajxoj",
+        "index.main.table.p4": "Sendependa muziko",
+        "index.main.table.p5": "Esperanta blogo (konstruigxante)",
+        "index.main.table.p6": "Ludo \"arcade\" kun 8-bita stilo",
         "index.main.h12": "Sekvu miajn sociajn retejojn"
     },
     "about": {
@@ -77,9 +77,19 @@
         "huesitos.main.p4": "Kredita ekrano: Retropasxklavo",
         "huesitos.main.h23": "Subteno por kontroliloj de Xbox, Playstation kaj Nintendo Switch, kaj tusxekranoj (EKSPERIMENTA) haveblas.",
         "huesitos.main.h31": "Sekretsurprizo: MINUS1",
-        "huesitos.main.p5": "<a href=\"./huesitos/alcanzalos_huesitos.html\">Ludi</a>",
-        "huesitos.main.p6": "<a href=\"https://codeberg.org/Autumn64/alcanzalos_huesitos\" target=\"_blank\">Fontkodo</a>",
+        "huesitos.main.p5": "Ludi",
+        "huesitos.main.p6": "Fontkodo",
         "huesitos.main.h24": "Kodo laux AGPLv3 permesilo. \"Sprite\"-oj, \"tile\"-oj kaj scenaroj laux CC BY-NC-SA permesilo, muziko laux CC BY permesilo."
+    },
+    "services": {
+        "services.main.h11": "Servoj",
+        "services.main.p1": "Cxi tiuj servoj funkcias per Libera Softvaro, kaj mi gastigas ilin hejme el mia Raspberry Pi 4B.",
+        "services.main.p2": "Ni ofte havas elektrinterrompojn hejme, do mi ne povas certigi 100%-an disponeblecon. Dankon pro la tuta subteno!",
+        "services.main.section.div1.p1": "Libera kaj privata metasercxilo",
+        "services.main.section.div2.p1": "Alternativa fasado por Reddit, fokusata je privateco",
+        "services.main.h12": "Servoj ne funkciante?",
+        "services.main.p3": "Disponebleca stato",
+        "services.main.p4": "Kontakto"
     },
     "footer": {
         "footer.p": "Autumn64 &copy; 2023-2025. <a href=\"https://codeberg.org/Autumn64/pages\" target=\"_blank\">Fontkodo</a></p>"
