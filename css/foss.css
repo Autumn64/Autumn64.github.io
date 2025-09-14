@@ -6,8 +6,27 @@ iframe {
   border: 0;
 }
 
-#linktree-img {
-    max-width: 600px;
-    width: 80%;
+#social-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+.social-icon img{
+    width: 30px;
     height: auto;
+}
+
+.social-icon:hover {
+    filter: brightness(0.8);
 }
