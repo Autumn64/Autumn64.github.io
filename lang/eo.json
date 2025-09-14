@@ -48,10 +48,11 @@
     },
     "donate": {
         "donate.main.p1": "Se vi sxatas miajn verkojn kaj volas donaci, jen la loko por fari tiel. Tio ne necesas, sed cxiuj mondonacoj estas ege dankataj!",
-        "donate.main.h11": "Donaci per Liberapay",
-        "donate.main.h12": "Donaci per Monero",
+        "donate.main.h11": "Donaci per Stripe",
+        "donate.main.h12": "Donaci per Liberapay",
+        "donate.main.h13": "Donaci per Monero",
         "donate.main.h31": "Adreso:",
-        "donate.main.h13": "Donaci alimaniere?",
+        "donate.main.h14": "Donaci alimaniere?",
         "donate.main.p2": "Kontakto"
     },
     "drawings": {

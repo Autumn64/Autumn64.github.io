@@ -10,6 +10,8 @@
         <link rel="me" href="https://mast.lat/@autumn64">
         <script src="./js/main.js"></script>
         <script src="./js/lang.js"></script>
+        <script async src="https://js.stripe.com/v3/buy-button.js">
+        </script>
     </head>
     <body>
         <noscript>This website needs JS to work properly. <a href="https://codeberg.org/Autumn64/pages" target="_blank">Source code</a></noscript>
@@ -32,12 +34,17 @@
         </header>
         <main>
             <p data-i18n="donate.main.p1">If you like my work and want to donate, this is the place. It's not necessary, but greatly appreciated!</p>
-            <h1 data-i18n="donate.main.h11">Donate with Liberapay</h1>
+            <h1 data-i18n="donate.main.h11">Donate with Stripe</h1>
+            <stripe-buy-button
+            buy-button-id="buy_btn_1S7OCQAgsmfxZ3N2aUyjqB9Z"
+            publishable-key="pk_live_51OoDXoAgsmfxZ3N29SFJaKtzKpWWTyx8EViWpCwIt0yUVtKbom27eOwC3mZQM2q9C4C1UhDwSbWeJCeucX6fJqXs00zh2ibcQU">
+            </stripe-buy-button>
+            <h1 data-i18n="donate.main.h12">Donate with Liberapay</h1>
             <a href="https://liberapay.com/autumn64/" target="_blank"><img src="./res/liberapay.svg"></a>
-            <h1 data-i18n="donate.main.h12">Donate with Monero</h1>
+            <h1 data-i18n="donate.main.h13">Donate with Monero</h1>
             <h3 data-i18n="donate.main.h31">Address:</h3>
             <span>8C265E82ZQNihCH8UmBTzLaV5Kwo4jmbyD9M58kWLYPfagiJ5VU8urog75uEKFCovngUFFYPaA84vJFv9omDAVEWU8jrkrv</span>
-            <h1 data-i18n="donate.main.h13">Donate in another way?</h1>
+            <h1 data-i18n="donate.main.h14">Donate in another way?</h1>
             <a href="contact.html"><p data-i18n="donate.main.p2">Contact</p></a>
         </main>
         <footer>

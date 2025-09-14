@@ -48,10 +48,11 @@
     },
     "donate": {
         "donate.main.p1": "제 일을 좋아하시고 그래서 기부하고 싶으시다면 여기에서 하실 수 있습니다. 필요한 게 아니지만 정말 감사드립니다!",
-        "donate.main.h11": "Liberapay로 기부",
-        "donate.main.h12": "Monero로 기부",
+        "donate.main.h11": "Stripe로 기부",
+        "donate.main.h12": "Liberapay로 기부",
+        "donate.main.h13": "Monero로 기부",
         "donate.main.h31": "어드레스:",
-        "donate.main.h13": "다른 방법으로 기부하시겠습니까?",
+        "donate.main.h14": "다른 방법으로 기부하시겠습니까?",
         "donate.main.p2": "연락"
     },
     "drawings": {

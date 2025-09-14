@@ -48,10 +48,11 @@
     },
     "donate": {
         "donate.main.p1": "Si te gusta mi trabajo y quieres donar, este es el lugar. No es obligatorio, pero todas las donaciones son bienvenidas. ¡Gracias!",
-        "donate.main.h11": "Donar con Liberapay",
-        "donate.main.h12": "Donar con Monero",
+        "donate.main.h11": "Donar con Stripe",
+        "donate.main.h12": "Donar con Liberapay",
+        "donate.main.h13": "Donar con Monero",
         "donate.main.h31": "Dirección:",
-        "donate.main.h13": "¿Donar de otra manera?",
+        "donate.main.h14": "¿Donar de otra manera?",
         "donate.main.p2": "Contacto"
     },
     "drawings": {
