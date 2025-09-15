@@ -27,6 +27,10 @@ td a:active, td a:visited:active {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     gap: 10px;
 }
 
