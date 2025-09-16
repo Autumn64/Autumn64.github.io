@@ -46,6 +46,7 @@ const setFooter = () =>{
         <a href="http://stopcpozlbfa4s4fuhisthyaivzbewe2rihsadarlkvqv5gaphkrvvyd.onion/" target="_blank"><img src="./res/badges/stopcp.png"></a>
         <a href="https://hillhouse.neocities.org/journal/notes/palestine" target="_blank"><img src="./res/badges/palestinebadge.png"></a>
         <a href="https://inv.nadeko.net/watch?&v=tfY8RiI5u5Q" target="_blank"><img src="./res/badges/communist.png"></a>
+        <a href="https://redlib.autumn64.xyz/r/MovingToNorthKorea/comments/s87s2w/10_more_myths_about_the_dprk_debunked/" target="_blank"><img id="dprk-badge" src="./res/badges/DPRK.png"></a>
         <a href="https://lernu.net/" target="_blank"><img src="./res/badges/esperanto.png"></a>
     </section>
     <section id="notbyai">

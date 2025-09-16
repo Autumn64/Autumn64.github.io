@@ -26,6 +26,10 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     src: url("../res/fonts/GamjaFlower-Regular.ttf");
 }
 
+.hidden {
+    display: none !important;
+}
+
 body {
     display: flex;
     flex-direction: column;
