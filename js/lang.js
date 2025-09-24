@@ -54,11 +54,9 @@ setFont = lang =>{
     if (lang == "kr") {
         document.body.style.fontFamily = "'GamjaFlower', sans-serif";
         document.body.style.fontSize = "28px";
-        if (!dprk_badge.classList.contains("hidden")) dprk_badge.classList.add("hidden");
     }else {
         document.body.style.fontFamily = "'GochiHand', sans-serif";
         document.body.style.fontSize = "22px";
-        if (dprk_badge.classList.contains("hidden")) dprk_badge.classList.remove("hidden");
     }
 }
 
