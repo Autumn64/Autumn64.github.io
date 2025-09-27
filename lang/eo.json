@@ -44,7 +44,10 @@
     "contact": {
         "contact.main.h11": "Kontakto",
         "contact.main.p1": "Se vi volas labori kun mi, verki kunlaborajxon, doni kelkan retrokuplon aux simple sendi al mi mesagxon, vi povas fari tiel per ajna el la kontaktmanieroj disponeblaj malsupren. Dankon!",
-        "contact.main.p2": "Retposxto"
+        "contact.main.p2": "Retposxto",
+        "contact.main.section.h11": "PGPa sxlosilo",
+        "contact.main.section.p1": "Elsxuti sxlosilon",
+        "contact.main.section.p2": "Montri sxlosilon"
     },
     "donate": {
         "donate.main.p1": "Se vi sxatas miajn verkojn kaj volas donaci, jen la loko por fari tiel. Tio ne necesas, sed cxiuj mondonacoj estas ege dankataj!",

@@ -44,7 +44,10 @@
     "contact": {
         "contact.main.h11": "Contacto",
         "contact.main.p1": "Ya sea que desees trabajar conmigo, hacer una colaboración, darme un feedback o simplemente enviarme un mensaje, puedes hacerlo desde cualquiera de los medios de contacto proporcionados abajo. ¡Gracias!",
-        "contact.main.p2": "Correo electrónico"
+        "contact.main.p2": "Correo electrónico",
+        "contact.main.section.h11": "Clave PGP",
+        "contact.main.section.p1": "Descargar clave",
+        "contact.main.section.p2": "Ver clave"
     },
     "donate": {
         "donate.main.p1": "Si te gusta mi trabajo y quieres donar, este es el lugar. No es obligatorio, pero todas las donaciones son bienvenidas. ¡Gracias!",

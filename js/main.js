@@ -31,9 +31,9 @@ const setMenuNavigation = () =>{
     <a href="contact.html" data-i18n="nav.contact">Contact</a>`;
 
     document.getElementById("lang").addEventListener("change", (e)=>{
-    localStorage.setItem('language', e.target.value);
-    setLanguage(location.href.split("/").slice(-1)[0].replace(".html", ""));
-});
+        localStorage.setItem('language', e.target.value);
+        setLanguage(location.href.split("/").slice(-1)[0].replace(".html", ""));
+    });
 }
 
 const setFooter = () =>{
@@ -45,6 +45,7 @@ const setFooter = () =>{
         <a href="https://www.torproject.org/" target="_blank"><img src="./res/badges/tor.png"></a>
         <a href="http://stopcpozlbfa4s4fuhisthyaivzbewe2rihsadarlkvqv5gaphkrvvyd.onion/" target="_blank"><img src="./res/badges/stopcp.png"></a>
         <a href="https://jointhefediverse.net/" target="_blank"><img src="./res/badges/fediverse.png"></a>
+        <a href="https://es.anarchistlibraries.net/library/alexander-berkman-el-abc-del-comunismo-libertario" target="_blank"><img src="./res/badges/anarchocommunism.png"></a>
         <a href="https://anarchistfaq.org/afaq/index.html" target="_blank"><img src="./res/badges/anarcotrans.png"></a>
         <a href="https://hillhouse.neocities.org/journal/notes/palestine" target="_blank"><img src="./res/badges/palestinebadge.png"></a>
         <a href="https://lernu.net/" target="_blank"><img src="./res/badges/esperanto.png"></a>

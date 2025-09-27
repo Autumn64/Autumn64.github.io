@@ -44,7 +44,10 @@
     "contact": {
         "contact.main.h11": "연락",
         "contact.main.p1": "저와 함께 일하시거나, 콜라보하시거나, 피드백을 주시거나 간단히 메시지를 보내고 싶으시다면 이 연락 수단을 통해 하실 수 있습니다. 감사합니다!",
-        "contact.main.p2": "이메일"
+        "contact.main.p2": "이메일",
+        "contact.main.section.h11": "PGP 키",
+        "contact.main.section.p1": "키 다운로드",
+        "contact.main.section.p2": "키 보기"
     },
     "donate": {
         "donate.main.p1": "제 일을 좋아하시고 그래서 기부하고 싶으시다면 여기에서 하실 수 있습니다. 필요한 게 아니지만 정말 감사드립니다!",

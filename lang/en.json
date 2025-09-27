@@ -44,7 +44,10 @@
     "contact": {
         "contact.main.h11": "Contact",
         "contact.main.p1": "Whether you wish to work with me, make a collab, give some feedback or simply send me a message, you can do it by any of the means of contact provided below. Thanks!",
-        "contact.main.p2": "E-mail"
+        "contact.main.p2": "E-mail",
+        "contact.main.section.h11": "PGP Key",
+        "contact.main.section.p1": "Download key",
+        "contact.main.section.p2": "View key"
     },
     "donate": {
         "donate.main.p1": "If you like my work and want to donate, this is the place. It's not necessary, but greatly appreciated!",
