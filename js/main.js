@@ -34,9 +34,15 @@ const setMenuNavigation = () =>{
         localStorage.setItem('language', e.target.value);
         setLanguage(location.href.split("/").slice(-1)[0].replace(".html", ""));
     });
+
+    document.getElementById("theme-toggle").addEventListener("click", () =>{
+        changeTheme();
+    });
 }
 
 const setFooter = () =>{
+    const darkMode = localStorage.getItem("darkmode") === "true" ? "-dark" : "";
+
     document.getElementsByTagName("footer")[0].innerHTML = 
     `<section id="badges">
         <a href="https://www.fsf.org/" target="_blank"><img src="./res/badges/fsf_member.png"></a>
@@ -51,10 +57,10 @@ const setFooter = () =>{
         <a href="https://lernu.net/" target="_blank"><img src="./res/badges/esperanto.png"></a>
     </section>
     <section id="notbyai">
-        <img src="./res/notbyai/en.svg">
-        <img src="./res/notbyai/es.svg">
-        <img src="./res/notbyai/eo.svg">
-        <img src="./res/notbyai/kr.svg">
+        <img src="./res/notbyai/en${darkMode}.svg">
+        <img src="./res/notbyai/es${darkMode}.svg">
+        <img src="./res/notbyai/eo${darkMode}.svg">
+        <img src="./res/notbyai/kr${darkMode}.svg">
     </section>
     <p data-i18n="footer.p">Autumn64 &copy; 2023-${new Date().getFullYear()}. <a href="https://codeberg.org/Autumn64/pages" target="_blank">Source code</a></p>`;
 }

@@ -10,7 +10,7 @@ table img {
 }
 
 td a:link, td a:visited {
-    color: black;
+    color: var(--fg-color-1);
     text-decoration: none;
 }
 

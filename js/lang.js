@@ -49,8 +49,7 @@ function setLanguage(page){
     setFont(language);
 }
 
-setFont = lang =>{
-    let dprk_badge = document.getElementById("dprk-badge");
+const setFont = lang =>{
     if (lang == "kr") {
         document.body.style.fontFamily = "'GamjaFlower', sans-serif";
         document.body.style.fontSize = "28px";

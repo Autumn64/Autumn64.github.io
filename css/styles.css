@@ -41,6 +41,7 @@ body {
     background-image: url("../res/topography.svg");
     background-repeat: repeat;
     background-attachment: fixed;
+    color: var(--fg-color-1);
     cursor: url("../res/hachiware/hachiware_cursor.png"), auto;
     margin: 0;
     padding: 0;
@@ -55,19 +56,38 @@ a, button {
     cursor: url("../res/hachiware/hachiware_link.png"), auto;
 }
 
+#settings-header {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    cursor: url("../res/hachiware/hachiware_link.png"), auto;
+}
+
 #lang-select {
     display: flex;
     justify-content: center;
 }
 
 #lang {
-    margin-top: 20px;
+    color: var(--fg-color-1);
     background-color: var(--bg-color-1);
-    border: 1px #ff9bb6 solid;
+    border: 1px var(--accent-color) solid;
     border-radius: 5px;
     font-family: "GochiHand";
     font-size: 18px;
     cursor: url("../res/hachiware/hachiware_link.png"), auto;
+}
+
+#theme-toggle svg{
+    max-height: 40px;
+    fill: var(--fg-color-1);
+}
+
+#theme-toggle svg:last-child {
+    display: none;
 }
 
 #site-logo {
@@ -93,6 +113,7 @@ a, button {
 }
 
 #main-nav {
+    color: var(--link-color);
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -105,7 +126,7 @@ a, button {
     margin-right: auto;
 }
 
-a:link{
+a, a:link {
     color: var(--link-color);
 }
 
@@ -151,9 +172,30 @@ footer {
     margin: 5px;
 }
 
+.darkmode {
+    --bg-color-1: #403a50;
+    --bg-color-2: #644768;
+    --accent-color: #bc9bff;
+    --link-color: #c485ff;
+    --link-active-color: #FF0000;
+    --fg-color-1: white;
+    background-image: url("../res/topography-dark.svg");
+}
+
+.darkmode #theme-toggle svg:first-child{
+    display: none;
+}
+
+.darkmode #theme-toggle svg:last-child{
+    display: block;
+    margin-bottom: 8px;
+}
+
 :root {
     --bg-color-1: #fff0f4;
     --bg-color-2: #ffcdda;
+    --accent-color: #ff9bb6;
     --link-color: #551A8B;
     --link-active-color: #FF0000;
+    --fg-color-1: black;
 }

@@ -28,7 +28,7 @@
 }
 
 .service a:link, .service a:visited {
-    color: black;
+    color: var(--fg-color-1);
     text-decoration: none;
 }
 
