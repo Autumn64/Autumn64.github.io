@@ -17,6 +17,7 @@
     text-overflow: clip;
     overflow-wrap: break-word;
     gap: 20px;
+    font-size: 20px;
 }
 
 .fedaccount img {
