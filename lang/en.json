@@ -64,6 +64,11 @@
         "drawings.main.h12": "Featured drawings",
         "drawings.main.p2": "(click to see on insta)"
     },
+    "fediverse": {
+        "fediverse.main.h11": "Federated social media",
+        "fediverse.main.p1": "These are my profiles on federated services (like the Fediverse or Matrix). Thanks for following!",
+        "fediverse.main.p2": "Contact"
+    },
     "foss": {
         "foss.main.h11": "FOSS activism",
         "foss.main.p1": "I sometimes upload long and short videos about Free Software and GNU/Linux.",

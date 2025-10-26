@@ -64,6 +64,11 @@
         "drawings.main.h12": "Dibujos destacados",
         "drawings.main.p2": "(click para ver en insta)"
     },
+    "fediverse": {
+        "fediverse.main.h11": "Redes sociales federadas",
+        "fediverse.main.p1": "Estas son mis cuentas en los servicios federados (como el Fediverso o Matrix). ¡Gracias por seguirme!",
+        "fediverse.main.p2": "Contacto"
+    },
     "foss": {
         "foss.main.h11": "Activismo FOSS",
         "foss.main.p1": "A veces subo videos largos y cortos sobre el Software Libre y GNU/Linux.",

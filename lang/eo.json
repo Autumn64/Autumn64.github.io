@@ -64,6 +64,11 @@
         "drawings.main.h12": "Elstaraj desegnoj",
         "drawings.main.p2": "(alklaku por vidi je instagramo)"
     },
+    "fediverse": {
+        "fediverse.main.h11": "Federaciaj sociaj retejoj",
+        "fediverse.main.p1": "Jen miaj sociaj kontoj je federaciaj servoj (kiel la Federujo aux Matrikso). Dankon pro sekvi min!",
+        "fediverse.main.p2": "Kontakto"
+    },
     "foss": {
         "foss.main.h11": "Aktivismo FOSS",
         "foss.main.p1": "Kelkfoje mi afisxas longajn kaj mallongajn filmetojn pri Libera Softvaro kaj GNU/Linukso.",

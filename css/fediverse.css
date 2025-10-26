@@ -1,0 +1,39 @@
+#fediverse-accounts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    gap: 50px;
+    width: 90%;
+    margin-bottom: 100px;
+}
+
+.fedaccount {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-overflow: clip;
+    gap: 20px;
+}
+
+.fedaccount img {
+    height: 100%;
+    max-height: 100px;
+    width: auto;
+}
+
+.fedaccount a:link, .fedaccount a:visited {
+    color: var(--fg-color-1);
+    text-decoration: none;
+}
+
+.fedaccount a:hover, .fedaccount a:visited:hover {
+    color: var(--link-color); 
+    text-decoration: underline;
+}
+
+.fedaccount a:active, .fedaccount a:visited:active {
+    color: var(--link-active-color); 
+}

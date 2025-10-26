@@ -19,9 +19,13 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 // @license magnet:?xt=urn:btih:0b31508aeb0634b347b8270c7bee4d411b5d4109&dn=agpl-3.0.txt AGPL-3.0
 function setLanguage(page){
     if (page === "") page = "index";
+
     let language = "en";
-    if(localStorage.getItem('language')) language = localStorage.getItem('language');
+
+    if (localStorage.getItem('language')) language = localStorage.getItem('language');
+
     document.getElementById("lang").value = language;
+
     fetch(`lang/${language}.json`).then(response => response.json())
     .then(langData =>{
         // nav element
@@ -46,10 +50,10 @@ function setLanguage(page){
         });
     });
 
-    setFont(language);
+    //setFont(language);
 }
 
-const setFont = lang =>{
+/*const setFont = lang =>{
     if (lang == "kr") {
         document.body.style.fontFamily = "'GamjaFlower', sans-serif";
         document.body.style.fontSize = "28px";
@@ -57,6 +61,6 @@ const setFont = lang =>{
         document.body.style.fontFamily = "'GochiHand', sans-serif";
         document.body.style.fontSize = "22px";
     }
-}
+}*/
 
 // @license-end

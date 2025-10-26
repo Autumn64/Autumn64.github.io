@@ -18,16 +18,15 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Autumn64's Website - Main page</title>
+        <title>Autumn64's Website - Fediverse page</title>
         <link rel="shortcut icon" href="./res/favicon.ico">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/styles.css">
-        <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="./css/fediverse.css">
         <link rel="me" href="https://mast.lat/@autumn64">
         <link rel="me" href="https://esperanto.masto.host/@autumn_64">
         <link rel="me" href="https://blahaj.zone/@autumn_64">
-        <link rel="me" href="https://pixelfed.social/autumn_64">
         <script src="./js/main.js"></script>
         <script src="./js/lang.js"></script>
         <script src="./js/theme.js"></script>
@@ -58,62 +57,39 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
             </section>
         </header>
         <main>
-            <p data-i18n="index.main.p1">Hi! I'm Autumn64, a <a href="https://en.wikipedia.org/wiki/Computer_engineering" target="_blank">CE major</a> from México. This is the place where I share my hobbies.<br></p>
-            <h1 data-i18n="index.main.h11">Main activities</h1>
-            <table>
-                <tr>
-                    <td><a href="services.html"><img src="./res/searx.png"></a></td>
-                    <td><a href="services.html"><p data-i18n="index.main.table.p1">Free Software based web services</p></a></td>
-                </tr>
-                <tr>
-                    <td><a href="foss.html"><img src="./res/blahaj.ico"></a></td>
-                    <td><a href="foss.html"><p data-i18n="index.main.table.p2">Free Software activism</p></a></td>
-                </tr>
-                <tr>
-                    <td><a href="drawings.html"><img src="./res/drawing-thumbnail.png"></a></td>
-                    <td><a href="drawings.html"><p data-i18n="index.main.table.p3">Drawings</p></a></td>
-                </tr>
-                <tr>
-                    <td><a href="https://linktr.ee/autumn64_music" target="_blank"><img src="./res/lmms.svg"></a></td>
-                    <td><a href="https://linktr.ee/autumn64_music" target="_blank"><p data-i18n="index.main.table.p4">Indie music</p></a></td>
-                </tr>
-                <tr>
-                    <td><a href="https://cloud.gnlug.org/s/H8J97Z9qKjcPMeX" target="_blank"><img src="./res/book.png"></a></td>
-                    <td><a href="https://cloud.gnlug.org/s/H8J97Z9qKjcPMeX" target="_blank"><p data-i18n="index.main.table.p5">Articles and books in Spanish and Esperanto</p></a></td>
-                </tr>
-                <tr>
-                    <td><a href="huesitos.html"><img src="./res/huesitos.png"></a></td>
-                    <td><a href="huesitos.html"><p data-i18n="index.main.table.p6">8-bit style arcade game</p></a></td>
-                </tr>
-            </table>
-            <h1 data-i18n="index.main.h12">Follow me on my social media</h1>
-            <section id="social-icons">
-                <a href="https://linktr.ee/autumn64" target="_blank">
-                    <div class="social-icon" style="background-color: #43E55E;">
-                        <img src="./res/social/linktree.svg">
-                    </div>
-                </a>
-                <a href="fediverse.html">
-                    <div class="social-icon" style="background-color: #6364FF;">
-                        <img src="./res/social/fediverse.svg">
-                    </div>
-                </a>
-                <a href="https://www.instagram.com/autumn._64/" target="_blank">
-                    <div class="social-icon" style="background-color: #FF0069;">
-                        <img src="./res/social/instagram.svg">
-                    </div>
-                </a>
-                <a href="https://www.youtube.com/@autumn_64" target="_blank">
-                    <div class="social-icon" style="background-color: #FF0000;">
-                        <img src="./res/social/youtube.svg">
-                    </div>
-                </a>
-                <a href="https://codeberg.org/autumn64" target="_blank">
-                    <div class="social-icon" style="background-color: #2185D0;">
-                        <img src="./res/social/codeberg.svg">
-                    </div>
-                </a>
+            <h1 data-i18n="fediverse.main.h11">Federated social media</h1>
+            <p data-i18n="fediverse.main.p1">These are my profiles on federated services (like the Fediverse or Matrix). Thanks for following!</p>
+            <section id="fediverse-accounts">
+                <div class="fedaccount">
+                    <a href="https://openfollow.social/@autumn64@mast.lat" target="_blank"><img src="res/fediverse_logos/mastodon.svg"></a>
+                    <a href="https://openfollow.social/@autumn64@mast.lat" target="_blank">Mastodon<br>&commat;autumn64&commat;mast.lat</a>
+                </div>
+                <div class="fedaccount">
+                    <a href="https://openfollow.social/@autumn_64@esperanto.masto.host" target="_blank"><img src="res/fediverse_logos/mastodon.svg"></a>
+                    <a href="https://openfollow.social/@autumn_64@esperanto.masto.host" target="_blank">Mastodon<br>&commat;autumn64&commat;esperanto.masto.host</a>
+                </div>
+                <div class="fedaccount">
+                    <a href="https://openfollow.social/@autumn_64@blahaj.zone" target="_blank"><img src="res/fediverse_logos/sharkey.webp"></a>
+                    <a href="https://openfollow.social/@autumn_64@blahaj.zone" target="_blank">Sharkey<br>&commat;autumn64&commat;blahaj.zone</a>
+                </div>
+                <div class="fedaccount">
+                    <a href="https://pixelfed.social/autumn_64" target="_blank"><img src="res/fediverse_logos/pixelfed.svg"></a>
+                    <a href="https://pixelfed.social/autumn_64" target="_blank">Pixelfed<br>&commat;autumn_64&commat;pixelfed.social</a>
+                </div>
+                <div class="fedaccount">
+                    <a href="https://lemmy.blahaj.zone/u/autumn64@lemmy.blahaj.zone" target="_blank"><img src="res/fediverse_logos/lemmy.svg"></a>
+                    <a href="https://lemmy.blahaj.zone/u/autumn64@lemmy.blahaj.zone" target="_blank">Lemmy<br>&commat;autumn64&commat;lemmy.blahaj.zone</a>
+                </div>
+                <div class="fedaccount">
+                    <a href="http://matrix.to/#/@autumn64:unredacted.org" target="_blank"><img src="res/fediverse_logos/matrix.svg"></a>
+                    <a href="http://matrix.to/#/@autumn64:unredacted.org" target="_blank">Matrix<br>&commat;autumn64:unredacted.org</a>
+                </div>
+                <div class="fedaccount">
+                    <a href="https://conversations.im/i/autumn64@gnlug.org" target="_blank"><img src="res/fediverse_logos/xmpp.svg"></a>
+                    <a href="https://conversations.im/i/autumn64@gnlug.org" target="_blank">XMPP<br>&commat;autumn64&commat;gnlug.org</a>
+                </div>
             </section>
+            <a href="contact.html"><p data-i18n="fediverse.main.p2">Contact</p></a>
         </main>
         <footer>
         </footer>
