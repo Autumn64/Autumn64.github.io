@@ -24,6 +24,7 @@ iframe {
     width: 60px;
     height: 60px;
     border-radius: 100%;
+    transition: filter 0.3s;
 }
 
 .social-icon img{
