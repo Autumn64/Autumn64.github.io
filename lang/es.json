@@ -22,24 +22,26 @@
         "about.main.h21": "Datos rápidos",
         "about.main.ul.li1": "Mi cumpleaños es el 11 de junio.",
         "about.main.ul.li2": "Soy una mujer trans, y uso pronombres femeninos.",
-        "about.main.ul.li3": "Hablo español, inglés, esperanto y un poco de francés, y actualmente aprendo coreano.",
-        "about.main.ul.li4": "Me gustan la espiritualidad y el neopaganismo, pero me considero más bien irreligiosa.",
+        "about.main.ul.li3": "Hablo español, inglés, esperanto y un poco de francés.",
+        "about.main.ul.li4": "Me considero neopagana, y me interesa sobre todo la brujería ecléctica.",
         "about.main.ul.li5": "Me considero una anarcocomunista queer.",
         "about.main.ul.li6": "Me importa mucho el medio ambiente. Sólo tenemos una Tierra!",
         "about.main.ul.li7": "Prefiero comer halal o vegano cuando se pueda (porque encontrar comida así en México está complicado o es caro).",
-        "about.main.ul.li8": "Me gusta el <a href=\"https://es.wikipedia.org/wiki/Fediverso\" target=\"_blank\">Fediverso</a>, aunque no uso mis cuentas federadas tan seguido (que es básicamente el punto de no tener el mal llamado \"algoritmo\").",
+        "about.main.ul.li8": "¡Me encanta el <a href=\"https://es.wikipedia.org/wiki/Fediverso\" target=\"_blank\">Fediverso</a>! Es incluso el único lugar en la Internet en donde realmente me siento cómoda.",
         "about.main.ul.li9": "Soy activista por el Software Libre, y a veces subo videos largos y cortos sobre ello en la Internet.",
-        "about.main.ul.li10": "Actualmente uso Linux Mint (después de 4 años de usar Arch btw).",
+        "about.main.ul.li10": "Actualmente uso Debian (después de 4 años de usar Arch Linux btw).",
+        "about.main.ul.li11": "Mi principal interés es el desarrollo backend, y actualmente aprendo Flask y PHP. En cuanto al frontend, me siento cómoda con Bootstrap y también me gustaría aprender Svelte.",
+        "about.main.ul.li12": "Tengo un <a href=\"https://codeberg.org/Autumn64/portfolio\" target=\"_blank\">portafolio</a> en donde subo algunos proyectos web bonitos.",
         "about.main.h22": "Mi top 3...",
-        "about.main.ul.li11": "De comidas: Ramen, <a href=\"https://es.wikipedia.org/wiki/Tacos_de_canasta\" target=\"_blank\">Tacos de canasta</a>, Pan.",
-        "about.main.ul.li12": "De colores: Rosa, Amarillo, Morado.",
-        "about.main.ul.li13": "De películas: Interstellar, K-Pop Demon Hunters, la saga de Star Wars.",
-        "about.main.ul.li14": "De géneros: K-Pop, DnB, R&B.",
-        "about.main.ul.li15": "De canciones: GOLDEN de HUNTR/X, CACTUS de TWICE, Aldrig vågat de Melissa Horn.",
-        "about.main.ul.li16": "De grupos de K-Pop: TWICE, MAMAMOO, QWER.",
-        "about.main.ul.li17": "De artistas: AURORA, Silvio Rodríguez, The Beatles.",
-        "about.main.ul.li18": "De lenguajes de programación: C, Python, JS (lo odio pero me gusta xD).",
-        "about.main.ul.li19": "De distribuciones Linux: Arch Linux btw, Linux Mint, Debian."
+        "about.main.ul.li13": "De comidas: Ramen, <a href=\"https://es.wikipedia.org/wiki/Tacos_de_canasta\" target=\"_blank\">Tacos de canasta</a>, Pan.",
+        "about.main.ul.li14": "De colores: Rosa, Amarillo, Morado.",
+        "about.main.ul.li15": "De películas: Interstellar, K-Pop Demon Hunters, la saga de Star Wars.",
+        "about.main.ul.li16": "De géneros: K-Pop, DnB, R&B.",
+        "about.main.ul.li17": "De canciones: GOLDEN de HUNTR/X, CACTUS de TWICE, In Another World de EJAE.",
+        "about.main.ul.li18": "De grupos de K-Pop: TWICE, MAMAMOO, QWER.",
+        "about.main.ul.li19": "De artistas: AURORA, Silvio Rodríguez, The Beatles.",
+        "about.main.ul.li20": "De lenguajes de programación: C, Python, JS (lo odio pero me gusta xD).",
+        "about.main.ul.li21": "De distribuciones GNU/Linux: Arch Linux btw, Debian, Linux Mint."
     },
     "contact": {
         "contact.main.h11": "Contacto",
@@ -101,6 +103,6 @@
         "services.main.p4": "Contacto"
     },
     "footer": {
-        "footer.p": "Autumn64 &copy; 2023-2025. <a href=\"https://codeberg.org/Autumn64/pages\" target=\"_blank\">Código fuente</a></p>"
+        "footer.a": "<a href=\"https://codeberg.org/Autumn64/pages\" target=\"_blank\">Código fuente</a>"
     }
 }

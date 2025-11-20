@@ -28,26 +28,20 @@ function setLanguage(page){
 
     fetch(`lang/${language}.json`).then(response => response.json())
     .then(langData =>{
-        // nav element
+        // all body elements
         document.querySelectorAll('[data-i18n]').forEach(element =>{
             const key = element.getAttribute('data-i18n');
-            if (!["nav.about", "nav.donate", "nav.contact"].includes(key)) return;
-            element.innerHTML = langData["nav"][key];
-        });
-
-        // all other elements
-        document.querySelectorAll('[data-i18n]').forEach(element =>{
-            const key = element.getAttribute('data-i18n');
-            if (["nav.about", "nav.donate", "nav.contact"].includes(key)) return;
+            if (key.startsWith("nav") || key.startsWith("footer")) return;
             element.innerHTML = langData[page][key];
         });
 
+        // nav elements
+        for (element of ["nav.about", "nav.donate", "nav.contact"]){
+            document.querySelector(`[data-i18n="${element}"]`).innerHTML = langData["nav"][element];
+        }
+
         // footer element
-        document.querySelectorAll('[data-i18n]').forEach(element =>{
-            const key = element.getAttribute('data-i18n');
-            if (key !== "footer.p") return;
-            element.innerHTML = langData["footer"][key];
-        });
+        document.querySelector('[data-i18n="footer.a"]').innerHTML = langData["footer"]["footer.a"];
     });
 
     //setFont(language);

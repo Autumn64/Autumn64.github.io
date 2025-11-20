@@ -22,24 +22,26 @@
         "about.main.h21": "Rapidaj faktoj",
         "about.main.ul.li1": "Mia naskigxtago estas je la 11a de junio.",
         "about.main.ul.li2": "Mi estas transvirino, kaj miaj pronomoj estas inaj (sxi). Mi ankaux emas \"inigi\" vortojn kiam parolante pri mi mem.",
-        "about.main.ul.li3": "Mi parolas la hispanan, la anglan, esperanton kaj iomete la francan, kaj nuntempe mi lernas la korean.",
-        "about.main.ul.li4": "Mi estas spiritualema kaj sxatas novpaganismon, sed konsideras min mem prefere kiel nereligiulino.",
+        "about.main.ul.li3": "Mi parolas la hispanan, la anglan, esperanton kaj iomete la francan.",
+        "about.main.ul.li4": "Mi konsideras min kiel novpaganistino, kaj mi cxefe interesigxas pri eklektika sorcxo.",
         "about.main.ul.li5": "Mi konsideras min kiel kvira anarkikomunistino.",
         "about.main.ul.li6": "Mi zorgas pri la tera medio. Ni nur havas unu Teron!",
         "about.main.ul.li7": "Mi preferas mangxi halale aux vegane kiam eble (cxar trovi tiajn mangxajxojn en Meksiko malfacilas aux multekostas).",
-        "about.main.ul.li8": "Mi sxatas la <a href=\"https://eo.wikipedia.org/wiki/Fediverso\" target=\"_blank\">Fediverson</a> (aux Federujon), sed mi ne tiom multe uzas miajn Fediversajn kontojn (kio baze estas la celo ne havi malbone nomatan \"algoritmon\").",
+        "about.main.ul.li8": "Mi amas la <a href=\"https://eo.wikipedia.org/wiki/Fediverso\" target=\"_blank\">Fediverson</a> (aux Federujon)! Fakte, gxi estas la sola loko en la Interreto, kie mi ja vere sentas komforte.",
         "about.main.ul.li9": "Mi estas aktivulino por Libera Softvaro, kaj kelkfoje afisxas longajn kaj mallongajn filmetojn pri tio Interrete.",
-        "about.main.ul.li10": "Nuntempe mi uzas je Linux Mint (post 4 jaroj uzinte je Arch btw).",
+        "about.main.ul.li10": "Nuntempe mi uzas je Debian (post 4 jaroj uzinte je Arch Linux btw).",
+        "about.main.ul.li11": "Mia precipa intereso estas la backend-a programado, kaj mi nuntempe lernas je Flask kaj je PHP. Pri la frontend, mi estas komforta kun Bootstrap, kaj mi sxatus lerni je Svelte.",
+        "about.main.ul.li12": "Mi havas <a href=\"https://codeberg.org/Autumn64/portfolio\" target=\"_blank\">projektmontrajxon</a> kie mi afisxas kelkajn beletajn retejajn projektojn.",
         "about.main.h22": "Miaj 3 plej sxatataj...",
-        "about.main.ul.li11": "Mangxajxoj: Ramen, <a href=\"https://en.wikipedia.org/wiki/Tacos_de_canasta\" target=\"_blank\">Tacos de canasta</a>, Pano.",
-        "about.main.ul.li12": "Koloroj: Roza, Flava, Purpura.",
-        "about.main.ul.li13": "Filmoj: Interstellar, K-Pop Demon Hunters, la sagao de Star Wars.",
-        "about.main.ul.li14": "Gxenroj: K-Pop, DnB, R&B.",
-        "about.main.ul.li15": "Kantoj: GOLDEN de HUNTR/X, CACTUS de TWICE, Aldrig vågat de Melissa Horn.",
-        "about.main.ul.li16": "Grupoj de K-Pop: TWICE, MAMAMOO, QWER.",
-        "about.main.ul.li17": "Artistoj: AURORA, Silvio Rodríguez, The Beatles.",
-        "about.main.ul.li18": "Programlingvoj: C, Python, JS (malgraux mi malamas gxin mi sxatas gxin mdr).",
-        "about.main.ul.li19": "Linuksaj distribuajxoj: Arch Linux btw, Linux Mint, Debian."
+        "about.main.ul.li13": "Mangxajxoj: Ramen, <a href=\"https://en.wikipedia.org/wiki/Tacos_de_canasta\" target=\"_blank\">Tacos de canasta</a>, Pano.",
+        "about.main.ul.li14": "Koloroj: Roza, Flava, Purpura.",
+        "about.main.ul.li15": "Filmoj: Interstellar, K-Pop Demon Hunters, la sagao de Star Wars.",
+        "about.main.ul.li16": "Gxenroj: K-Pop, DnB, R&B.",
+        "about.main.ul.li17": "Kantoj: GOLDEN de HUNTR/X, CACTUS de TWICE, In Antoher World de EJAE.",
+        "about.main.ul.li18": "Grupoj de K-Pop: TWICE, MAMAMOO, QWER.",
+        "about.main.ul.li19": "Artistoj: AURORA, Silvio Rodríguez, The Beatles.",
+        "about.main.ul.li20": "Programlingvoj: C, Python, JS (malgraux mi malamas gxin mi sxatas gxin mdr).",
+        "about.main.ul.li21": "GNU/Linuksaj distribuajxoj: Arch Linux btw, Debian, Linux Mint."
     },
     "contact": {
         "contact.main.h11": "Kontakto",
@@ -101,6 +103,6 @@
         "services.main.p4": "Kontakto"
     },
     "footer": {
-        "footer.p": "Autumn64 &copy; 2023-2025. <a href=\"https://codeberg.org/Autumn64/pages\" target=\"_blank\">Fontkodo</a></p>"
+        "footer.a": "<a href=\"https://codeberg.org/Autumn64/pages\" target=\"_blank\">Fontkodo</a>"
     }
 }

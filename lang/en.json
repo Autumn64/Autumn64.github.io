@@ -22,24 +22,26 @@
         "about.main.h21": "Quick facts",
         "about.main.ul.li1": "My birthday is on June 11th.",
         "about.main.ul.li2": "I'm a trans woman, and my pronouns are she/her.",
-        "about.main.ul.li3": "I speak Spanish, English, Esperanto and some French, and I'm currently learning Korean.",
-        "about.main.ul.li4": "I'm into spirituality and neopaganism, but I consider myself as rather irreligious.",
+        "about.main.ul.li3": "I speak Spanish, English, Esperanto and some French.",
+        "about.main.ul.li4": "I consider myself as a neopagan, and I'm particularly interested in eclectic witchcraft.",
         "about.main.ul.li5": "I consider myself a queer anarcho-communist.",
         "about.main.ul.li6": "I care about the environment. We only got one Earth!",
         "about.main.ul.li7": "I prefer to eat halal or vegan when possible (because finding such kinds of food is rather difficult or expensive in my country).",
-        "about.main.ul.li8": "I like the <a href=\"https://en.wikipedia.org/wiki/Fediverse\" target=\"_blank\">Fediverse</a>, though I don't use my Fediverse accounts that much (which is basically the point of not having a so called \"algorithm\").",
+        "about.main.ul.li8": "I love the <a href=\"https://en.wikipedia.org/wiki/Fediverse\" target=\"_blank\">Fediverse</a>! It's pretty much the only place on the Internet where I really feel comfortable.",
         "about.main.ul.li9": "I'm a Free Software activist, and sometimes upload long and short videos about it on the Internet.",
-        "about.main.ul.li10": "I'm currently using Linux Mint (after 4 years of using Arch btw).",
+        "about.main.ul.li10": "I'm currently using Debian (after 4 years of using Arch Linux btw).",
+        "about.main.ul.li11": "My main interest is backend development, and I'm currently learning Flask and PHP. As for frontend, I feel comfortable with Bootstrap and I'd like to learn Svelte.",
+        "about.main.ul.li12": "I have a <a href=\"https://codeberg.org/Autumn64/portfolio\" target=\"_blank\">portfolio</a> where I upload some nice web projects.",
         "about.main.h22": "My top 3...",
-        "about.main.ul.li11": "Foods: Ramen, <a href=\"https://en.wikipedia.org/wiki/Tacos_de_canasta\" target=\"_blank\">Tacos de canasta</a>, Bread.",
-        "about.main.ul.li12": "Colours: Pink, Yellow, Purple.",
-        "about.main.ul.li13": "Movies: Interstellar, K-Pop Demon Hunters, the Star Wars saga.",
-        "about.main.ul.li14": "Genres: K-Pop, DnB, R&B.",
-        "about.main.ul.li15": "Songs: GOLDEN by HUNTR/X, CACTUS by TWICE, Aldrig vågat by Melissa Horn.",
-        "about.main.ul.li16": "K-Pop groups: TWICE, MAMAMOO, QWER.",
-        "about.main.ul.li17": "Artists: AURORA, Silvio Rodríguez, The Beatles.",
-        "about.main.ul.li18": "Programming Languages: C, Python, JS (I hate it but I like it lol).",
-        "about.main.ul.li19": "Linux distros: Arch Linux btw, Linux Mint, Debian."
+        "about.main.ul.li13": "Foods: Ramen, <a href=\"https://en.wikipedia.org/wiki/Tacos_de_canasta\" target=\"_blank\">Tacos de canasta</a>, Bread.",
+        "about.main.ul.li14": "Colours: Pink, Yellow, Purple.",
+        "about.main.ul.li15": "Movies: Interstellar, K-Pop Demon Hunters, the Star Wars saga.",
+        "about.main.ul.li16": "Genres: K-Pop, DnB, R&B.",
+        "about.main.ul.li17": "Songs: GOLDEN by HUNTR/X, CACTUS by TWICE, In Another World by EJAE.",
+        "about.main.ul.li18": "K-Pop groups: TWICE, MAMAMOO, QWER.",
+        "about.main.ul.li19": "Artists: AURORA, Silvio Rodríguez, The Beatles.",
+        "about.main.ul.li20": "Programming Languages: C, Python, JS (I hate it but I like it lol).",
+        "about.main.ul.li21": "GNU/Linux distros: Arch Linux btw, Debian, Linux Mint."
     },
     "contact": {
         "contact.main.h11": "Contact",
@@ -101,6 +103,6 @@
         "services.main.p4": "Contact"
     },
     "footer": {
-        "footer.p": "Autumn64 &copy; 2023-2025. <a href=\"https://codeberg.org/Autumn64/pages\" target=\"_blank\">Source code</a></p>"
+        "footer.a": "<a href=\"https://codeberg.org/Autumn64/pages\" target=\"_blank\">Source code</a>"
     }
 }

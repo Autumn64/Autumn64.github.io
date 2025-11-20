@@ -60,9 +60,10 @@ const setFooter = () =>{
         <img src="./res/notbyai/en${darkMode}.svg">
         <img src="./res/notbyai/es${darkMode}.svg">
         <img src="./res/notbyai/eo${darkMode}.svg">
-        <img src="./res/notbyai/kr${darkMode}.svg">
     </section>
-    <p data-i18n="footer.p">Autumn64 &copy; 2023-${new Date().getFullYear()}. <a href="https://codeberg.org/Autumn64/pages" target="_blank">Source code</a></p>`;
+    <p>Autumn64 CC BY 2023-${new Date().getFullYear()}. <a data-i18n="footer.a" href="https://codeberg.org/Autumn64/pages" target="_blank">Source code</a></p>`;
+
+    // <img src="./res/notbyai/kr${darkMode}.svg">
 }
 
 // @license-end
