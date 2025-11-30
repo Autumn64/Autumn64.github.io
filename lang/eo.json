@@ -94,11 +94,11 @@
     },
     "services": {
         "services.main.h11": "Servoj",
-        "services.main.p1": "Cxi tiuj servoj funkcias per Libera Softvaro, kaj mi gastigas ilin hejme el mia Raspberry Pi 4B.",
-        "services.main.p2": "Ni ofte havas elektrinterrompojn hejme, do mi ne povas certigi 100%-an disponeblecon. Dankon pro la tuta subteno!",
+        "services.main.p1": "Cxi tiuj servoj funkcias per Libera Softvaro, kaj mi gastigas ilin cxe servilo provizata de <a href=\"https://mstdn.mx/@categulario\" target=\"_blank\">@categulario@mstdn.mx</a>. Dankon pro la tuta subteno!",
         "services.main.section.div1.p1": "Libera kaj privata metasercxilo",
         "services.main.section.div2.p1": "Alternativa fasado por Reddit, fokusata je privateco",
-        "services.main.section.div3.p1": "Enreta muzika elsxutilo",
+        "services.main.section.div3.p1": "Alternativa fasado por Google Translate",
+        "services.main.section.div4.p1": "Enreta muzika elsxutilo",
         "services.main.h12": "Servoj ne funkciante?",
         "services.main.p3": "Disponebleca stato",
         "services.main.p4": "Kontakto"

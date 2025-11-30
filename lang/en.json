@@ -94,11 +94,11 @@
     },
     "services": {
         "services.main.h11": "Services",
-        "services.main.p1": "These services are based on Free Software, and I host them at home from my Raspberry Pi 4B.",
-        "services.main.p2": "We often have power outages at home, which means I can't ensure 100% uptime. Thanks for all the support!",
+        "services.main.p1": "These services are based on Free Software, and I host them from a server provided by <a href=\"https://mstdn.mx/@categulario\" target=\"_blank\">@categulario@mstdn.mx</a>. Thanks so much for all the support!",
         "services.main.section.div1.p1": "Open and private metasearch engine",
         "services.main.section.div2.p1": "Alternative frontend for Reddit, focused on privacy",
-        "services.main.section.div3.p1": "Online music downloader",
+        "services.main.section.div3.p1": "Alternative frontend for Google Translate",
+        "services.main.section.div4.p1": "Online music downloader",
         "services.main.h12": "Services not working?",
         "services.main.p3": "Status",
         "services.main.p4": "Contact"
