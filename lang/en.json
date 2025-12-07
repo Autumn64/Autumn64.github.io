@@ -84,7 +84,7 @@
     },
     "huesitos": {
         "huesitos.main.h11": "¡Alcánzalos, Huesitos!",
-        "huesitos.main.h21": "Game made as a project for the UVM National Engineering Forum 2024. (In Spanish)",
+        "huesitos.main.h21": "<bold>Second place</bold> winning game at the UVM National Engineering Forum 2024. (In Spanish)",
         "huesitos.main.h22": "Controls:",
         "huesitos.main.p1": "Run: Arrows, A, D",
         "huesitos.main.p2": "Jump: Space",
@@ -98,7 +98,7 @@
     },
     "contingencia": {
         "contingencia.main.h11": "Contingencia Estelar",
-        "contingencia.main.h21": "Game made as a project for the UVM National Engineering Forum 2025. (In Spanish)",
+        "contingencia.main.h21": "<bold>Third place</bold> winning game at the UVM National Engineering Forum 2025. (In Spanish)",
         "contingencia.main.h22": "Controls:",
         "contingencia.main.p1": "Run: A, D",
         "contingencia.main.p2": "Jump: Space",

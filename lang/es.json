@@ -84,7 +84,7 @@
     },
     "huesitos": {
         "huesitos.main.h11": "¡Alcánzalos, Huesitos!",
-        "huesitos.main.h21": "Juego hecho como proyecto para el Foro Nacional de Ingeniería de UVM 2024.",
+        "huesitos.main.h21": "Juego ganador del <bold>segundo lugar</bold> en el Foro Nacional de Ingeniería de UVM 2024.",
         "huesitos.main.h22": "Controles:",
         "huesitos.main.p1": "Correr: Flechas, A, D",
         "huesitos.main.p2": "Saltar: Espacio",
@@ -98,7 +98,7 @@
     },
     "contingencia": {
         "contingencia.main.h11": "Contingencia Estelar",
-        "contingencia.main.h21": "Juego hecho como proyecto para el Foro Nacional de Ingeniería de UVM 2025.",
+        "contingencia.main.h21": "Juego ganador del <bold>tercer lugar</bold> en el Foro Nacional de Ingeniería de UVM 2025.",
         "contingencia.main.h22": "Controles:",
         "contingencia.main.p1": "Correr: A, D",
         "contingencia.main.p2": "Saltar: Espacio",
