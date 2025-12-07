@@ -12,7 +12,7 @@
         "index.main.table.p3": "Drawings",
         "index.main.table.p4": "Indie music",
         "index.main.table.p5": "Articles and books in Spanish and Esperanto",
-        "index.main.table.p6": "8-bit style arcade game",
+        "index.main.table.p6": "8-bit style games",
         "index.main.h12": "Follow me on my social media"
     },
     "about": {
@@ -78,6 +78,10 @@
         "foss.main.h13": "Featured short video (in Spanish)",
         "foss.main.h14": "Follow me on my social media"
     },
+    "games": {
+        "games.main.h11": "Games",
+        "games.main.p1": "These games were made for National Engineering Contests that ocurred in México. Enjoy!"
+    },
     "huesitos": {
         "huesitos.main.h11": "¡Alcánzalos, Huesitos!",
         "huesitos.main.h21": "Game made as a project for the UVM National Engineering Forum 2024. (In Spanish)",
@@ -91,6 +95,19 @@
         "huesitos.main.p5": "Play",
         "huesitos.main.p6": "Source code",
         "huesitos.main.h24": "Code licensed under the AGPLv3. Sprites, tiles and scenarios licensed under the CC BY-NC-SA, music licensed under the CC BY."
+    },
+    "contingencia": {
+        "contingencia.main.h11": "Contingencia Estelar",
+        "contingencia.main.h21": "Game made as a project for the UVM National Engineering Forum 2025. (In Spanish)",
+        "contingencia.main.h22": "Controls:",
+        "contingencia.main.p1": "Run: A, D",
+        "contingencia.main.p2": "Jump: Space",
+        "contingencia.main.p3": "Attack: J",
+        "contingencia.main.p4": "Dash (only in diagonal): K",
+        "contingencia.main.h23": "Support for Xbox, Playstation and Nintendo Switch controllers included.",
+        "contingencia.main.p5": "Play",
+        "contingencia.main.p6": "Source code",
+        "contingencia.main.h24": "Code licensed under the AGPLv3. Sprites, tiles and scenarios licensed under the CC BY-NC-SA, music licensed under the CC BY."
     },
     "services": {
         "services.main.h11": "Services",

@@ -12,7 +12,7 @@
         "index.main.table.p3": "Dibujos",
         "index.main.table.p4": "Música independiente",
         "index.main.table.p5": "Artículos y libros en español y esperanto",
-        "index.main.table.p6": "Juego arcade en estilo 8-bit",
+        "index.main.table.p6": "Videojuegos en estilo 8-bits",
         "index.main.h12": "Sígueme en mis redes sociales"
     },
     "about": {
@@ -78,6 +78,10 @@
         "foss.main.h13": "Video corto destacado",
         "foss.main.h14": "Sígueme en mis redes sociales"
     },
+    "games": {
+        "games.main.h11": "Juegos",
+        "games.main.p1": "Estos juegos fueron hechos para los Foros Nacionales de Ingeniería que ocurrieron en México. ¡Disfruta!"
+    },
     "huesitos": {
         "huesitos.main.h11": "¡Alcánzalos, Huesitos!",
         "huesitos.main.h21": "Juego hecho como proyecto para el Foro Nacional de Ingeniería de UVM 2024.",
@@ -91,6 +95,19 @@
         "huesitos.main.p5": "Jugar",
         "huesitos.main.p6": "Código fuente",
         "huesitos.main.h24": "Código bajo licencia AGPLv3. Sprites, tiles y escenarios bajo licencia CC BY-NC-SA, música bajo licencia CC BY."
+    },
+    "contingencia": {
+        "contingencia.main.h11": "Contingencia Estelar",
+        "contingencia.main.h21": "Juego hecho como proyecto para el Foro Nacional de Ingeniería de UVM 2025.",
+        "contingencia.main.h22": "Controles:",
+        "contingencia.main.p1": "Correr: A, D",
+        "contingencia.main.p2": "Saltar: Espacio",
+        "contingencia.main.p3": "Atacar: J",
+        "contingencia.main.p4": "Dash (sólo en diagonal): K",
+        "contingencia.main.h23": "Soporte para controles de Xbox, Playstation y Nintendo Switch incluido.",
+        "contingencia.main.p5": "Jugar",
+        "contingencia.main.p6": "Código fuente",
+        "contingencia.main.h24": "Código bajo licencia AGPLv3. Sprites, tiles y escenarios bajo licencia CC BY-NC-SA, música bajo licencia CC BY."
     },
     "services": {
         "services.main.h11": "Servicios",

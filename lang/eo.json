@@ -12,7 +12,7 @@
         "index.main.table.p3": "Desegnajxoj",
         "index.main.table.p4": "Sendependa muziko",
         "index.main.table.p5": "Artikoloj kaj libroj hispane kaj esperante",
-        "index.main.table.p6": "Ludo \"arcade\" kun 8-bita stilo",
+        "index.main.table.p6": "Ludoj kun 8-bita stilo",
         "index.main.h12": "Sekvu miajn sociajn retejojn"
     },
     "about": {
@@ -78,6 +78,10 @@
         "foss.main.h13": "Elstara mallonga filmeto (hispane)",
         "foss.main.h14": "Sekvu miajn sociajn retejojn"
     },
+    "games": {
+        "games.main.h11": "Ludoj",
+        "games.main.p1": "Cxi tiuj ludoj estis verkitaj por la Naciaj Ingxenierartaj Forumoj, kiuj okazis en Meksiko. Gxuu!"
+    },
     "huesitos": {
         "huesitos.main.h11": "¡Alcánzalos, Huesitos!",
         "huesitos.main.h21": "Ludo verkita kiel projekto por la Nacia Ingxenierarta Forumo 2024 de UVM. (Hispane)",
@@ -91,6 +95,19 @@
         "huesitos.main.p5": "Ludi",
         "huesitos.main.p6": "Fontkodo",
         "huesitos.main.h24": "Kodo laux AGPLv3 permesilo. \"Sprite\"-oj, \"tile\"-oj kaj scenaroj laux CC BY-NC-SA permesilo, muziko laux CC BY permesilo."
+    },
+    "contingencia": {
+        "contingencia.main.h11": "Contingencia Estelar",
+        "contingencia.main.h21": "Ludo verkita kiel projekto por la Nacia Ingxenierarta Forumo 2025 de UVM. (Hispane)",
+        "contingencia.main.h22": "Ludkontroloj:",
+        "contingencia.main.p1": "Kuri: A, D",
+        "contingencia.main.p2": "Salti: Spacoklavo",
+        "contingencia.main.p3": "Ataki: J",
+        "contingencia.main.p4": "Impeti (nur diagonale): K",
+        "contingencia.main.h23": "Subteno por kontroliloj de Xbox, Playstation kaj Nintendo Switch haveblas.",
+        "contingencia.main.p5": "Ludi",
+        "contingencia.main.p6": "Fontkodo",
+        "contingencia.main.h24": "Kodo laux AGPLv3 permesilo. \"Sprite\"-oj, \"tile\"-oj kaj scenaroj laux CC BY-NC-SA permesilo, muziko laux CC BY permesilo."
     },
     "services": {
         "services.main.h11": "Servoj",
