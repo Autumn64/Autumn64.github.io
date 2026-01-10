@@ -61,7 +61,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 		<article>
 			<h1 style="font-size: 48px;">Cómo tener tu propio blog con tecnologías libres</h1>
 			<section class="date">
-				2024-07-07
+				2024-07-07 &bull; 4 min de lectura
 			</section>
 			<section class="author">
 				<img class="author-avatar" src="/static/misc/blog-avatar.jpg">
@@ -85,9 +85,23 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 					</section>
 				</div>
 			</section>
+			<section id="t-alignment">
+			<div>Alineación del texto</div>
+			<div>
+				<input type="radio" id="t-left" name="t-align">
+				<label for="t-left"><button class="align-btn material-symbols">format_align_left</button></label>
+				<input type="radio" id="t-center" name="t-align">
+				<label for="t-center"><button class="align-btn material-symbols">format_align_center</button></label>
+				<input type="radio" id="t-right" name="t-align">
+				<label for="t-right"><button class="align-btn material-symbols">format_align_right</button></label>
+				<input type="radio" id="t-justified" name="t-align" checked>
+				<label for="t-justified"><button class="align-btn material-symbols">format_align_justify</button></label>
+			</div>
+			</section>
 			<section id="featured-img">
 			<img class="featured" src="/static/posts/20240707_como-tener-tu-propio-blog/featured.jpeg">
 			</section>
+			<section id="post-content">
 			<h1>ACTUALIZADO EL 2026-01-09</h1>
 <p>Existen dos tecnologías libres que para mí son las más sencillas y que, por ende, son mis preferidas, para poder hostear un blog. La primera es <a href="https://writefreely.org/">WriteFreely</a>, y la segunda es <a href="https://github.com/cfenollosa/bashblog">BashBlog</a>. También existe <a href="https://wordpress.com">WordPress</a> y hay otras más, pero son un poco más complejas y pueden no ser del todo <em>beginner-friendly</em>.</p>
 <h2>BashBlog</h2>
@@ -107,6 +121,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <p>En el caso de Wordpress, existe todo un mercado de servicios de alojamiento, los cuales incluyen a Hostinger, Hostgator, InfinityFree, PloxHost, etcétera, que ya se encargan de la parte técnica y entonces el cliente sólo se tiene que preocupar de diseñar su página web. En caso de querer autohostear, se requieren una base de datos MySQL, PHP y la instalación de Wordpress en sí, si bien personalmente prefiero tenerlo dockerizado, ya que de ese modo es más portable y me es más fácil mantener un servidor así.</p>
 <p>Cualquiera de estos servicios ocupa poquísimos recursos —siendo Wordpress el que probablemente consuma más—, lo que significa que se pueden hostear prácticamente desde cualquier dispositivo: tu patata de 2002 con un Pentium 4, tu celular abandonado que no sabes qué uso darle, tu <a href="https://video.hardlimit.com/w/qDjSXvNwrVzSjjtvNw1PFV">Raspberry Pi que ganaste en una competencia</a> pero que no tienes nada en qué usarla, etcétera. No hay prácticamente límites sobre dónde o cómo hostear.</p>
 
+			</section>
 			<div class="separator" style="margin: 100px 0;"></div>
 			<h5>Comparte este post</h5>
 			<!-- AddToAny BEGIN -->

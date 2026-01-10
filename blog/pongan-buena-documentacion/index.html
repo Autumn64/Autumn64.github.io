@@ -61,7 +61,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 		<article>
 			<h1 style="font-size: 48px;">¡Pongan buena documentación, carajo!</h1>
 			<section class="date">
-				2024-07-13
+				2024-07-13 &bull; 3 min de lectura
 			</section>
 			<section class="author">
 				<img class="author-avatar" src="/static/misc/blog-avatar.jpg">
@@ -85,9 +85,23 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 					</section>
 				</div>
 			</section>
+			<section id="t-alignment">
+			<div>Alineación del texto</div>
+			<div>
+				<input type="radio" id="t-left" name="t-align">
+				<label for="t-left"><button class="align-btn material-symbols">format_align_left</button></label>
+				<input type="radio" id="t-center" name="t-align">
+				<label for="t-center"><button class="align-btn material-symbols">format_align_center</button></label>
+				<input type="radio" id="t-right" name="t-align">
+				<label for="t-right"><button class="align-btn material-symbols">format_align_right</button></label>
+				<input type="radio" id="t-justified" name="t-align" checked>
+				<label for="t-justified"><button class="align-btn material-symbols">format_align_justify</button></label>
+			</div>
+			</section>
 			<section id="featured-img">
 			<img class="featured" src="/static/posts/20240713_pongan-buena-documentacion/featured.jpg">
 			</section>
+			<section id="post-content">
 			<p>Pronto lanzaré un nuevo álbum de música, por lo que reactivé <a href="https://tube.tchncs.de/c/autumn64_music/video-playlists">mi canal de PeerTube</a>, y quise ver si aún tenía acceso a mi cuenta de FunkWhale, en la que no podía iniciar desde hace 2 meses. Resulta que no. Cada que pongo mis credenciales el servidor manda &quot;Server Error&quot;, y con ello prácticamente perdí el control de esa cuenta. Fue entonces cuando decidí hostear yo misma, aprovechando el espacio que me quedaba en la VPS.</p>
 <p>Entonces, entré a la documentación de FunkWhale, y me dirigí al apartado de <a href="https://docs.funkwhale.audio/administrator/installation/quick-install.html">instalación</a>, en el que ofrecían un script de instalación rápida, un método manual, y un contenedor de Docker. Para no dedicarle tanto tiempo a ello, decidí usar el script, y no pude evitar darme cuenta de que, al final de la instalación, mandaba un mensaje de error diciendo que había una variable que no estaba definida. Sin embargo, en teoría ya tenía la instancia funcionando, por lo que no le presté mucha atención. Ahora el problema era otro; el sitio ya funcionaba e incluso federaba, pero, ¿cuál es la maldita contraseña para iniciar sesión?</p>
 <p>Al momento de instalar FunkWhale sí me pidió el nombre del usuario administrador, pero no me pidió ninguna contraseña, y entonces decidí reinstalar todo para asegurarme de que no me haya saltado un paso. Todo el proceso fue exactamente el mismo, y de nuevo no me pidió ninguna contraseña. Prestando un poco de atención al mensaje de error que salía anteriormente, me di cuenta de que justamente la variable que no estaba definida era la susodicha contraseña, que la esperaba como una variable de entorno que, evidentemente, no existía. Procedí a utilizar la herramienta <code>manage</code>, que viene incluida en la carpeta de instalación, para tratar de cambiar (o establecer, en todo caso) la contraseña de administrador, pero en todo momento mandaba un <em>backtrace</em> larguísimo, junto con un mensaje de error indicando que ahora el problema estaba en la base de datos, que en este caso es PostgreSQL porque esa es la que usa FunkWhale.</p>
@@ -97,6 +111,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <p>Admito mi culpa de no haber leído con detenimiento <em>toda</em> la documentación, ya que el usuario <code>funkwhale</code> sí se menciona en el apartado de la instalación manual, pero también me parece una chorrada que en el apartado de la <a href="https://docs.funkwhale.audio/administrator/configuration/index.html">configuración de la instancia</a> nunca se mencione, ni tampoco se especifique que se debe usar ese usuario para la administración de la instancia del lado del backend, y entonces por eso yo estaba más que perdida y tardé 2 horas y media en hacer algo que habría quedado en 15 minutos.</p>
 <p>Uno de los principales problemas del Software Libre, que reconoce hasta Stallman, es la falta de manuales (o en este caso documentación) buenos, ya que a los programadores de SL les encanta escribir código, pero no les gusta escribir documentación. De parte de una compañera desarrolladora, les pido de todo corazón que hagan lo siguiente para los programas o servicios de SL que pudieran tener. ¡Pongan buena documentación, carajo!</p>
 
+			</section>
 			<div class="separator" style="margin: 100px 0;"></div>
 			<h5>Comparte este post</h5>
 			<!-- AddToAny BEGIN -->

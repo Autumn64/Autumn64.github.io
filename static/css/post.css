@@ -5,8 +5,24 @@ main {
 article {
 	margin: 0 auto;
 	width: 90%;
-	text-align: justify;
 	word-wrap: break-word;
+}
+
+/* Alineación del cuerpo del artículo. */
+article:has(#t-left:checked) #post-content {
+	text-align: left;
+}
+
+article:has(#t-center:checked) #post-content {
+	text-align: center;
+}
+
+article:has(#t-right:checked) #post-content {
+	text-align: right;
+}
+
+article:has(#t-justified:checked) #post-content {
+	text-align: justify;
 }
 
 .date {
@@ -44,6 +60,37 @@ article {
 .author-socials img {
 	width: auto;
 	height: 25px;
+}
+
+/* Estilos de botones de alineación de texto */
+#t-alignment {
+	margin: 25px 0;
+	font-family: "Chelsea";
+}
+
+#t-alignment div {
+	margin: 5px 0;
+}
+
+#t-alignment input {
+	display: none;
+}
+
+#t-alignment label {
+	cursor: pointer;
+}
+
+#t-alignment label button {
+	padding: 5px 10px;
+	background-color: var(--bg-color-2);
+	color: var(--fg-color-1);
+	border-radius: 5px;
+	border: none;
+	pointer-events: none;
+}
+
+#t-alignment input[type="radio"]:checked+label button {
+  background-color: var(--bg-color-3);
 }
 
 #featured-img {

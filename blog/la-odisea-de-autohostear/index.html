@@ -61,7 +61,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 		<article>
 			<h1 style="font-size: 48px;">La odisea de autohostear</h1>
 			<section class="date">
-				2024-07-23
+				2024-07-23 &bull; 4 min de lectura
 			</section>
 			<section class="author">
 				<img class="author-avatar" src="/static/misc/blog-avatar.jpg">
@@ -85,9 +85,23 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 					</section>
 				</div>
 			</section>
+			<section id="t-alignment">
+			<div>Alineación del texto</div>
+			<div>
+				<input type="radio" id="t-left" name="t-align">
+				<label for="t-left"><button class="align-btn material-symbols">format_align_left</button></label>
+				<input type="radio" id="t-center" name="t-align">
+				<label for="t-center"><button class="align-btn material-symbols">format_align_center</button></label>
+				<input type="radio" id="t-right" name="t-align">
+				<label for="t-right"><button class="align-btn material-symbols">format_align_right</button></label>
+				<input type="radio" id="t-justified" name="t-align" checked>
+				<label for="t-justified"><button class="align-btn material-symbols">format_align_justify</button></label>
+			</div>
+			</section>
 			<section id="featured-img">
 			<img class="featured" src="/static/posts/20240723_la-odisea-de-autohostear/featured.webp">
 			</section>
+			<section id="post-content">
 			<p><em>Hostear</em> es un anglicismo que significa &quot;hospedar&quot; o &quot;alojar&quot;, y que se refiere al dispositivo (que puede ser una computadora, una Raspberry Pi, un <em>smartphone</em>, o lo que sea) desde el cual se presta un sitio web o servicio por internet (es decir, que actúa de <em>servidor</em>). Este <em>host</em> puede estar en cualquier ubicación, y puede ser que nosotros utilicemos una plataforma ajena, o que usemos una propia. A este último caso se le llama &quot;autohostear&quot;.</p>
 <p>Son muy populares los servicios de <em>hosting</em>, que ofrecen la capacidad de mantener un sitio web o un servicio <em>online</em> por un precio. Wordpress ofrece este servicio, en el que todos los sitios tienen la terminación <code>wordpress.com</code>, Mastodon también ofrece el suyo propio con <code>masto.host</code>, y servicios como Hostinger permiten alojar páginas web. Incluso existen sitios como PloxHost o Sparkle Host, que ofrecen planes de <em>hosting</em> para servidores de Minecraft, y para bots de Discord. Estos servicios tienen la ventaja de que requieren pocos o nulos conocimientos para utilizarse, además de que no hay que poner de nuestra propia tecnología, por lo que tendremos un soporte técnico casi automatizado y no habrá que preocuparnos por <em>nada</em>. Las desventajas son que, en primer lugar, estamos sujetos a las reglas y los términos de uso de estos proveedores, que en muchas ocasiones pueden ser desventajosos para el consumidor; en segundo lugar, si ocurren fallas que provoquen la pérdida total o parcial de nuestra información, difícilmente podremos hacer algo al respecto.</p>
 <p>Después está el <em>autohosting</em>, que desde el principio nos da la ventaja de tener el control total y absoluto sobre la información que entra y sale de nuestro sitio o servicio, sin que tengamos que limitarnos por reglas o términos de uso (aunque sí por la legislación local). Sin embargo, la dificultad de autohostear es bastante alta, requiriendo, al menos, conocimientos básicos de redes y de servidores, además de que cosas como el soporte técnico, respaldos, configuraciones de firewall, y demás prácticas de <em>sysadmin</em> son totalmente nuestra responsabilidad, y muchas veces nadie nos ayudará con ello. Esto significa que, en muchas ocasiones, debemos dedicar parte de nuestro tiempo a mantener nuestro servidor, cosa que muchas personas no pueden o no quieren hacer.</p>
@@ -100,6 +114,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <p>Con todo esto he aprendido una infinidad de cosas; desde prestar servicio en un simple y sencillo sitio web estático, pasando por la creación y configuración de servicios en segundo plano con <code>systemd</code>, hasta configurar una <em>reverse proxy</em>, y encima pasarla por TOR. No sólo eso, sino que además aprendí a usar SSH, aprendí a crear claves para iniciar sesión con ellas en lugar de con contraseñas, aprendí a usar <code>cron</code>, aprendí más sobre los entornos multiusuario y la gestión de permisos, y aprendí a crear respaldos esporádicos que se suben a mi espacio de Nextcloud, con lo cual indirectamente aprendí un poco sobre las <a href="https://www.geeksforgeeks.org/rest-api-introduction/">API REST</a>. Además, aprendí mejor sobre cómo funcionan los servidores, los firewall, los puertos de red, las medidas de seguridad y el <em>sysadmin</em> en general.</p>
 <p>En resumen, el proceso en el que comencé a autohostear mis propios servicios web ha sido una verdadera odisea. ¡Y vaya odisea más divertida, pedagógica y fructífera!</p>
 
+			</section>
 			<div class="separator" style="margin: 100px 0;"></div>
 			<h5>Comparte este post</h5>
 			<!-- AddToAny BEGIN -->

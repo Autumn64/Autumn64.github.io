@@ -61,7 +61,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 		<article>
 			<h1 style="font-size: 48px;">La razón por la que no hay que preocuparnos del problema del año 2038</h1>
 			<section class="date">
-				2024-08-28
+				2024-08-28 &bull; 8 min de lectura
 			</section>
 			<section class="author">
 				<img class="author-avatar" src="/static/misc/blog-avatar.jpg">
@@ -85,9 +85,23 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 					</section>
 				</div>
 			</section>
+			<section id="t-alignment">
+			<div>Alineación del texto</div>
+			<div>
+				<input type="radio" id="t-left" name="t-align">
+				<label for="t-left"><button class="align-btn material-symbols">format_align_left</button></label>
+				<input type="radio" id="t-center" name="t-align">
+				<label for="t-center"><button class="align-btn material-symbols">format_align_center</button></label>
+				<input type="radio" id="t-right" name="t-align">
+				<label for="t-right"><button class="align-btn material-symbols">format_align_right</button></label>
+				<input type="radio" id="t-justified" name="t-align" checked>
+				<label for="t-justified"><button class="align-btn material-symbols">format_align_justify</button></label>
+			</div>
+			</section>
 			<section id="featured-img">
 			<img class="featured" src="/static/posts/20240828_el-problema-del-2038/featured.webp">
 			</section>
+			<section id="post-content">
 			<h3>Prólogo</h3>
 <p>Cualquier persona de la generación <a href="https://es.wikipedia.org/wiki/Milenial"><em>Millennial</em></a> o anterior seguramente recordará bien todo el revuelo que causó la idea del llamado &quot;efecto Y2K&quot;: que a partir del año 2000 los sistemas informáticos de todo el mundo iban a fallar y &quot;todo iba a colapsar&quot;, debido al incorrecto manejo de la fecha en las computadoras. Si bien no hubo ningún daño significativo a prácticamente nada —quedándose el Y2K entonces como una graciosa y ridícula anécdota de la paranoia que invadía las mentes de los mortales antes de la llegada del nuevo milenio— sí nos dejó imágenes curiosas como la siguiente.</p>
 <section class="post-image">
@@ -182,6 +196,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <p>Entonces, independientemente de la computadora que tengamos para entonces, prácticamente no hay pierde si utilizamos GNU/Linux; es imposible que nos suceda el problema del Y2K38 gracias a la colaboracion de todas las personas que hicieron posible su solución. También es verdad que este problema puede ser diferente o no existir en sistemas operativos que no estén basados en el estándar POSIX (como Windows) o en aplicaciones que no hayan sido hechas en C o en lenguajes basados en éste.</p>
 <p>En conclusión, pienso que este problema es súper interesante porque, a pesar de que al menos en mi caso es imposible que me suceda puesto que todos mis dispositivos son de 64 bits, sí que nos enseña un montón de cosas, y gracias a ello podemos comprender de una mejor manera como funcionan las computadoras.</p>
 
+			</section>
 			<div class="separator" style="margin: 100px 0;"></div>
 			<h5>Comparte este post</h5>
 			<!-- AddToAny BEGIN -->
