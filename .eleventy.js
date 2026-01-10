@@ -1,13 +1,16 @@
-// Para el manejo correcto de las fechas de los posts.
 import { DateTime } from "luxon";
-import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
+import readingTime from "eleventy-plugin-reading-time";
+import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 
 export default function(eleventyConfig) {
 	// Filtro que, al ser pasado desde nunjucks, convierte la fecha a formato ISO 8601.
 	eleventyConfig.addFilter("iso8601", (dateString) => {
 		return DateTime.fromJSDate(new Date(dateString), { zone: "utc" }).toFormat('yyyy-MM-dd');
 	});
+
+	// Plugin para el tiempo de lectura de un post.
+	eleventyConfig.addPlugin(readingTime);
 
 	// Plugin del coloreado de sintaxis.
 	eleventyConfig.addPlugin(syntaxHighlight);
