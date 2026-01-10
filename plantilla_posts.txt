@@ -1,0 +1,9 @@
+---
+layout: post.njk
+title: 
+date: 
+permalink: "/blog//"
+featured: "/static/posts//featured.jpg"
+activeLink: blog
+tags: post
+---

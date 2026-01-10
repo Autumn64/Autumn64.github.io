@@ -1,0 +1,43 @@
+<!--
+Autumn64's pages
+Copyright (C) 2023-{{ year }} Mónica Gómez (Autumn64)
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+<!DOCTYPE html>
+<html lang="es-MX">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="/static/css/styles.css">
+		<link rel="stylesheet" href="/static/css/layout-pc.css">
+		<link rel="stylesheet" href="/static/css/layout-mobile.css">
+		<link rel="stylesheet" href="/static/css/page.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols">
+		<link rel="icon" type="image/x-icon" href="/static/misc/favicon.ico">
+		<link rel="me" href="https://mast.lat/@autumn64">
+		<link rel="me" href="https://esperanto.masto.host/@autumn_64">
+		<link rel="me" href="https://blahaj.zone/@autumn_64">
+		<link rel="me" href="https://pixelfed.social/autumn_64">
+		<title>{{ title | safe  }} - Sitio de Autumn64</title>
+	</head>
+	<body>
+		{% include 'header.njk' %}
+		<main>
+			{{ content | safe  }}
+			{% include 'footer.njk' %}
+		</main>
+	</body>
+</html>
+

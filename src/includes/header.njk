@@ -1,0 +1,22 @@
+<header>
+		<nav id="main-nav">
+		<a href="/" class="logo logo-desktop">
+			<img src="/static/logo/logo_square.svg">
+		</a>
+		<section id="mobile-header">
+			<a href="/" class="logo logo-mobile">
+				<img src="/static/logo/logo_line.svg">
+			</a>
+			<input type="checkbox" id="menu-toggle">
+			<label for="menu-toggle"><span id="menu-toggle-icon" class="material-symbols"></span></label>
+		</section>
+		<section id="nav-links">
+			<a href="/" {% if activeLink == "index" %}active{% endif %}>Inicio</a>
+			<a href="/about" {% if activeLink == "about" %}active{% endif %}>Acerca de</a>
+			<a href="/blog" {% if activeLink == "blog" %}active{% endif %}>Blog</a>
+			<a href="/contact" {% if activeLink == "contact" %}active{% endif %}>Contacto</a>
+			<a href="/donate" {% if activeLink == "donate" %}active{% endif %}>Donar</a>
+		</section>
+		</nav>
+
+</header>

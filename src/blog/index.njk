@@ -1,0 +1,89 @@
+---
+permalink: /blog/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}
+title: Blog
+activeLink: blog
+pagination:
+  data: collections.post
+  size: 6
+  reverse: true
+---
+<!--
+Autumn64's pages
+Copyright (C) 2023-{{ year }} Mónica Gómez (Autumn64)
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+<!DOCTYPE html>
+<html lang="es-MX">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="/static/css/styles.css">
+		<link rel="stylesheet" href="/static/css/page.css">
+		<link rel="stylesheet" href="/static/css/layout-pc.css">
+		<link rel="stylesheet" href="/static/css/layout-mobile.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols">
+		<link rel="icon" type="image/x-icon" href="/static/misc/favicon.ico">
+		<link rel="me" href="https://mast.lat/@autumn64">
+		<link rel="me" href="https://esperanto.masto.host/@autumn_64">
+		<link rel="me" href="https://blahaj.zone/@autumn_64">
+		<link rel="me" href="https://pixelfed.social/autumn_64">
+		<title>{{ title | safe  }} - Sitio de Autumn64</title>
+	</head>
+	<body>
+		{% include 'header.njk' %}
+		<main style="max-width: 100%;">
+			<h1 style="margin-bottom: -20px;">Autumn's Blog</h1>
+			<h4 style="margin-bottom: 100px;">El nuevo desafío de Autumn64</h4>
+			<section class="wrapped">
+				{% for post in pagination.items %}
+					<a href="{{ post.url }}" class="card-link">
+					<div class="card">
+						<img src="{{ post.data.featured }}" class="card-thumbnail">
+						<section class="card-info">
+							<p class="card-title">{{ post.data.title | truncate(50, true, "...") }}</p>
+							<p class="card-subtitle">{{ post.data.date | iso8601 }}</p>
+						</section>
+						<button class="card-button">Leer</button>
+					</div>
+					</a>
+				{% endfor %}
+			</section>
+			<div class="separator" style="margin: 50px 0;"></div>
+			<nav class="pagination">
+				<!-- Botón de primera página -->
+				{% if pagination.pageNumber > 0 %}
+					<a href="{{ pagination.href.first }}"><button class="pag-btn">&#60;&#60;</button></a>
+				{% endif %}
+				<!-- Botón de página anterior -->
+				{% if pagination.previousPageHref %}
+					<a href="{{ pagination.previousPageHref }}"><button class="pag-btn">&#60;</button></a>
+				{% endif %}
+				<span>
+					Página {{ pagination.pageNumber + 1 }} de {{ pagination.pages.length }}
+				</span>
+				<!-- Botón de página siguiente -->
+				{% if pagination.nextPageHref %}
+					<a href="{{ pagination.nextPageHref }}"><button class="pag-btn">&#62;</button></a>
+				{% endif %}
+				<!-- Botón de última página -->
+				{% if pagination.pageNumber < pagination.pages.length - 1 %}
+					<a href="{{ pagination.href.last }}"><button class="pag-btn">&#62;&#62;</button></a>
+				{% endif %}
+			</nav>
+			{% include 'footer.njk' %}
+		</main>
+	</body>
+</html>
+

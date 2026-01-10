@@ -1,0 +1,4 @@
+<section class="post-image">
+<img src="" alt="">
+<p></p>
+</section>

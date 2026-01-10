@@ -1,0 +1,25 @@
+---
+layout: post.njk
+title: ¡Pongan buena documentación, carajo!
+date: 2024-07-13
+permalink: "/blog/pongan-buena-documentacion/"
+featured: "/static/posts/20240713_pongan-buena-documentacion/featured.jpg"
+activeLink: blog
+tags: post
+---
+
+Pronto lanzaré un nuevo álbum de música, por lo que reactivé [mi canal de PeerTube](https://tube.tchncs.de/c/autumn64_music/video-playlists), y quise ver si aún tenía acceso a mi cuenta de FunkWhale, en la que no podía iniciar desde hace 2 meses. Resulta que no. Cada que pongo mis credenciales el servidor manda "Server Error", y con ello prácticamente perdí el control de esa cuenta. Fue entonces cuando decidí hostear yo misma, aprovechando el espacio que me quedaba en la VPS.
+
+Entonces, entré a la documentación de FunkWhale, y me dirigí al apartado de [instalación](https://docs.funkwhale.audio/administrator/installation/quick-install.html), en el que ofrecían un script de instalación rápida, un método manual, y un contenedor de Docker. Para no dedicarle tanto tiempo a ello, decidí usar el script, y no pude evitar darme cuenta de que, al final de la instalación, mandaba un mensaje de error diciendo que había una variable que no estaba definida. Sin embargo, en teoría ya tenía la instancia funcionando, por lo que no le presté mucha atención. Ahora el problema era otro; el sitio ya funcionaba e incluso federaba, pero, ¿cuál es la maldita contraseña para iniciar sesión?
+
+Al momento de instalar FunkWhale sí me pidió el nombre del usuario administrador, pero no me pidió ninguna contraseña, y entonces decidí reinstalar todo para asegurarme de que no me haya saltado un paso. Todo el proceso fue exactamente el mismo, y de nuevo no me pidió ninguna contraseña. Prestando un poco de atención al mensaje de error que salía anteriormente, me di cuenta de que justamente la variable que no estaba definida era la susodicha contraseña, que la esperaba como una variable de entorno que, evidentemente, no existía. Procedí a utilizar la herramienta `manage`, que viene incluida en la carpeta de instalación, para tratar de cambiar (o establecer, en todo caso) la contraseña de administrador, pero en todo momento mandaba un _backtrace_ larguísimo, junto con un mensaje de error indicando que ahora el problema estaba en la base de datos, que en este caso es PostgreSQL porque esa es la que usa FunkWhale.
+
+Inmediatamente busqué tutoriales y documentación sobre PostgreSQL para tratar de arreglar el problema, y manualmente cambié la contraseña de administrador, pero entonces al querer iniciar sesión en el sitio me mandaba el famoso mensaje de "Server Error", y cuando quise volver a moverle resulta que la base ya estaba toda mal y ya no servía. En la documentación de FunkWhale no había absolutamente nada de algún troubleshooting post-instalación, más allá de mencionar que usáramos `journald` y leyéramos los logs para ver qué pasaba (y ni `journald` ni los logs decían nada).
+
+Para mi tercer intento quise llevar un enfoque distinto: no configurar una cuenta de administrador, y entonces agregarla después de haber instalado todo. De nuevo, pero esta vez al meter el comando para agregar un usuario, tiraba error de la base de datos. De nuevo instalé todo para asegurarme de no haber errado en un paso, y nada. Estuve así toda la tarde, tratando de pensar en por qué estaba fallando y cómo lo podía arreglar, pues nunca en mi vida he usado PostgreSQL, y mucho menos he hosteado nunca una instancia de un servicio del Fediverso más allá de WriteFreely, que usa SQLite y entonces es mucho más fácil de gestionar.
+
+No fue sino hasta después de un rato leyendo el foro de FunkWhale que encontré que todas las operaciones de administración de la instancia deben hacerse anteponiendo el comando `sudo -u funkwhale`, es decir, se deben hacer desde un usuario llamado `funkwhale` que el script crea al momento de la instalación. Inmediatamente lo intenté, y esta vez pude agregar el usuario con éxito, y pude iniciar sesión. 5 intentos me tomó poder iniciar sesión en mi propia instancia.
+
+Admito mi culpa de no haber leído con detenimiento _toda_ la documentación, ya que el usuario `funkwhale` sí se menciona en el apartado de la instalación manual, pero también me parece una chorrada que en el apartado de la [configuración de la instancia](https://docs.funkwhale.audio/administrator/configuration/index.html) nunca se mencione, ni tampoco se especifique que se debe usar ese usuario para la administración de la instancia del lado del backend, y entonces por eso yo estaba más que perdida y tardé 2 horas y media en hacer algo que habría quedado en 15 minutos.
+
+Uno de los principales problemas del Software Libre, que reconoce hasta Stallman, es la falta de manuales (o en este caso documentación) buenos, ya que a los programadores de SL les encanta escribir código, pero no les gusta escribir documentación. De parte de una compañera desarrolladora, les pido de todo corazón que hagan lo siguiente para los programas o servicios de SL que pudieran tener. ¡Pongan buena documentación, carajo!
