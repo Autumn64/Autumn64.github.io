@@ -1,0 +1,13 @@
+#drawings-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#drawings-grid img {
+    max-width: 350px;
+    width: 80%;
+    height: auto;
+}

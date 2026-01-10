@@ -1,0 +1,139 @@
+<!--
+Autumn64's pages
+Copyright (C) 2023-2026 Mónica Gómez (Autumn64)
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+<!DOCTYPE html>
+<html lang="es-MX">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="/static/css/styles.css">
+		<link rel="stylesheet" href="/static/css/post.css">
+		<link rel="stylesheet" href="/static/css/layout-pc.css">
+		<link rel="stylesheet" href="/static/css/layout-mobile.css">
+		<link rel="stylesheet" href="/static/css/prism-one-dark.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols">
+		<link rel="icon" type="image/x-icon" href="/static/misc/favicon.ico">
+		<link rel="me" href="https://mast.lat/@autumn64">
+		<link rel="me" href="https://esperanto.masto.host/@autumn_64">
+		<link rel="me" href="https://blahaj.zone/@autumn_64">
+		<link rel="me" href="https://pixelfed.social/autumn_64">
+		<title>¡Pongan buena documentación, carajo! - Sitio de Autumn64</title>
+	</head>
+	<body>
+		<header>
+		<nav id="main-nav">
+		<a href="/" class="logo logo-desktop">
+			<img src="/static/logo/logo_square.svg">
+		</a>
+		<section id="mobile-header">
+			<a href="/" class="logo logo-mobile">
+				<img src="/static/logo/logo_line.svg">
+			</a>
+			<input type="checkbox" id="menu-toggle">
+			<label for="menu-toggle"><span id="menu-toggle-icon" class="material-symbols"></span></label>
+		</section>
+		<section id="nav-links">
+			<a href="/" >Inicio</a>
+			<a href="/about" >Acerca de</a>
+			<a href="/blog" active>Blog</a>
+			<a href="/contact" >Contacto</a>
+			<a href="/donate" >Donar</a>
+		</section>
+		</nav>
+
+</header>
+
+		<main>
+		<article>
+			<h1 style="font-size: 48px;">¡Pongan buena documentación, carajo!</h1>
+			<section class="date">
+				2024-07-13
+			</section>
+			<section class="author">
+				<img class="author-avatar" src="/static/misc/blog-avatar.jpg">
+				<div class="author-intro">
+					<section class="author-name">
+						Mónica Gómez
+					</section>
+					<section class="author-socials">
+					<a href="https://linktr.ee/autumn64" target="_blank">
+					<img src="/static/social/linktree.svg">
+					</a>
+					<a href="https://openfollow.social/@autumn64@mast.lat" target="_blank">
+					<img src="/static/social/mastodon.svg">
+					</a>
+					<a href="https://www.youtube.com/@autumn_64" target="_blank">
+					<img src="/static/social/youtube.svg">
+					</a>
+					<a href="https://codeberg.org/autumn64" target="_blank">
+					<img src="/static/social/codeberg.svg">
+					</a>
+					</section>
+				</div>
+			</section>
+			<section id="featured-img">
+			<img class="featured" src="/static/posts/20240713_pongan-buena-documentacion/featured.jpg">
+			</section>
+			<p>Pronto lanzaré un nuevo álbum de música, por lo que reactivé <a href="https://tube.tchncs.de/c/autumn64_music/video-playlists">mi canal de PeerTube</a>, y quise ver si aún tenía acceso a mi cuenta de FunkWhale, en la que no podía iniciar desde hace 2 meses. Resulta que no. Cada que pongo mis credenciales el servidor manda &quot;Server Error&quot;, y con ello prácticamente perdí el control de esa cuenta. Fue entonces cuando decidí hostear yo misma, aprovechando el espacio que me quedaba en la VPS.</p>
+<p>Entonces, entré a la documentación de FunkWhale, y me dirigí al apartado de <a href="https://docs.funkwhale.audio/administrator/installation/quick-install.html">instalación</a>, en el que ofrecían un script de instalación rápida, un método manual, y un contenedor de Docker. Para no dedicarle tanto tiempo a ello, decidí usar el script, y no pude evitar darme cuenta de que, al final de la instalación, mandaba un mensaje de error diciendo que había una variable que no estaba definida. Sin embargo, en teoría ya tenía la instancia funcionando, por lo que no le presté mucha atención. Ahora el problema era otro; el sitio ya funcionaba e incluso federaba, pero, ¿cuál es la maldita contraseña para iniciar sesión?</p>
+<p>Al momento de instalar FunkWhale sí me pidió el nombre del usuario administrador, pero no me pidió ninguna contraseña, y entonces decidí reinstalar todo para asegurarme de que no me haya saltado un paso. Todo el proceso fue exactamente el mismo, y de nuevo no me pidió ninguna contraseña. Prestando un poco de atención al mensaje de error que salía anteriormente, me di cuenta de que justamente la variable que no estaba definida era la susodicha contraseña, que la esperaba como una variable de entorno que, evidentemente, no existía. Procedí a utilizar la herramienta <code>manage</code>, que viene incluida en la carpeta de instalación, para tratar de cambiar (o establecer, en todo caso) la contraseña de administrador, pero en todo momento mandaba un <em>backtrace</em> larguísimo, junto con un mensaje de error indicando que ahora el problema estaba en la base de datos, que en este caso es PostgreSQL porque esa es la que usa FunkWhale.</p>
+<p>Inmediatamente busqué tutoriales y documentación sobre PostgreSQL para tratar de arreglar el problema, y manualmente cambié la contraseña de administrador, pero entonces al querer iniciar sesión en el sitio me mandaba el famoso mensaje de &quot;Server Error&quot;, y cuando quise volver a moverle resulta que la base ya estaba toda mal y ya no servía. En la documentación de FunkWhale no había absolutamente nada de algún troubleshooting post-instalación, más allá de mencionar que usáramos <code>journald</code> y leyéramos los logs para ver qué pasaba (y ni <code>journald</code> ni los logs decían nada).</p>
+<p>Para mi tercer intento quise llevar un enfoque distinto: no configurar una cuenta de administrador, y entonces agregarla después de haber instalado todo. De nuevo, pero esta vez al meter el comando para agregar un usuario, tiraba error de la base de datos. De nuevo instalé todo para asegurarme de no haber errado en un paso, y nada. Estuve así toda la tarde, tratando de pensar en por qué estaba fallando y cómo lo podía arreglar, pues nunca en mi vida he usado PostgreSQL, y mucho menos he hosteado nunca una instancia de un servicio del Fediverso más allá de WriteFreely, que usa SQLite y entonces es mucho más fácil de gestionar.</p>
+<p>No fue sino hasta después de un rato leyendo el foro de FunkWhale que encontré que todas las operaciones de administración de la instancia deben hacerse anteponiendo el comando <code>sudo -u funkwhale</code>, es decir, se deben hacer desde un usuario llamado <code>funkwhale</code> que el script crea al momento de la instalación. Inmediatamente lo intenté, y esta vez pude agregar el usuario con éxito, y pude iniciar sesión. 5 intentos me tomó poder iniciar sesión en mi propia instancia.</p>
+<p>Admito mi culpa de no haber leído con detenimiento <em>toda</em> la documentación, ya que el usuario <code>funkwhale</code> sí se menciona en el apartado de la instalación manual, pero también me parece una chorrada que en el apartado de la <a href="https://docs.funkwhale.audio/administrator/configuration/index.html">configuración de la instancia</a> nunca se mencione, ni tampoco se especifique que se debe usar ese usuario para la administración de la instancia del lado del backend, y entonces por eso yo estaba más que perdida y tardé 2 horas y media en hacer algo que habría quedado en 15 minutos.</p>
+<p>Uno de los principales problemas del Software Libre, que reconoce hasta Stallman, es la falta de manuales (o en este caso documentación) buenos, ya que a los programadores de SL les encanta escribir código, pero no les gusta escribir documentación. De parte de una compañera desarrolladora, les pido de todo corazón que hagan lo siguiente para los programas o servicios de SL que pudieran tener. ¡Pongan buena documentación, carajo!</p>
+
+			<div class="separator" style="margin: 100px 0;"></div>
+			<h5>Comparte este post</h5>
+			<!-- AddToAny BEGIN -->
+			<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+			<a class="a2a_button_bluesky"></a>
+			<a class="a2a_button_mastodon"></a>
+			<a class="a2a_button_x"></a>
+			<a class="a2a_button_pinterest"></a>
+			<a class="a2a_button_email"></a>
+			<a class="a2a_button_copy_link"></a>
+			<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+			</div>
+			<script>
+			var a2a_config = a2a_config || {};
+			a2a_config.locale = "es";
+			</script>
+			<script defer src="https://static.addtoany.com/menu/page.js"></script>
+			<!-- AddToAny END -->
+		</article>
+		<footer>
+	<section id="badges">
+		<a href="https://www.fsf.org/" target="_blank"><img src="/static/badges/fsf_member.png"></a><a href="https://www.gnu.org/" target="_blank"><img src="/static/badges/gnu.png"></a>
+		<a href="https://www.bittorrent.org/" target="_blank"><img src="/static/badges/bittorrent.jpg"></a><a href="https://www.torproject.org/" target="_blank"><img src="/static/badges/tor.png"></a>
+		<a href="http://stopcpozlbfa4s4fuhisthyaivzbewe2rihsadarlkvqv5gaphkrvvyd.onion/" target="_blank"><img src="/static/badges/stopcp.png"></a>
+		<a href="https://jointhefediverse.net/" target="_blank"><img src="/static/badges/fediverse.png"></a>
+		<a href="https://es.anarchistlibraries.net/library/alexander-berkman-el-abc-del-comunismo-libertario" target="_blank"><img src="/static/badges/anarchocommunism.png"></a>
+		<a href="https://anarchistfaq.org/afaq/index.html" target="_blank"><img src="/static/badges/anarcotrans.png"></a>
+		<a href="https://hillhouse.neocities.org/journal/notes/palestine" target="_blank"><img src="/static/badges/palestinebadge.png"></a>
+		<a href="https://lernu.net/" target="_blank"><img src="/static/badges/esperanto.png"></a></section>
+		<section id='notbyai'>
+			<img src='/static/notbyai/en-dark.svg'>
+			<img src='/static/notbyai/es-dark.svg'>
+			<img src='/static/notbyai/eo-dark.svg'>
+		</section>
+	<p>Autumn64 CC BY 2023-2026. <a data-i18n="footer.a" href="https://codeberg.org/Autumn64/pages-php" target="_blank">Código fuente</a></p>
+</footer>
+
+		</main>
+	</body>
+</html>

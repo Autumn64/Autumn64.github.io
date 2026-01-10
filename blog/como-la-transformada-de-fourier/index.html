@@ -1,0 +1,201 @@
+<!--
+Autumn64's pages
+Copyright (C) 2023-2026 Mónica Gómez (Autumn64)
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+<!DOCTYPE html>
+<html lang="es-MX">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="/static/css/styles.css">
+		<link rel="stylesheet" href="/static/css/post.css">
+		<link rel="stylesheet" href="/static/css/layout-pc.css">
+		<link rel="stylesheet" href="/static/css/layout-mobile.css">
+		<link rel="stylesheet" href="/static/css/prism-one-dark.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols">
+		<link rel="icon" type="image/x-icon" href="/static/misc/favicon.ico">
+		<link rel="me" href="https://mast.lat/@autumn64">
+		<link rel="me" href="https://esperanto.masto.host/@autumn_64">
+		<link rel="me" href="https://blahaj.zone/@autumn_64">
+		<link rel="me" href="https://pixelfed.social/autumn_64">
+		<title>Como la transformada de Fourier ayudó a cambiar mi voz - Sitio de Autumn64</title>
+	</head>
+	<body>
+		<header>
+		<nav id="main-nav">
+		<a href="/" class="logo logo-desktop">
+			<img src="/static/logo/logo_square.svg">
+		</a>
+		<section id="mobile-header">
+			<a href="/" class="logo logo-mobile">
+				<img src="/static/logo/logo_line.svg">
+			</a>
+			<input type="checkbox" id="menu-toggle">
+			<label for="menu-toggle"><span id="menu-toggle-icon" class="material-symbols"></span></label>
+		</section>
+		<section id="nav-links">
+			<a href="/" >Inicio</a>
+			<a href="/about" >Acerca de</a>
+			<a href="/blog" active>Blog</a>
+			<a href="/contact" >Contacto</a>
+			<a href="/donate" >Donar</a>
+		</section>
+		</nav>
+
+</header>
+
+		<main>
+		<article>
+			<h1 style="font-size: 48px;">Como la transformada de Fourier ayudó a cambiar mi voz</h1>
+			<section class="date">
+				2024-08-10
+			</section>
+			<section class="author">
+				<img class="author-avatar" src="/static/misc/blog-avatar.jpg">
+				<div class="author-intro">
+					<section class="author-name">
+						Mónica Gómez
+					</section>
+					<section class="author-socials">
+					<a href="https://linktr.ee/autumn64" target="_blank">
+					<img src="/static/social/linktree.svg">
+					</a>
+					<a href="https://openfollow.social/@autumn64@mast.lat" target="_blank">
+					<img src="/static/social/mastodon.svg">
+					</a>
+					<a href="https://www.youtube.com/@autumn_64" target="_blank">
+					<img src="/static/social/youtube.svg">
+					</a>
+					<a href="https://codeberg.org/autumn64" target="_blank">
+					<img src="/static/social/codeberg.svg">
+					</a>
+					</section>
+				</div>
+			</section>
+			<section id="featured-img">
+			<img class="featured" src="/static/posts/20240810_como-la-transformada-de-fourier/featured.jpg">
+			</section>
+			<p>Cuando empezaron mis vacaciones de verano una de las cosas que me propuse fue comenzar con el <em>voice training</em>, que consiste en una serie de ejercicios útiles para que las mujeres trans tengan una voz más femenina. Busqué tutoriales y cursos en Internet, y casi todo lo que encontré repetía la misma idea de que, como aspecto más básico, lo importante para cambiar la voz no es el <em>tono</em>, sino la <em>resonancia</em>.</p>
+<p>Pero, ¿qué significa esto?</p>
+<h2>Tono vs resonancia</h2>
+<p>La gente comúnmente comete el error de asumir que la <em>masculinidad</em> o <em>feminidad</em> de una voz depende únicamente de su <em>tono</em>. El <em>tono</em> se refiere a qué tan aguda o grave es, cosa que en música y acústica se conoce como <em>nota</em> o <em>altura</em>. Muchas mujeres trans —y también muchos imitadores de voces novatos— suben su tono de voz lo más que pueden, y como resultado terminan sonando como Mickey Mouse o como Elmo. Incluso hay quienes utilizan la nariz para alcanzar un tono altísimo, haciendo así involuntariamente una voz como la de Cepillín.</p>
+<p>Entonces la cosa no va realmente por ahí. A lo que verdaderamente se le debe prestar atención es a la <em>resonancia</em>. Cualquier persona que haya tomado clases de canto y locución (como yo, que mi padre me enseñó a cantar cuando era adolescente) ha escuchado sobre esto. Las cuerdas vocales producen el sonido, que recorre la laringe y la garganta y sale por nuestra boca. La <em>resonancia</em> de la voz tiene que ver directamente con la posición y el tamaño de la laringe, cosa que explicaremos más adelante.</p>
+<section class="post-image">
+<img src="https://2.bp.blogspot.com/-zeyMo8MITqM/WPenDsrpOqI/AAAAAAAAD6w/i8afFydIf30Ql3Ay16-w2J2onKh7WKzXACLcB/s1600/infant-vs-adult-larynx.jpg" alt="Diagrama de laringe femenina y masculina">
+<p>Diagrama de una voz femenina y masculina. La laringe femenina está más hacia arriba y ocupa menos espacio, produciendo una voz más fina, mientras que la laringe masculina está más hacia abajo y ocupa más espacio, produciendo una voz más gruesa.</p>
+</section>
+<p>Podemos directamente modificar el tamaño y la posición de nuestra laringe, y ya habremos hecho la mitad del trabajo. Sin embargo, falta la parte que es menos intuitiva, pero que más efecto tiene.</p>
+<h2>Todo es una suma de senos</h2>
+<p>En 1821 —no mucho antes de que el Ejército Trigarante entrara en la Ciudad de México para firmar el acta de independencia con Juan O'Donojú— un reconocido matemático y físico francés llamado Joseph Fourier afirmó una barbaridad que dejó a todo el mundo perplejo: dijo que &quot;cualquier onda, señal o función está construida con una suma de senos&quot; [<a href="https://redirect.invidious.io/watch?v=N19yWwACfY8">1</a>] [<a href="https://es.wikipedia.org/wiki/Transformada_de_Fourier#Historia">2</a>]. Sí, esa línea curva que constantemente iba hacia arriba y hacia abajo, y que tanto nos quebró el coco en la secundaria. Fourier se atrevió a desafiar todo lo que en ese momento se sabía, afirmando que podemos sumar la cantidad que queramos de senos, y así construiremos una onda o una señal cualquiera.</p>
+<section class="post-image">
+<img src="/static/posts/20240810_como-la-transformada-de-fourier/seno1.png" alt="Función f(x) = \sin(x)">
+<p>Una función seno sencillita, como las que veíamos en la secundaria. A saber, f(x) = sin(x)</p>
+</section>
+<section class="post-image">
+<img src="/static/posts/20240810_como-la-transformada-de-fourier/seno2.png" alt="Función g(x) = \frac{\sin(4x)}{2}">
+<p>Otra función seno un poco más rebuscada. A saber, g(x) = sin(4x)/2</p>
+</section>
+<section class="post-image">
+<img src="/static/posts/20240810_como-la-transformada-de-fourier/seno3.png" alt="Función h(x) = \frac{\sin(2x^2)}{\sqrt{\pi}}">
+<p>Otra función seno más complicada. A saber, h(x) = sin(2x^2)/sqrt(π)</p>
+</section>
+<section class="post-image">
+<img src="/static/posts/20240810_como-la-transformada-de-fourier/seno4.png" alt="Las tres funciones superpuestas">
+<p>Las tres funciones superpuestas, que a simple vista no parecen tener relación ni sentido.</p>
+</section>
+<section class="post-image">
+<img src="/static/posts/20240810_como-la-transformada-de-fourier/seno5.png" alt="Suma de f(x) + g(x) + h(x)">
+<p>La suma de las tres funciones $f(x) + g(x) + h(x)$, que da como resultado esta barbaridad que no se parece en nada a un seno convencional.</p>
+</section>
+<p>No es necesario ser un genio en matemáticas para darse cuenta de como visualmente a partir de funciones seno sin relación aparente entre sí construimos una señal similar a las que se usan en el sonido y las telecomunicaciones. Tampoco hay que prestar atención a las fórmulas; las puse por si alguien quiere experimentar. Eso significa que nosotros podemos tomar una onda culaquiera —como por ejemplo, nuestra voz— y podemos <em>descomponerla</em> en un montón de funciones seno distintas.</p>
+<p>La <strong>transformada de Fourier</strong> es una herramienta que nos permite justamente hacer eso; tomamos cualquier señal que queramos, y la <em>descomponemos</em> en un montón de funciones seno.</p>
+<section class="post-image">
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Periodic_identity_function.gif" alt="Serie de Fourier">
+<p>Conforme vamos sumando funciones seno distintas, la gráfica resultante se parece más y más a las líneas rectas.</p>
+</section>
+<p>Esta herramienta tiene una cantidad infinita de aplicaciones, y es en gran medida la base de las telecomunicaciones modernas. Sin embargo, la parte que nos interesa en esta entrada tiene que ver con el sonido, y particularmente la voz. Por ejemplo, veamos cómo se ve un acorde de <em>Do Mayor</em> tocado en un piano.</p>
+<section class="post-image">
+<img src="/static/posts/20240810_como-la-transformada-de-fourier/domayor1.png" alt="Do Mayor representado en funciones seno superpuestas">
+<p>El acorde de Do Mayor expresado como funciones seno superpuestas</p>
+</section>
+<section class="post-image">
+<img src="/static/posts/20240810_como-la-transformada-de-fourier/domayor2.png" alt="Do Mayor representado como la suma de las funciones seno">
+<p>La suma de las funciones seno, dando como resultado esta brutalidad que sin embargo luce bastante regular, y que se parece mucho a las ondas que se suelen ver en programas como Audacity</p>
+</section>
+<p>Ahora <em>descompongámosla</em>, y veamos con qué nos encontramos.</p>
+<section class="post-image">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/31/CQT-piano-chord.png" alt="Transformada de Fourier de Do Mayor">
+<p>Transformada de Fourier del acorde. Las letras superiores son las notas en notación anglosajona. Las líneas más oscuras son los senos (es decir, las notas) más fuertes, volviéndose progresivamente más débiles.</p>
+</section>
+<p>Podemos ver las notas principales del acorde (<em>Do-Mi-Sol</em>) perfectamente representadas, pero luego resulta que estas mismas notas se empiezan a repetir a menor intensidad. Lo verdaderamente interesante de esto es que en un punto vemos a notas como <em>Si</em>, <em>Re</em> o hasta <em>La sostenido</em> representadas, siendo que estas notas no forman parte del acorde. Si ampliamos la transformada, podremos darnos cuenta de que, al final, <em>todas</em> las notas se involucran en el acorde; sólo que la mayoría son tan débiles que no las percibimos. La nota principal (en este caso <em>Do</em>) se denomina como <em>fundamental</em>, mientras que todas las demás notas se llaman <em>armónicos</em>. Toda señal tiene su <em>fundamental</em> y sus <em>armónicos</em>, siendo estos últimos el resto de funciones seno que se suman y le <em>dan forma</em>.</p>
+<p>Todo esto nos dice que <em>teóricamente</em> podemos tener una <em>fundamental</em> y una cantidad infinita de <em>armónicos</em>, lo cual <em>en teoría</em> es cierto. Sin embargo, en la práctica los <em>armónicos</em> se vuelven cada vez más débiles, por lo que deberemos tomar una cantidad finita de éstos para incorporarlos a la señal, cosa que se denomina como <strong>ancho de banda</strong> (¡no te confundas con la velocidad de una conexión de red!); entre más <em>ancho de banda</em>, más armónicos se están tomando en cuenta, y la señal tiene una mejor calidad. Entonces, un sonido con un ancho de banda muy corto tendrá una calidad de teléfono debido a la poca cantidad de <em>armónicos</em>, mientras que uno con un ancho de banda muy amplio tendrá una calidad de estudio.</p>
+<p>Hace unos días un conocido me contaba como se dio cuenta de que en una canción en MP3 no lograba percibir unos sonidos de ambientación que deberían escucharse de fondo, mientras que, con la misma canción en FLAC, sí que los escuchaba claramente. Eso es debido a que MP3 <em>comprime</em> el audio y, por ende, reduce el ancho de banda, eliminando entonces los armónicos de dichos sonidos ambientales, mientras que FLAC no comprime nada, por lo que todos los armónicos están disponibles.</p>
+<p>Además, también podemos darnos cuenta de que una misma <em>fundamental</em> puede, de hecho, generar distintos <em>armónicos</em>, lo cual se conoce como <strong>resonancia</strong>. Entonces, la <em>resonancia</em> se refiere a la relación entre una <em>fundamental</em> con sus <em>armónicos</em>, que pueden ser (y son) distintos en cada caso. Es esta la razón por la que somos capaces de diferenciar el sonido de una guitarra y de un piano, incluso si ambos instrumentos tocan la misma nota; dado que los <em>armónicos</em> son diferentes, el sonido producido es distinto, y sin embargo no deja de ser coherente gracias a que la <em>fundamental</em> es la misma.</p>
+<p>También, cuando utilizamos un ecualizador, lo que estamos haciendo es <em>amplificar</em> los armónicos del sonido que estamos reproduciendo, para así lograr darle una mejor calidad. ¿Alguna vez has visto este tipo de visualizadores?</p>
+<section class="post-image">
+<img src="https://media1.tenor.com/m/zL7a0t8wP20AAAAC/%E0%B6%8B%E0%B6%AD%E0%B7%8A%E0%B6%9A%E0%B7%98%E0%B7%82%E0%B7%8A%E0%B6%A8%E0%B6%BA%E0%B7%92.gif" alt="Visualizador de audio">
+</section>
+<p>Bueno, pues no es más que una representación hecha mediante la transformada de Fourier de los armónicos que suenan al reproducir una canción.</p>
+<h3>Los resonadores</h3>
+<p>Entonces, para conseguir una voz más femenina o más masculina, lo más importante que hay que hacer es <em>cambiar la resonancia</em> de nuestra voz. Esto lo podemos lograr alterando la altura y el espacio de nuestra laringe, como mencioné al principio. Esta entrada no es un tutorial de como hacer eso, pero pondré como ejemplo que, para levantar la laringe, podemos fingir que vamos a toser y fijarnos en la posición de nuestra garganta justo antes de hacerlo; para bajarla, podemos fingir que vamos a bostezar y fijarnos en la posición de nuestra garganta en el proceso.</p>
+<p>Una laringe alta y que ocupa poco espacio producirá un sonido fino y suave, mientras que una laringe baja y que ocupa mucho espacio producirá el sonido opuesto. De este modo, al <em>cambiar la resonancia</em> de nuestra voz, estamos alterando su <em>calidad</em> sin necesidad de cambiar el tono.</p>
+<p>También existe lo que en canto se conoce como &quot;voz de pecho&quot; y &quot;voz de cabeza&quot;, que en locución se llaman &quot;resonador de pecho&quot; y &quot;resonador de cabeza&quot;, siendo ambas ideas lo mismo. Estos conceptos se refieren al lugar en donde la voz se <em>amplifica</em>, y donde adquiere mayor nitidez. Tampoco explicaré cómo usar ambos resonadores, pero aplicando los ejercicios de subir y bajar la laringe podemos hacernos una idea de cómo funciona. No es que literalmente la resonancia se dé en el pecho o en la cabeza; simplemente es que esas partes <em>vibran</em> con mayor fuerza como reflejo de nuestra voz. Si ponemos nuestra mano en el pecho y hablamos o cantamos, y éste vibra con fuerza, entonces estamos usando voz de pecho; si no vibra o vibra poco, estamos usando voz de cabeza.</p>
+<h3>Conclusión</h3>
+<p>Si bien es cierto que todo lo anteriormente mencionado juega un papel fundamental en la construcción de una voz, tampoco obtendremos mágicamente la voz deseada con tan sólo aplicar eso. Cosas como la entonación, los ademanes, el vocabulario y el &quot;sentimiento&quot; influyen muchísimo en la <em>masculinidad</em> o <em>feminidad</em> de una voz, que por supuesto se basa en estereotipos. Además, estamos hablando de un músculo, y como tal hay que entrenarlo.</p>
+<p>Las primeras veces podría sonar muy forzado y podríamos terminar cansándonos, e incluso nos podría doler la garganta. Debemos practicar constantemente con el fin de <em>acostumbrarnos</em> a esa voz. El consumo de agua también es primordial, y también es preciso evitar el consumo de sustancias como el alcohol o el tabaco.</p>
+<p>Esta ha sido una historia muy larga, y me ha tomado mucho tiempo estudiar —y sobre todo entender— todo esto. Aunque es cierto que las matemáticas no son necesarias para lograr cambiar nuestra voz, es innegable que gracias a ellas yo logré hacerlo.</p>
+<p>Cuando los demás me preguntan sobre <em>tips</em> para cambiar la voz, no les suelo mencionar la parte matemática; les explico lo de la tos y el bostezo, y más cosas sencillas de aplicar para hacerse una idea de cómo funciona. Sin embargo, aquí quise sí mencionarla porque, además de que esto me enseñó que las matemáticas están en <em>todo</em> aunque no las percibamos, también me llevo el aprendizaje de que a veces una necesidad o un deseo nos puede llevar a lugares que nunca antes habíamos imaginado. ¡Sigamos aprendiendo, y sigamos compartiendo el conocimiento!</p>
+
+			<div class="separator" style="margin: 100px 0;"></div>
+			<h5>Comparte este post</h5>
+			<!-- AddToAny BEGIN -->
+			<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+			<a class="a2a_button_bluesky"></a>
+			<a class="a2a_button_mastodon"></a>
+			<a class="a2a_button_x"></a>
+			<a class="a2a_button_pinterest"></a>
+			<a class="a2a_button_email"></a>
+			<a class="a2a_button_copy_link"></a>
+			<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+			</div>
+			<script>
+			var a2a_config = a2a_config || {};
+			a2a_config.locale = "es";
+			</script>
+			<script defer src="https://static.addtoany.com/menu/page.js"></script>
+			<!-- AddToAny END -->
+		</article>
+		<footer>
+	<section id="badges">
+		<a href="https://www.fsf.org/" target="_blank"><img src="/static/badges/fsf_member.png"></a><a href="https://www.gnu.org/" target="_blank"><img src="/static/badges/gnu.png"></a>
+		<a href="https://www.bittorrent.org/" target="_blank"><img src="/static/badges/bittorrent.jpg"></a><a href="https://www.torproject.org/" target="_blank"><img src="/static/badges/tor.png"></a>
+		<a href="http://stopcpozlbfa4s4fuhisthyaivzbewe2rihsadarlkvqv5gaphkrvvyd.onion/" target="_blank"><img src="/static/badges/stopcp.png"></a>
+		<a href="https://jointhefediverse.net/" target="_blank"><img src="/static/badges/fediverse.png"></a>
+		<a href="https://es.anarchistlibraries.net/library/alexander-berkman-el-abc-del-comunismo-libertario" target="_blank"><img src="/static/badges/anarchocommunism.png"></a>
+		<a href="https://anarchistfaq.org/afaq/index.html" target="_blank"><img src="/static/badges/anarcotrans.png"></a>
+		<a href="https://hillhouse.neocities.org/journal/notes/palestine" target="_blank"><img src="/static/badges/palestinebadge.png"></a>
+		<a href="https://lernu.net/" target="_blank"><img src="/static/badges/esperanto.png"></a></section>
+		<section id='notbyai'>
+			<img src='/static/notbyai/en-dark.svg'>
+			<img src='/static/notbyai/es-dark.svg'>
+			<img src='/static/notbyai/eo-dark.svg'>
+		</section>
+	<p>Autumn64 CC BY 2023-2026. <a data-i18n="footer.a" href="https://codeberg.org/Autumn64/pages-php" target="_blank">Código fuente</a></p>
+</footer>
+
+		</main>
+	</body>
+</html>

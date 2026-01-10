@@ -1,0 +1,43 @@
+@media screen and (width > 750px) {
+	body {
+		/* A la horizontal ya que son dos páneles, uno al lado del otro. */
+		flex-direction: row;
+	}
+
+	main {
+		width: 100%;
+		margin-top: 100px;
+		margin-left: 310px;
+	}
+
+	/* ----COMIENZAN ESTILOS DE PANEL DE NAVEGACIÓN---- */
+	header {
+		/* El panel de navegación debe iniciar en la esquina superior izquierda, de ahí se recorre 275px hacia la derecha y el 100% hacia abajo, y se quedará fijo incluso si el usuario hace scroll */
+		width: 275px;
+		height: 100%;
+		overflow-y: hidden;
+		padding-right: 70px;
+		/* Esta fue la parte más molesta del panel. En un inicio quise poner una imagen svg como fondo del panel lateral, pero hacer eso rompía por completo la responsividad del sitio. Al final usé un generador de ondas css que vi por internet y sólo así pude lograr una apariencia similar a la que había planeado desde el mockup. */
+		mask: var(--wave-mask);
+		-webkit-mask: var(--wave-mask);
+	}
+
+	#main-nav {
+		align-items: center;
+		justify-content: center;
+	}
+
+	.logo-desktop img {
+		width: 200px;
+		height: auto;
+	}
+
+	#mobile-header {
+		display: none;
+	}
+
+	#nav-links {
+		margin-top: 50px;
+	}
+	/* ----TERMINAN ESTILOS DE PANEL DE NAVEGACIÓN---- */
+}

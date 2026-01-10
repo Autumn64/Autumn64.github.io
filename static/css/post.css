@@ -1,0 +1,83 @@
+main {
+	flex-direction: column;
+}
+
+article {
+	margin: 0 auto;
+	width: 90%;
+	text-align: justify;
+	word-wrap: break-word;
+}
+
+.date {
+	font-family: "Chelsea";
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+/* Estilos de autor */
+.author {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 20px;
+}
+
+.author-avatar {
+	max-width: 50px;
+	max-height: 50px;
+	border-radius: 100px;
+}
+
+.author-intro {
+	display: flex;
+	flex-direction: column;
+	font-family: "Chelsea";
+}
+
+.author-socials {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+}
+
+.author-socials img {
+	width: auto;
+	height: 25px;
+}
+
+#featured-img {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	margin: 20px 0;
+}
+
+.featured {
+	width: 100%;
+}
+
+/* Estilo para las imágenes que se inserten dentro del cuerpo del texto. */
+.post-image {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.post-image img {
+	width: 80%;
+	max-width: 550px;
+}
+
+/* Sección genérica que debe ir al centro. */
+.center {
+	margin: 20px 0;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	gap: 10px;
+}
