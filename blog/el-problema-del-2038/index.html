@@ -133,8 +133,24 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <p>Si quisiéramos forzar un número más grande, caeríamos en lo que se conoce como &quot;desbordamiento de entero&quot;, que es clave para entender el tema del Y2K38. Si intentáramos meter uno más a nuestro entero, entonces el valor resultante sería <code>10000000000</code>; el problema está en que ese es un número de 11 bits que no entra en nuestro entero de 10 bits, por lo que el primer <code>1</code> se descarta puesto que no cabe, y el número termina siendo <code>0000000000</code>, o sea, cero.</p>
 <p>El desbordamiento de entero es la explicación de muchos fenómenos populares relacionados con bugs. Por ejemplo, la <a href="https://pacman.fandom.com/wiki/Map_256_Glitch"><em>Kill Screen</em></a> de Pac-Man, en la que la mitad de la pantalla aparece toda glitcheada y que no permite avanzar de nivel, ocurre porque el contador de niveles del juego es de 8 bits, por lo que sólo permite almacenar valores de entre 0 y 255; un nivel después el contador se desborda y por eso ocurre el error. También es debido a un desbordamiento de entero que, cuando aprendíamos a calcular un factorial en nuestra clase de programación, después de un determinado número (si no mal recuerdo, el 31) el resultado daba 0, o alguna otra cosa aleatoria.</p>
 <h3>Los límites de time_t</h3>
-<p>La mayoría de computadoras domésticas del mundo eran de 32 bits cuando se hizo conocido el problema del Y2K38, lo que significa que <code>time_t</code> en esas computadoras tenía una longitud de 32 bits (excepto en GNU/Linux, cosa que veremos más adelante). Siguiendo la lógica de la sección anterior, podemos calcular fácilmente la cantidad de valores que podríamos meter en un entero de ese tamaño usando la fórmula 2^n, en donde <em>n</em> es el número de bits.</p>
-<p>Si el tamaño de <code>time_t</code> es de 32 bits, entonces usamos la fórmula 2^32 = 4 294 967 296. Es decir, nuestro entero permite un poco más de cuatro mil doscientos noventa y cuatro millones de valores posibles.</p>
+<p>La mayoría de computadoras domésticas del mundo eran de 32 bits cuando se hizo conocido el problema del Y2K38, lo que significa que <code>time_t</code> en esas computadoras tenía una longitud de 32 bits (excepto en GNU/Linux, cosa que veremos más adelante). Siguiendo la lógica de la sección anterior, podemos calcular fácilmente la cantidad de valores que podríamos meter en un entero de ese tamaño usando la fórmula
+<math display="inline">
+<msup>
+<mn>2</mn>
+<mi>n</mi>
+</msup>
+</math>, en donde <math><mi>n</mi></math> es el número de bits.</p>
+<p>Si el tamaño de <code>time_t</code> es de 32 bits, entonces usamos la fórmula
+<math>
+<mrow>
+<msup>
+<mn>2</mn>
+<mn>32</mn>
+</msup>
+<mo>=</mo>
+<mn>4 294 967 296</mn>
+</mrow>
+</math>. Es decir, nuestro entero permite un poco más de cuatro mil doscientos noventa y cuatro millones de valores posibles.</p>
 <p>¡Son un montón de números! Excepto por un <em>pequeñísimo</em> detalle. Si recuerdan, hace rato les dije que <code>time_t</code> es un entero con signo, lo que significa que tenemos que dividir ese número de la fórmula entre 2 y restarle uno, y entonces, si bien la cantidad de valores sigue siendo la misma, realmente el rango va desde <code>-2 147 483 648</code> hasta <code>2 147 483 647</code>. Para que me entiendan, si al principio podíamos contar desde el 1 de enero de 1970 a las 00:00:00 hasta cuatro mil millones de segundos adelante (que da una fecha de hasta el año 2106), resulta que debido al signo ahora sólo podremos hacerlo hasta dos mil millones de segundos (que llega hasta el 2038). De igual modo, si contamos hacia atrás, la fecha más antigua a la que podríamos llegar es al año 1901.</p>
 <h3>El efecto Y2K38</h3>
 <p>Habiendo dicho todo esto, resulta que el 19 de enero de 2038 a las 03:14:07 UTC el valor del contador de <code>time_t</code> llegará exactamente al valor <code>2 147 483 647</code>. Un segundo después, ocurrirá el desbordamiento de entero, y el valor se regresará a cero o, peor aún, a <code>-2 147 483 648</code>. Entonces, las computadoras detectarán que están en 1901, lo que impedirá que los sistemas operativos y las aplicaciones funcionen correctamente.</p>
@@ -153,7 +169,13 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <li>Muchos videojuegos dejarán de funcionar debido a la incapacidad de calcular correctamente la fecha.</li>
 </ul>
 <h3>Que no panda el cúnico</h3>
-<p>Si recuerdan, hace rato les dije que este problema existe porque en la época en la que se hizo viral las computadoras eran de 32 bits y, por ende, <code>time_t</code> tenía ese tamaño. En 2024 la gran mayoría de computadoras y de <em>smartphones</em> son de 64 bits, y <code>time_t</code> tiene ahora ese nuevo tamaño. Si calculamos la cantidad máxima de segundos que podremos contar mediante la fórmula 2^64, nos vamos a dar cuenta de que nos sale una cantidad agobiantemente grande, dando como límite unos 292 mil millones de años en el futuro. A manera de comparación, el universo tiene en este momento una edad de poco más de 13 mil 700 millones de años, por lo que haría falta que el universo tuviera 22 veces esa edad para alcanzar el límite.</p>
+<p>Si recuerdan, hace rato les dije que este problema existe porque en la época en la que se hizo viral las computadoras eran de 32 bits y, por ende, <code>time_t</code> tenía ese tamaño. En 2024 la gran mayoría de computadoras y de <em>smartphones</em> son de 64 bits, y <code>time_t</code> tiene ahora ese nuevo tamaño. Si calculamos la cantidad máxima de segundos que podremos contar mediante la fórmula
+<math>
+<msup>
+<mn>2</mn>
+<mn>64</mn>
+</msup>
+</math>, nos vamos a dar cuenta de que nos sale una cantidad agobiantemente grande, dando como límite unos 292 mil millones de años en el futuro. A manera de comparación, el universo tiene en este momento una edad de poco más de 13 mil 700 millones de años, por lo que haría falta que el universo tuviera 22 veces esa edad para alcanzar el límite.</p>
 <p>En pocas palabras, es prácticamente imposible que a un usuario doméstico le ocurra eso, tomando en cuenta además que el 2038 será dentro de 14 años, y los sistemas de 64 bits se utilizan plenamente desde, más o menos, 2015. Solamente pueden resultar afectados sistemas como cajeros automáticos que sigan utilizando Windows XP y sistemas embebidos que para entonces ya tengan al menos 30 años. Es decir, si bien es muy interesante aprender sobre este problema, lo cierto es que el riesgo que supone es casi nulo.</p>
 <h3>Conclusión: Son unos capos los de GNU/Linux</h3>
 <p>Incluso si para el 2038 todavía hay quien utilice una computadora de 32 bits, sigue teniendo una manera extremadamente sencilla de resolver el problema, sin necesidad de cambiar a los 64 bits: instalar GNU/Linux. Esto es porque hace aproximadamente 8 años Linus Torvalds y el resto de contribuyentes del kernel se propusieron solucionar este problema. Se trata de algo mucho más técnico que no abordaré en esta entrada, por lo que dejaré <a href="https://web.archive.org/web/20190121085728/https://opensource.com/article/19/1/year2038-problem-linux-kernel">este link</a> para quien se interese en aprender sobre como hicieron para arreglarlo, aunque sí diré que, <em>grosso modo</em>, cambiaron la longitud de <code>time_t</code> de 32 a 64 bits, incluso si el sistema operativo en sí es de 32.</p>
