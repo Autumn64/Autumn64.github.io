@@ -31,17 +31,88 @@ En 1821 &mdash;no mucho antes de que el Ejército Trigarante entrara en la Ciuda
 
 <section class="post-image">
 <img src="/static/posts/20240810_como-la-transformada-de-fourier/seno1.png" alt="Función f(x) = \sin(x)">
-<p>Una función seno sencillita, como las que veíamos en la secundaria. A saber, f(x) = sin(x)</p>
+<p>Una función seno sencillita, como las que veíamos en la secundaria. A saber, 
+<math>
+  <mrow>
+    <mi>f</mi>
+    <mo form="prefix" stretchy="false">(</mo>
+    <mi>x</mi>
+    <mo form="postfix" stretchy="false">)</mo>
+    <mo>=</mo>
+    <mrow>
+      <mi>sin</mi>
+      <mo>⁡</mo>
+    </mrow>
+    <mo form="prefix" stretchy="false">(</mo>
+    <mi>x</mi>
+    <mo form="postfix" stretchy="false">)</mo>
+  </mrow>
+</math>
+</p>
 </section>
 
 <section class="post-image">
 <img src="/static/posts/20240810_como-la-transformada-de-fourier/seno2.png" alt="Función g(x) = \frac{\sin(4x)}{2}">
-<p>Otra función seno un poco más rebuscada. A saber, g(x) = sin(4x)/2</p>
+<p>Otra función seno un poco más rebuscada. A saber, 
+<math>
+  <mrow>
+    <mi>g</mi>
+    <mo form="prefix" stretchy="false">(</mo>
+    <mi>x</mi>
+    <mo form="postfix" stretchy="false">)</mo>
+    <mo>=</mo>
+    <mfrac>
+      <mrow>
+        <mrow>
+          <mi>sin</mi>
+          <mo>⁡</mo>
+        </mrow>
+        <mo form="prefix" stretchy="false">(</mo>
+        <mn>4</mn>
+        <mi>x</mi>
+        <mo form="postfix" stretchy="false" lspace="0em" rspace="0em">)</mo>
+      </mrow>
+      <mn>2</mn>
+    </mfrac>
+  </mrow>
+</math>
+</p>
 </section>
 
 <section class="post-image">
 <img src="/static/posts/20240810_como-la-transformada-de-fourier/seno3.png" alt="Función h(x) = \frac{\sin(2x^2)}{\sqrt{\pi}}">
-<p>Otra función seno más complicada. A saber, h(x) = sin(2x^2)/sqrt(π)</p>
+<p>Otra función seno más complicada. A saber, 
+<math>
+  <mrow>
+    <mi>h</mi>
+    <mo form="prefix" stretchy="false">(</mo>
+    <mi>x</mi>
+    <mo form="postfix" stretchy="false">)</mo>
+    <mo>=</mo>
+    <mfrac>
+      <mrow>
+        <mrow>
+          <mi>sin</mi>
+          <mo>⁡</mo>
+        </mrow>
+        <mo form="prefix" stretchy="false">(</mo>
+        <mn>2</mn>
+        <msup>
+          <mi>x</mi>
+          <mn class="tml-sml-pad">2</mn>
+        </msup>
+        <mo form="postfix" stretchy="false" lspace="0em" rspace="0em">)</mo>
+      </mrow>
+      <msqrt>
+        <mrow>
+          <mi>x</mi>
+          <mspace width="0pt" height="0.7143em"></mspace>
+        </mrow>
+      </msqrt>
+    </mfrac>
+  </mrow>
+</math>
+</p>
 </section>
 
 <section class="post-image">
@@ -51,7 +122,25 @@ En 1821 &mdash;no mucho antes de que el Ejército Trigarante entrara en la Ciuda
 
 <section class="post-image">
 <img src="/static/posts/20240810_como-la-transformada-de-fourier/seno5.png" alt="Suma de f(x) + g(x) + h(x)">
-<p>La suma de las tres funciones $f(x) + g(x) + h(x)$, que da como resultado esta barbaridad que no se parece en nada a un seno convencional.</p>
+<p>La suma de las tres funciones 
+<math>
+  <mrow>
+    <mi>f</mi>
+    <mo form="prefix" stretchy="false">(</mo>
+    <mi>x</mi>
+    <mo form="postfix" stretchy="false">)</mo>
+    <mo>+</mo>
+    <mi>g</mi>
+    <mo form="prefix" stretchy="false">(</mo>
+    <mi>x</mi>
+    <mo form="postfix" stretchy="false">)</mo>
+    <mo>+</mo>
+    <mi>h</mi>
+    <mo form="prefix" stretchy="false">(</mo>
+    <mi>x</mi>
+    <mo form="postfix" stretchy="false">)</mo>
+  </mrow>
+</math>, que da como resultado esta barbaridad que no se parece en nada a un seno convencional.</p>
 </section>
 
 No es necesario ser un genio en matemáticas para darse cuenta de como visualmente a partir de funciones seno sin relación aparente entre sí construimos una señal similar a las que se usan en el sonido y las telecomunicaciones. Tampoco hay que prestar atención a las fórmulas; las puse por si alguien quiere experimentar. Eso significa que nosotros podemos tomar una onda culaquiera &mdash;como por ejemplo, nuestra voz&mdash; y podemos _descomponerla_ en un montón de funciones seno distintas.

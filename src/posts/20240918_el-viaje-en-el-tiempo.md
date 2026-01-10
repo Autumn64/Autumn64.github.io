@@ -19,7 +19,18 @@ Antes de continuar, es necesario aclarar que una _teoría_ no es lo mismo que un
 
 Originalmente se creía que el tiempo era algo constante e inmutable, y de repente llegó esta teoría a darle a los científicos una patada en la cara y a decirles que el tiempo, de hecho, es variable, y que está ligado al espacio, produciendo así lo que se conoce como _el espacio-tiempo_, cuyo valor depende de su movimiento, de su velocidad [[1](https://es.gizmodo.com/la-teoria-de-la-relatividad-especial-explicada-de-mane-1691315854)].
 
-El científico de quien estamos hablando es Albert Einstein (pronunciado "ainshtain"), y la teoría de la que hablamos es la _relatividad especial_, de la cual viene la legendaria ecuación E = mc^2. Diez años después Einstein publicaría la _relatividad general_, que terminaría de transformar nuestra comprensión del universo y que, junto con el [modelo estándar](https://es.wikipedia.org/wiki/Modelo_est%C3%A1ndar_de_la_f%C3%ADsica_de_part%C3%ADculas), sería nuestra mejor teoría física hasta ahora para describir al universo.
+El científico de quien estamos hablando es Albert Einstein (pronunciado "ainshtain"), y la teoría de la que hablamos es la _relatividad especial_, de la cual viene la legendaria ecuación 
+<math>
+  <mrow>
+    <mi>E</mi>
+    <mo>=</mo>
+    <mi>m</mi>
+    <msup>
+      <mi>c</mi>
+      <mn class="tml-sml-pad">2</mn>
+    </msup>
+  </mrow>
+</math>. Diez años después Einstein publicaría la _relatividad general_, que terminaría de transformar nuestra comprensión del universo y que, junto con el [modelo estándar](https://es.wikipedia.org/wiki/Modelo_est%C3%A1ndar_de_la_f%C3%ADsica_de_part%C3%ADculas), sería nuestra mejor teoría física hasta ahora para describir al universo.
 
 Para poder entender cómo sería un viaje en el tiempo, primero debemos entender a la gravedad en sí misma, que se describe en la relatividad general, así como a un fenómeno relacionado con el tiempo que se describe en la relatividad especial.
 
@@ -70,15 +81,33 @@ Coloquialmente se dice que la masa es la cantidad de materia. En la vida cotidia
 
 Para ver mejor qué tiene que ver la masa con la velocidad, regresemos a la icónica ecuación de equivalencia entre masa y energía:
 
-<div class="center">
-E = mc^2
-</div>
+<math display="block">
+  <mrow>
+    <mi>E</mi>
+    <mo>=</mo>
+    <mi>m</mi>
+    <msup>
+      <mi>c</mi>
+      <mn class="tml-sml-pad">2</mn>
+    </msup>
+  </mrow>
+</math>
 
-Donde _E_ es la energía de un cuerpo en reposo, _m_ es su masa y _c_ es la velocidad de la luz en el vacío (porque en un medio como el aire o el agua va levemente más lento). Despejemos la masa para ver qué obtenemos:
+Donde <math><mi>E</mi></math> es la energía de un cuerpo en reposo, <math><mi>m</mi></math> es su masa y <math><mi>c</mi></math> es la velocidad de la luz en el vacío (porque en un medio como el aire o el agua va levemente más lento). Despejemos la masa para ver qué obtenemos:
 
-<div class="center">
-E/c^2 = m
-</div>
+<math display="block">
+  <mrow>
+    <mfrac>
+      <mi>E</mi>
+      <msup>
+        <mi>c</mi>
+        <mn class="tml-sml-pad">2</mn>
+      </msup>
+    </mfrac>
+    <mo>=</mo>
+    <mi>m</mi>
+  </mrow>
+</math>
 
 Cualquier persona que haya prestado atención a sus clases de matemáticas de la preparatoria se habrá dado cuenta de que, con base en esta fórmula, la masa y la velocidad son inversamente proporcionales; si soy muy pesada, iré lento, si soy muy ligera, iré rápido.
 

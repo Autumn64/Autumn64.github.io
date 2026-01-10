@@ -79,9 +79,25 @@ El desbordamiento de entero es la explicación de muchos fenómenos populares re
 
 ### Los límites de time_t
 
-La mayoría de computadoras domésticas del mundo eran de 32 bits cuando se hizo conocido el problema del Y2K38, lo que significa que `time_t` en esas computadoras tenía una longitud de 32 bits (excepto en GNU/Linux, cosa que veremos más adelante). Siguiendo la lógica de la sección anterior, podemos calcular fácilmente la cantidad de valores que podríamos meter en un entero de ese tamaño usando la fórmula 2^n, en donde _n_ es el número de bits.
+La mayoría de computadoras domésticas del mundo eran de 32 bits cuando se hizo conocido el problema del Y2K38, lo que significa que `time_t` en esas computadoras tenía una longitud de 32 bits (excepto en GNU/Linux, cosa que veremos más adelante). Siguiendo la lógica de la sección anterior, podemos calcular fácilmente la cantidad de valores que podríamos meter en un entero de ese tamaño usando la fórmula 
+<math display="inline">
+  <msup>
+    <mn>2</mn>
+    <mi>n</mi>
+  </msup>
+</math>, en donde <math><mi>n</mi></math> es el número de bits.
 
-Si el tamaño de `time_t` es de 32 bits, entonces usamos la fórmula 2^32 = 4 294 967 296. Es decir, nuestro entero permite un poco más de cuatro mil doscientos noventa y cuatro millones de valores posibles.
+Si el tamaño de `time_t` es de 32 bits, entonces usamos la fórmula 
+<math>
+<mrow>
+    <msup>
+      <mn>2</mn>
+      <mn>32</mn>
+    </msup>
+    <mo>=</mo>
+    <mn>4 294 967 296</mn>
+</mrow>
+</math>. Es decir, nuestro entero permite un poco más de cuatro mil doscientos noventa y cuatro millones de valores posibles.
 
 ¡Son un montón de números! Excepto por un _pequeñísimo_ detalle. Si recuerdan, hace rato les dije que `time_t` es un entero con signo, lo que significa que tenemos que dividir ese número de la fórmula entre 2 y restarle uno, y entonces, si bien la cantidad de valores sigue siendo la misma, realmente el rango va desde `-2 147 483 648` hasta `2 147 483 647`. Para que me entiendan, si al principio podíamos contar desde el 1 de enero de 1970 a las 00:00:00 hasta cuatro mil millones de segundos adelante (que da una fecha de hasta el año 2106), resulta que debido al signo ahora sólo podremos hacerlo hasta dos mil millones de segundos (que llega hasta el 2038). De igual modo, si contamos hacia atrás, la fecha más antigua a la que podríamos llegar es al año 1901.
 
@@ -108,7 +124,13 @@ Si bien no se puede determinar con total certeza el impacto del problema, sí co
 
 ### Que no panda el cúnico
 
-Si recuerdan, hace rato les dije que este problema existe porque en la época en la que se hizo viral las computadoras eran de 32 bits y, por ende, `time_t` tenía ese tamaño. En 2024 la gran mayoría de computadoras y de _smartphones_ son de 64 bits, y `time_t` tiene ahora ese nuevo tamaño. Si calculamos la cantidad máxima de segundos que podremos contar mediante la fórmula 2^64, nos vamos a dar cuenta de que nos sale una cantidad agobiantemente grande, dando como límite unos 292 mil millones de años en el futuro. A manera de comparación, el universo tiene en este momento una edad de poco más de 13 mil 700 millones de años, por lo que haría falta que el universo tuviera 22 veces esa edad para alcanzar el límite.
+Si recuerdan, hace rato les dije que este problema existe porque en la época en la que se hizo viral las computadoras eran de 32 bits y, por ende, `time_t` tenía ese tamaño. En 2024 la gran mayoría de computadoras y de _smartphones_ son de 64 bits, y `time_t` tiene ahora ese nuevo tamaño. Si calculamos la cantidad máxima de segundos que podremos contar mediante la fórmula 
+<math>
+<msup>
+<mn>2</mn>
+<mn>64</mn>
+</msup>
+</math>, nos vamos a dar cuenta de que nos sale una cantidad agobiantemente grande, dando como límite unos 292 mil millones de años en el futuro. A manera de comparación, el universo tiene en este momento una edad de poco más de 13 mil 700 millones de años, por lo que haría falta que el universo tuviera 22 veces esa edad para alcanzar el límite.
 
 En pocas palabras, es prácticamente imposible que a un usuario doméstico le ocurra eso, tomando en cuenta además que el 2038 será dentro de 14 años, y los sistemas de 64 bits se utilizan plenamente desde, más o menos, 2015. Solamente pueden resultar afectados sistemas como cajeros automáticos que sigan utilizando Windows XP y sistemas embebidos que para entonces ya tengan al menos 30 años. Es decir, si bien es muy interesante aprender sobre este problema, lo cierto es que el riesgo que supone es casi nulo.
 
