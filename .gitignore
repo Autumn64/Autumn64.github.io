@@ -4,3 +4,4 @@ package-lock.json
 public/
 sync.sh
 src/posts/drafts/
+*.swp
