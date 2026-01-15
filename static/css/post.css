@@ -77,7 +77,7 @@ article:has(#t-justified:checked) #post-content {
 }
 
 #t-alignment label {
-	cursor: pointer;
+	cursor: var(--hachiware-pointer), auto;
 }
 
 #t-alignment label button {

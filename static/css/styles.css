@@ -24,6 +24,10 @@
 	--fg-color-2: #c7b5d8;
 	--fg-color-3: #ba6bff;
 
+	/* Cursores */
+	--hachiware-normal: url("/static/hachiware/hachiware_cursor.png");
+	--hachiware-pointer: url("/static/hachiware/hachiware_link.png");
+
 	/* Variables globales para la forma del panel de navegación */
 	--wave-offset: 75%;
 	--wave-mask:
@@ -45,11 +49,11 @@ body {
 	background-color: var(--bg-color-1);
 	background-image: url("/static/backgrounds/topography-plain.svg");
 	background-repeat: repeat;
-	cursor: url("/static/hachiware/hachiware_cursor.png"), auto;
+	cursor: var(--hachiware-normal), auto;
 }
 
 a, button {
-    cursor: url("/static/hachiware/hachiware_link.png"), auto;
+    cursor: var(--hachiware-pointer), auto;
 }
 
 header {
@@ -224,12 +228,20 @@ a:active {
 	text-decoration: none;
 }
 
-.card-link:hover {
-	color: var(--fg-color-3);
+/* .card-link:hover { */
+/* 	color: var(--fg-color-3); */
+/* } */
+
+.card-link:hover .card-button {
+	filter: brightness(150%);
 }
 
-.card-link:active {
-	color: var(--fg-color-2);
+/* .card-link:active { */
+/* 	color: var(--fg-color-2); */
+/* } */
+
+.card-link:active .card-button {
+	background-color: var(--bg-color-3);
 }
 
 /* Botones de redes sociales. */
