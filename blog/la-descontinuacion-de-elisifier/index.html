@@ -1,0 +1,163 @@
+<!--
+Autumn64's pages
+Copyright (C) 2023-2026 Mónica Gómez (Autumn64)
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+<!DOCTYPE html>
+<html lang="es-MX">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="/static/css/styles.css">
+		<link rel="stylesheet" href="/static/css/post.css">
+		<link rel="stylesheet" href="/static/css/layout-pc.css">
+		<link rel="stylesheet" href="/static/css/layout-mobile.css">
+		<link rel="stylesheet" href="/static/css/prism-one-dark.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols">
+		<link rel="icon" type="image/x-icon" href="/static/misc/favicon.ico">
+		<link rel="me" href="https://mast.lat/@autumn64">
+		<link rel="me" href="https://esperanto.masto.host/@autumn_64">
+		<link rel="me" href="https://blahaj.zone/@autumn_64">
+		<link rel="me" href="https://pixelfed.social/autumn_64">
+		<title>Cerrando ciclos: La descontinuación de "Elisifier" - Sitio de Autumn64</title>
+	</head>
+	<body>
+		<header>
+		<nav id="main-nav">
+		<a href="/" class="logo logo-desktop">
+			<img src="/static/logo/logo_square.svg">
+		</a>
+		<section id="mobile-header">
+			<a href="/" class="logo logo-mobile">
+				<img src="/static/logo/logo_line.svg">
+			</a>
+			<input type="checkbox" id="menu-toggle">
+			<label for="menu-toggle"><span id="menu-toggle-icon" class="material-symbols"></span></label>
+		</section>
+		<section id="nav-links">
+			<a href="/" >Inicio</a>
+			<a href="/about" >Acerca de</a>
+			<a href="/blog" active>Blog</a>
+			<a href="/contact" >Contacto</a>
+			<a href="/donate" >Donar</a>
+		</section>
+		</nav>
+
+</header>
+
+		<main>
+		<article>
+			<h1 style="font-size: 48px;">Cerrando ciclos: La descontinuación de "Elisifier"</h1>
+			<section class="date">
+				2026-01-16 &bull; 3 min de lectura
+			</section>
+			<section class="author">
+				<img class="author-avatar" src="/static/misc/blog-avatar.jpg">
+				<div class="author-intro">
+					<section class="author-name">
+						Mónica Gómez
+					</section>
+					<section class="author-socials">
+					<a href="https://linktr.ee/autumn64" target="_blank">
+					<img src="/static/social/linktree.svg">
+					</a>
+					<a href="https://openfollow.social/@autumn64@mast.lat" target="_blank">
+					<img src="/static/social/mastodon.svg">
+					</a>
+					<a href="https://www.youtube.com/@autumn_64" target="_blank">
+					<img src="/static/social/youtube.svg">
+					</a>
+					<a href="https://codeberg.org/autumn64" target="_blank">
+					<img src="/static/social/codeberg.svg">
+					</a>
+					</section>
+				</div>
+			</section>
+			<section id="t-alignment">
+			<div>Alineación del texto</div>
+			<div>
+				<input type="radio" id="t-left" name="t-align">
+				<label for="t-left"><button class="align-btn material-symbols">format_align_left</button></label>
+				<input type="radio" id="t-center" name="t-align">
+				<label for="t-center"><button class="align-btn material-symbols">format_align_center</button></label>
+				<input type="radio" id="t-right" name="t-align">
+				<label for="t-right"><button class="align-btn material-symbols">format_align_right</button></label>
+				<input type="radio" id="t-justified" name="t-align" checked>
+				<label for="t-justified"><button class="align-btn material-symbols">format_align_justify</button></label>
+			</div>
+			</section>
+			<section id="featured-img">
+			<img class="featured" src="/static/posts/20260116_la-descontinuacion-de-elisifier/featured.png">
+			</section>
+			<section id="post-content">
+			<p>Comencé el proyecto &quot;<a href="https://codeberg.org/Autumn64/Elisifier">Elisifier</a>&quot; en junio de 2025 como respuesta a una necesidad que surgió a raíz de que me propuse abandonar las plataformas de <em>streaming</em>. En ese tiempo, la manera en la que escuchaba música era mediante listas de reproducción (y no acostumbraba escuchar álbumes completos), y estaba buscando la forma de descargar las <em>playlists</em> que tenía en YouTube Music, de modo que pudiera replicar la misma estructura en local. Así, hice un <em>script</em> en Bash que descarga música junto a sus metadatos mediante <code>yt-dlp</code>, y que con <code>kid3-cli</code> agrega las correspondientes portadas.</p>
+<p>En un principio me funcionó de maravilla, y entonces quise compartir esto con la comunidad, aunque con una GUI para que fuera más fácil de usar y para que no necesitara que cada usuario instalara el entorno necesario en su computadora. Era como una suerte de SaaS libre que hacía todo el trabajo sucio y entregaba <em>en bandeja de plata</em> la música, lista para reproducirse.</p>
+<p>Al inicio desarrollé a Elisifier en Streamlit —porque quería que quedara rápido y eso era lo único que realmente sabía usar—, pero luego la migré a Flask en el <em>backend</em>, y Bootstrap en el <em>frontend</em>. En un inicio estaba muy emocionada por el proyecto, pero desde entonces ocurrieron las siguientes 3 situaciones:</p>
+<ol>
+<li>
+<p>Prácticamente <em>nadie</em> utiliza el servicio. Yo soy la persona que más lo ha utilizado, y en todo caso para mí es más práctico simplemente usar el <em>script</em> que ya tenía hecho. Estoy consciente de que Elisifier no descarga con la calidad máxima, ya que mismo YouTube almacena las canciones con una calidad más bien inferior, y pienso que eso, entre otras cosas, pudo haber influido mucho en esta falta de apoyo por parte de la comunidad.</p>
+</li>
+<li>
+<p>El haber <a href="https://mast.lat/@autumn64/115268111998616743">migrado mis servicios de la Raspberry Pi a la VPS</a> significó un aumento considerable en el tiempo y el esfuerzo que debo emplear en el mantenimiento del servidor, y esto afectó sobre todo a Redlib y a Elisifier. Cuando Elisifier funcionaba desde la red de mi casa YouTube prácticamente lo dejaba pasar sin problema, pero la cosa deja de ser tan amigable cuando se trata de una de las miles de VPS de algún Datacenter en Alemania. YT se volvió <em>extremadamente</em> agresivo con sus CAPTCHAs y, si bien la manera que propone <code>yt-dlp</code> para evadir este bloqueo es <a href="https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp">mediante cookies</a>, este método sólo era efectivo durante algunas horas —ni siquiera un día—, y es muy pesado tener que estar constantemente descargando las cookies de mi navegador para enviarlas al servidor.</p>
+</li>
+<li>
+<p>Levanté una instancia privada de Navidrome, y por ende empecé a buscar álbumes completos en lugar de sólamente <em>playlists</em>. Aprendí a copiar música de los CDs originales, y también comencé a utilizar sitios como SoulSeek o Qobuz, lo que provocó que ya ni siquiera yo misma utilice mi servicio. Conseguí prácticamente la totalidad de mi biblioteca de música actual mediante métodos que no involucran ni a <code>yt-dlp</code>, ni mucho menos a Elisifier, y parece que eso seguirá siendo así a largo plazo.</p>
+</li>
+</ol>
+<p>Por causa de todo esto, Elisifier dejó de ser un proyecto que me emocionara, y terminó convirtiéndose en una carga. Esto me ha llevado a tomar la decisión de descontinuar el proyecto desde este momento, y del mismo modo daré de baja la instancia que estuve manteniendo los últimos meses.</p>
+<p>Lo que yo me llevo de esto son los aprendizajes y la práctica tan grandes que adquirí: comunicación entre procesos, gestión de archivos desde Python, programación concurrente, e incluso manejo de WebSockets. Es innegable que he aprendido mucho con este proyecto, y me siento con la confianza de que podré aplicar estos nuevos conocimientos cuando sean necesarios en algún proyecto futuro. Pero mientras tanto, me parece que lo mejor será cerrar este capítulo, y dejar espacio para nuevas oportunidades que puedan ser más útiles o beneficiosas para la comunidad.</p>
+<p>Quiero finalizar agradeciendo a la comunidad por el apoyo que he recibido hasta ahora. Ha sido un camino bastante largo, pero aún me falta mucho por hacer y aún hay muchas oportunidades para las que deseo estar lista. ¡Espero seguir contando con ustedes para proyectos futuros!</p>
+
+			</section>
+			<div class="separator" style="margin: 100px 0;"></div>
+			<h5>Comparte este post</h5>
+			<!-- AddToAny BEGIN -->
+			<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+			<a class="a2a_button_bluesky"></a>
+			<a class="a2a_button_mastodon"></a>
+			<a class="a2a_button_x"></a>
+			<a class="a2a_button_pinterest"></a>
+			<a class="a2a_button_email"></a>
+			<a class="a2a_button_copy_link"></a>
+			<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+			</div>
+			<script>
+			var a2a_config = a2a_config || {};
+			a2a_config.locale = "es";
+			</script>
+			<script defer src="https://static.addtoany.com/menu/page.js"></script>
+			<!-- AddToAny END -->
+		</article>
+		<footer>
+	<section id="badges">
+		<a href="https://www.fsf.org/" target="_blank"><img src="/static/badges/fsf_member.png"></a><a href="https://www.gnu.org/" target="_blank"><img src="/static/badges/gnu.png"></a>
+		<a href="https://www.bittorrent.org/" target="_blank"><img src="/static/badges/bittorrent.jpg"></a><a href="https://www.torproject.org/" target="_blank"><img src="/static/badges/tor.png"></a>
+		<a href="http://stopcpozlbfa4s4fuhisthyaivzbewe2rihsadarlkvqv5gaphkrvvyd.onion/" target="_blank"><img src="/static/badges/stopcp.png"></a>
+		<a href="https://jointhefediverse.net/" target="_blank"><img src="/static/badges/fediverse.png"></a>
+		<a href="https://es.anarchistlibraries.net/library/alexander-berkman-el-abc-del-comunismo-libertario" target="_blank"><img src="/static/badges/anarchocommunism.png"></a>
+		<a href="https://anarchistfaq.org/afaq/index.html" target="_blank"><img src="/static/badges/anarcotrans.png"></a>
+		<a href="https://hillhouse.neocities.org/journal/notes/palestine" target="_blank"><img src="/static/badges/palestinebadge.png"></a>
+		<a href="https://lernu.net/" target="_blank"><img src="/static/badges/esperanto.png"></a></section>
+		<section id='notbyai'>
+			<img src='/static/notbyai/en-dark.svg'>
+			<img src='/static/notbyai/es-dark.svg'>
+			<img src='/static/notbyai/eo-dark.svg'>
+		</section>
+	<p>Autumn64 CC BY 2023-2026. <a data-i18n="footer.a" href="https://codeberg.org/Autumn64/pages/src/branch/src" target="_blank">Código fuente</a></p>
+</footer>
+
+		</main>
+	</body>
+</html>

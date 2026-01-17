@@ -7,6 +7,31 @@
     <description>El nuevo desafío de Autumn64</description>
     <language>es</language>
     <item>
+      <title>Cerrando ciclos: La descontinuación de &quot;Elisifier&quot;</title>
+      <link>https://www.autumn64.xyz/blog/la-descontinuacion-de-elisifier/</link>
+      <description>&lt;p&gt;Comencé el proyecto &amp;quot;&lt;a href=&quot;https://codeberg.org/Autumn64/Elisifier&quot;&gt;Elisifier&lt;/a&gt;&amp;quot; en junio de 2025 como respuesta a una necesidad que surgió a raíz de que me propuse abandonar las plataformas de &lt;em&gt;streaming&lt;/em&gt;. En ese tiempo, la manera en la que escuchaba música era mediante listas de reproducción (y no acostumbraba escuchar álbumes completos), y estaba buscando la forma de descargar las &lt;em&gt;playlists&lt;/em&gt; que tenía en YouTube Music, de modo que pudiera replicar la misma estructura en local. Así, hice un &lt;em&gt;script&lt;/em&gt; en Bash que descarga música junto a sus metadatos mediante &lt;code&gt;yt-dlp&lt;/code&gt;, y que con &lt;code&gt;kid3-cli&lt;/code&gt; agrega las correspondientes portadas.&lt;/p&gt;
+&lt;p&gt;En un principio me funcionó de maravilla, y entonces quise compartir esto con la comunidad, aunque con una GUI para que fuera más fácil de usar y para que no necesitara que cada usuario instalara el entorno necesario en su computadora. Era como una suerte de SaaS libre que hacía todo el trabajo sucio y entregaba &lt;em&gt;en bandeja de plata&lt;/em&gt; la música, lista para reproducirse.&lt;/p&gt;
+&lt;p&gt;Al inicio desarrollé a Elisifier en Streamlit —porque quería que quedara rápido y eso era lo único que realmente sabía usar—, pero luego la migré a Flask en el &lt;em&gt;backend&lt;/em&gt;, y Bootstrap en el &lt;em&gt;frontend&lt;/em&gt;. En un inicio estaba muy emocionada por el proyecto, pero desde entonces ocurrieron las siguientes 3 situaciones:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Prácticamente &lt;em&gt;nadie&lt;/em&gt; utiliza el servicio. Yo soy la persona que más lo ha utilizado, y en todo caso para mí es más práctico simplemente usar el &lt;em&gt;script&lt;/em&gt; que ya tenía hecho. Estoy consciente de que Elisifier no descarga con la calidad máxima, ya que mismo YouTube almacena las canciones con una calidad más bien inferior, y pienso que eso, entre otras cosas, pudo haber influido mucho en esta falta de apoyo por parte de la comunidad.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;El haber &lt;a href=&quot;https://mast.lat/@autumn64/115268111998616743&quot;&gt;migrado mis servicios de la Raspberry Pi a la VPS&lt;/a&gt; significó un aumento considerable en el tiempo y el esfuerzo que debo emplear en el mantenimiento del servidor, y esto afectó sobre todo a Redlib y a Elisifier. Cuando Elisifier funcionaba desde la red de mi casa YouTube prácticamente lo dejaba pasar sin problema, pero la cosa deja de ser tan amigable cuando se trata de una de las miles de VPS de algún Datacenter en Alemania. YT se volvió &lt;em&gt;extremadamente&lt;/em&gt; agresivo con sus CAPTCHAs y, si bien la manera que propone &lt;code&gt;yt-dlp&lt;/code&gt; para evadir este bloqueo es &lt;a href=&quot;https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp&quot;&gt;mediante cookies&lt;/a&gt;, este método sólo era efectivo durante algunas horas —ni siquiera un día—, y es muy pesado tener que estar constantemente descargando las cookies de mi navegador para enviarlas al servidor.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Levanté una instancia privada de Navidrome, y por ende empecé a buscar álbumes completos en lugar de sólamente &lt;em&gt;playlists&lt;/em&gt;. Aprendí a copiar música de los CDs originales, y también comencé a utilizar sitios como SoulSeek o Qobuz, lo que provocó que ya ni siquiera yo misma utilice mi servicio. Conseguí prácticamente la totalidad de mi biblioteca de música actual mediante métodos que no involucran ni a &lt;code&gt;yt-dlp&lt;/code&gt;, ni mucho menos a Elisifier, y parece que eso seguirá siendo así a largo plazo.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Por causa de todo esto, Elisifier dejó de ser un proyecto que me emocionara, y terminó convirtiéndose en una carga. Esto me ha llevado a tomar la decisión de descontinuar el proyecto desde este momento, y del mismo modo daré de baja la instancia que estuve manteniendo los últimos meses.&lt;/p&gt;
+&lt;p&gt;Lo que yo me llevo de esto son los aprendizajes y la práctica tan grandes que adquirí: comunicación entre procesos, gestión de archivos desde Python, programación concurrente, e incluso manejo de WebSockets. Es innegable que he aprendido mucho con este proyecto, y me siento con la confianza de que podré aplicar estos nuevos conocimientos cuando sean necesarios en algún proyecto futuro. Pero mientras tanto, me parece que lo mejor será cerrar este capítulo, y dejar espacio para nuevas oportunidades que puedan ser más útiles o beneficiosas para la comunidad.&lt;/p&gt;
+&lt;p&gt;Quiero finalizar agradeciendo a la comunidad por el apoyo que he recibido hasta ahora. Ha sido un camino bastante largo, pero aún me falta mucho por hacer y aún hay muchas oportunidades para las que deseo estar lista. ¡Espero seguir contando con ustedes para proyectos futuros!&lt;/p&gt;
+</description>
+      <pubDate>Thu, 15 Jan 2026 18:00:00 CST</pubDate>
+      <dc:creator>Mónica Gómez</dc:creator>
+      <guid>https://www.autumn64.xyz/blog/la-descontinuacion-de-elisifier/</guid>
+    </item>
+    <item>
       <title>¡El blog está de vuelta!</title>
       <link>https://www.autumn64.xyz/blog/el-blog-esta-de-vuelta/</link>
       <description>&lt;p&gt;Después de tanto tiempo con el blog inactivo, hoy hago el anuncio de que por fin estamos de vuelta, ¡y esta vez vamos con todo! En esta ocasión quiero priorizar la calidad sobre la cantidad. Es decir, no puedo prometer que publicaré a menudo, pero tampoco dejaré el blog abandonado de nuevo, y cuidaré sobre todo el contenido y la redacción de las nuevas publicaciones para que la experiencia de lectura sea lo mejor posible.&lt;/p&gt;

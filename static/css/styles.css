@@ -228,17 +228,22 @@ a:active {
 	text-decoration: none;
 }
 
-/* .card-link:hover { */
-/* 	color: var(--fg-color-3); */
-/* } */
+/* Efectos de hover para las tarjetas. */
+.card-link {
+	transition: transform 0.3s ease-out;
+}
+
+.card-link:hover {
+	transform: scale(1.03);
+}
 
 .card-link:hover .card-button {
 	filter: brightness(150%);
 }
 
-/* .card-link:active { */
-/* 	color: var(--fg-color-2); */
-/* } */
+.card-link:active {
+	transform: scale(0.97);
+}
 
 .card-link:active .card-button {
 	background-color: var(--bg-color-3);
@@ -299,6 +304,14 @@ a:active {
 	background-color: var(--bg-color-2);
 	border: none;
 	border-radius: 5px;
+}
+
+.pag-btn:hover {
+	filter: brightness(125%);
+}
+
+.pag-btn:active {
+  background-color: var(--bg-color-3);
 }
 
 footer {
