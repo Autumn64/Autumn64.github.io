@@ -27,8 +27,8 @@ Estos servicios están basados en Software Libre, y los hosteo desde un servidor
     <p data-i18n="services.main.section.div3.p1">Frontend alternativo para Google Translate</p>
 </div>
 <div class="service">
-    <a href="https://ydl.autumn64.xyz" target="_blank"><img src="/static/services/elisifier.png"></a>
-    <a href="https://ydl.autumn64.xyz" target="_blank"><h2>Elisifier</h2></a>
+    <a href="/blog/la-descontinuacion-de-elisifier"><img src="/static/services/elisifier.png"></a>
+    <a href="/blog/la-descontinuacion-de-elisifier"><h2>Elisifier</h2></a>
     <p data-i18n="services.main.section.div4.p1">Descargador de música online</p>
 </div>
 </section>

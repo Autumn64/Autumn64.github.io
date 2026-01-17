@@ -5,3 +5,4 @@ public/
 sync.sh
 src/posts/drafts/
 *.swp
+*.kate-swp

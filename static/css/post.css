@@ -89,6 +89,10 @@ article:has(#t-justified:checked) #post-content {
 	pointer-events: none;
 }
 
+#t-alignment label:hover button {
+	filter: brightness(125%);
+}
+
 #t-alignment input[type="radio"]:checked+label button {
   background-color: var(--bg-color-3);
 }
