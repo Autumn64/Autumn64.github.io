@@ -34,75 +34,73 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 		<title>Cómo tener tu propio blog con tecnologías libres - Sitio de Autumn64</title>
 	</head>
 	<body>
-		<header>
+	  <header>
 		<nav id="main-nav">
 		<a href="/" class="logo logo-desktop">
-			<img src="/static/logo/logo_square.svg">
+		  <img src="/static/logo/logo_square.svg">
 		</a>
 		<section id="mobile-header">
 			<a href="/" class="logo logo-mobile">
-				<img src="/static/logo/logo_line.svg">
+			  <img src="/static/logo/logo_line.svg">
 			</a>
 			<input type="checkbox" id="menu-toggle">
 			<label for="menu-toggle"><span id="menu-toggle-icon" class="material-symbols"></span></label>
 		</section>
 		<section id="nav-links">
-			<a href="/" >Inicio</a>
-			<a href="/about" >Acerca de</a>
+			<a href="/">Inicio</a>
+			<a href="/about">Acerca de</a>
 			<a href="/blog" active>Blog</a>
-			<a href="/contact" >Contacto</a>
-			<a href="/donate" >Donar</a>
+			<a href="/contact">Contacto</a>
+			<a href="/donate">Donar</a>
 		</section>
 		</nav>
-
-</header>
-
-		<main>
-		<article>
-			<h1 style="font-size: 48px;">Cómo tener tu propio blog con tecnologías libres</h1>
-			<section class="date">
-				2024-07-07 &bull; 4 min de lectura
-			</section>
-			<section class="author">
-				<img class="author-avatar" src="/static/misc/blog-avatar.jpg">
-				<div class="author-intro">
-					<section class="author-name">
-						Mónica Gómez
-					</section>
-					<section class="author-socials">
-					<a href="https://linktr.ee/autumn64" target="_blank">
-					<img src="/static/social/linktree.svg">
-					</a>
-					<a href="https://openfollow.social/@autumn64@mast.lat" target="_blank">
-					<img src="/static/social/mastodon.svg">
-					</a>
-					<a href="https://www.youtube.com/@autumn_64" target="_blank">
-					<img src="/static/social/youtube.svg">
-					</a>
-					<a href="https://codeberg.org/autumn64" target="_blank">
-					<img src="/static/social/codeberg.svg">
-					</a>
-					</section>
-				</div>
-			</section>
-			<section id="t-alignment">
-			<div>Alineación del texto</div>
-			<div>
-				<input type="radio" id="t-left" name="t-align">
-				<label for="t-left"><button class="align-btn material-symbols">format_align_left</button></label>
-				<input type="radio" id="t-center" name="t-align">
-				<label for="t-center"><button class="align-btn material-symbols">format_align_center</button></label>
-				<input type="radio" id="t-right" name="t-align">
-				<label for="t-right"><button class="align-btn material-symbols">format_align_right</button></label>
-				<input type="radio" id="t-justified" name="t-align" checked>
-				<label for="t-justified"><button class="align-btn material-symbols">format_align_justify</button></label>
-			</div>
-			</section>
-			<section id="featured-img">
-			<img class="featured" src="/static/posts/20240707_como-tener-tu-propio-blog/featured.jpeg">
-			</section>
-			<section id="post-content">
-			<h1>ACTUALIZADO EL 2026-01-09</h1>
+	  </header>
+	  <main>
+	  <article>
+		  <h1 style="font-size: 48px;">Cómo tener tu propio blog con tecnologías libres</h1>
+		  <section class="date">
+			  2024-07-07 &bull; 4 min de lectura
+		  </section>
+		  <section class="author">
+			  <img class="author-avatar" src="/static/misc/blog-avatar.jpg">
+			  <div class="author-intro">
+				  <section class="author-name">
+					  Mónica Gómez
+				  </section>
+				  <section class="author-socials">
+				  <a href="https://linktr.ee/autumn64" target="_blank">
+				  <img src="/static/social/linktree.svg">
+				  </a>
+				  <a href="https://openfollow.social/@autumn64@mast.lat" target="_blank">
+				  <img src="/static/social/mastodon.svg">
+				  </a>
+				  <a href="https://www.youtube.com/@autumn_64" target="_blank">
+				  <img src="/static/social/youtube.svg">
+				  </a>
+				  <a href="https://codeberg.org/autumn64" target="_blank">
+				  <img src="/static/social/codeberg.svg">
+				  </a>
+				  </section>
+			  </div>
+		  </section>
+		  <section id="t-alignment">
+		  <div>Alineación del texto</div>
+		  <div>
+			  <input type="radio" id="t-left" name="t-align">
+			  <label for="t-left"><button class="align-btn material-symbols">format_align_left</button></label>
+			  <input type="radio" id="t-center" name="t-align">
+			  <label for="t-center"><button class="align-btn material-symbols">format_align_center</button></label>
+			  <input type="radio" id="t-right" name="t-align">
+			  <label for="t-right"><button class="align-btn material-symbols">format_align_right</button></label>
+			  <input type="radio" id="t-justified" name="t-align" checked>
+			  <label for="t-justified"><button class="align-btn material-symbols">format_align_justify</button></label>
+		  </div>
+		  </section>
+		  <section id="featured-img">
+		  <img class="featured" src="/static/posts/20240707_como-tener-tu-propio-blog/featured.jpeg">
+		  </section>
+		  <section id="post-content">
+		  <h1>ACTUALIZADO EL 2026-01-09</h1>
 <p>Existen dos tecnologías libres que para mí son las más sencillas y que, por ende, son mis preferidas, para poder hostear un blog. La primera es <a href="https://writefreely.org/">WriteFreely</a>, y la segunda es <a href="https://github.com/cfenollosa/bashblog">BashBlog</a>. También existe <a href="https://wordpress.com">WordPress</a> y hay otras más, pero son un poco más complejas y pueden no ser del todo <em>beginner-friendly</em>.</p>
 <h2>BashBlog</h2>
 <p>El caso de BashBlog es el más sencillo, ya que es básicamente un script de bash que, cuando lo ejecutas, genera en el directorio actual un conjunto de archivos <code>.html</code> y <code>.css</code> que le dan forma al blog, y entonces cada que queremos publicar una nueva entrada basta con poner <code>./bb.sh post</code>, y se nos abrirá un editor de texto en donde podremos crearla. La edición del estilo visual del blog se hace modificando los archivos <code>main.css</code> y <code>blog.css</code> al gusto, y se puede crear un archivo de configuración <code>.config</code> para poner cosas como el nombre del blog, su descripción, nuestro correo electrónico, etcétera. En la descripción del blog del archivo de configuración se pueden poner etiquetas HTML para agregar información adicional.</p>
@@ -121,27 +119,27 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <p>En el caso de Wordpress, existe todo un mercado de servicios de alojamiento, los cuales incluyen a Hostinger, Hostgator, InfinityFree, PloxHost, etcétera, que ya se encargan de la parte técnica y entonces el cliente sólo se tiene que preocupar de diseñar su página web. En caso de querer autohostear, se requieren una base de datos MySQL, PHP y la instalación de Wordpress en sí, si bien personalmente prefiero tenerlo dockerizado, ya que de ese modo es más portable y me es más fácil mantener un servidor así.</p>
 <p>Cualquiera de estos servicios ocupa poquísimos recursos —siendo Wordpress el que probablemente consuma más—, lo que significa que se pueden hostear prácticamente desde cualquier dispositivo: tu patata de 2002 con un Pentium 4, tu celular abandonado que no sabes qué uso darle, tu <a href="https://video.hardlimit.com/w/qDjSXvNwrVzSjjtvNw1PFV">Raspberry Pi que ganaste en una competencia</a> pero que no tienes nada en qué usarla, etcétera. No hay prácticamente límites sobre dónde o cómo hostear.</p>
 
-			</section>
-			<div class="separator" style="margin: 100px 0;"></div>
-			<h5>Comparte este post</h5>
-			<!-- AddToAny BEGIN -->
-			<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-			<a class="a2a_button_bluesky"></a>
-			<a class="a2a_button_mastodon"></a>
-			<a class="a2a_button_x"></a>
-			<a class="a2a_button_pinterest"></a>
-			<a class="a2a_button_email"></a>
-			<a class="a2a_button_copy_link"></a>
-			<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
-			</div>
-			<script>
-			var a2a_config = a2a_config || {};
-			a2a_config.locale = "es";
-			</script>
-			<script defer src="https://static.addtoany.com/menu/page.js"></script>
-			<!-- AddToAny END -->
-		</article>
-		<footer>
+		  </section>
+		  <div class="separator" style="margin: 100px 0;"></div>
+		  <h5>Comparte este post</h5>
+		  <!-- AddToAny BEGIN -->
+		  <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+		  <a class="a2a_button_bluesky"></a>
+		  <a class="a2a_button_mastodon"></a>
+		  <a class="a2a_button_x"></a>
+		  <a class="a2a_button_pinterest"></a>
+		  <a class="a2a_button_email"></a>
+		  <a class="a2a_button_copy_link"></a>
+		  <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+		  </div>
+		  <script>
+		  var a2a_config = a2a_config || {};
+		  a2a_config.locale = "es";
+		  </script>
+		  <script defer src="https://static.addtoany.com/menu/page.js"></script>
+		  <!-- AddToAny END -->
+	  </article>
+	  <footer>
 	<section id="badges">
 		<a href="https://www.fsf.org/" target="_blank"><img src="/static/badges/fsf_member.png"></a><a href="https://www.gnu.org/" target="_blank"><img src="/static/badges/gnu.png"></a>
 		<a href="https://www.bittorrent.org/" target="_blank"><img src="/static/badges/bittorrent.jpg"></a><a href="https://www.torproject.org/" target="_blank"><img src="/static/badges/tor.png"></a>
@@ -159,6 +157,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 	<p>Autumn64 CC BY 2023-2026. <a data-i18n="footer.a" href="https://codeberg.org/Autumn64/pages/src/branch/src" target="_blank">Código fuente</a></p>
 </footer>
 
-		</main>
+	  </main>
 	</body>
 </html>

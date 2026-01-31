@@ -34,75 +34,73 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 		<title>Como la transformada de Fourier ayudó a cambiar mi voz - Sitio de Autumn64</title>
 	</head>
 	<body>
-		<header>
+	  <header>
 		<nav id="main-nav">
 		<a href="/" class="logo logo-desktop">
-			<img src="/static/logo/logo_square.svg">
+		  <img src="/static/logo/logo_square.svg">
 		</a>
 		<section id="mobile-header">
 			<a href="/" class="logo logo-mobile">
-				<img src="/static/logo/logo_line.svg">
+			  <img src="/static/logo/logo_line.svg">
 			</a>
 			<input type="checkbox" id="menu-toggle">
 			<label for="menu-toggle"><span id="menu-toggle-icon" class="material-symbols"></span></label>
 		</section>
 		<section id="nav-links">
-			<a href="/" >Inicio</a>
-			<a href="/about" >Acerca de</a>
+			<a href="/">Inicio</a>
+			<a href="/about">Acerca de</a>
 			<a href="/blog" active>Blog</a>
-			<a href="/contact" >Contacto</a>
-			<a href="/donate" >Donar</a>
+			<a href="/contact">Contacto</a>
+			<a href="/donate">Donar</a>
 		</section>
 		</nav>
-
-</header>
-
-		<main>
-		<article>
-			<h1 style="font-size: 48px;">Como la transformada de Fourier ayudó a cambiar mi voz</h1>
-			<section class="date">
-				2024-08-10 &bull; 7 min de lectura
-			</section>
-			<section class="author">
-				<img class="author-avatar" src="/static/misc/blog-avatar.jpg">
-				<div class="author-intro">
-					<section class="author-name">
-						Mónica Gómez
-					</section>
-					<section class="author-socials">
-					<a href="https://linktr.ee/autumn64" target="_blank">
-					<img src="/static/social/linktree.svg">
-					</a>
-					<a href="https://openfollow.social/@autumn64@mast.lat" target="_blank">
-					<img src="/static/social/mastodon.svg">
-					</a>
-					<a href="https://www.youtube.com/@autumn_64" target="_blank">
-					<img src="/static/social/youtube.svg">
-					</a>
-					<a href="https://codeberg.org/autumn64" target="_blank">
-					<img src="/static/social/codeberg.svg">
-					</a>
-					</section>
-				</div>
-			</section>
-			<section id="t-alignment">
-			<div>Alineación del texto</div>
-			<div>
-				<input type="radio" id="t-left" name="t-align">
-				<label for="t-left"><button class="align-btn material-symbols">format_align_left</button></label>
-				<input type="radio" id="t-center" name="t-align">
-				<label for="t-center"><button class="align-btn material-symbols">format_align_center</button></label>
-				<input type="radio" id="t-right" name="t-align">
-				<label for="t-right"><button class="align-btn material-symbols">format_align_right</button></label>
-				<input type="radio" id="t-justified" name="t-align" checked>
-				<label for="t-justified"><button class="align-btn material-symbols">format_align_justify</button></label>
-			</div>
-			</section>
-			<section id="featured-img">
-			<img class="featured" src="/static/posts/20240810_como-la-transformada-de-fourier/featured.jpg">
-			</section>
-			<section id="post-content">
-			<p>Cuando empezaron mis vacaciones de verano una de las cosas que me propuse fue comenzar con el <em>voice training</em>, que consiste en una serie de ejercicios útiles para que las mujeres trans tengan una voz más femenina. Busqué tutoriales y cursos en Internet, y casi todo lo que encontré repetía la misma idea de que, como aspecto más básico, lo importante para cambiar la voz no es el <em>tono</em>, sino la <em>resonancia</em>.</p>
+	  </header>
+	  <main>
+	  <article>
+		  <h1 style="font-size: 48px;">Como la transformada de Fourier ayudó a cambiar mi voz</h1>
+		  <section class="date">
+			  2024-08-10 &bull; 7 min de lectura
+		  </section>
+		  <section class="author">
+			  <img class="author-avatar" src="/static/misc/blog-avatar.jpg">
+			  <div class="author-intro">
+				  <section class="author-name">
+					  Mónica Gómez
+				  </section>
+				  <section class="author-socials">
+				  <a href="https://linktr.ee/autumn64" target="_blank">
+				  <img src="/static/social/linktree.svg">
+				  </a>
+				  <a href="https://openfollow.social/@autumn64@mast.lat" target="_blank">
+				  <img src="/static/social/mastodon.svg">
+				  </a>
+				  <a href="https://www.youtube.com/@autumn_64" target="_blank">
+				  <img src="/static/social/youtube.svg">
+				  </a>
+				  <a href="https://codeberg.org/autumn64" target="_blank">
+				  <img src="/static/social/codeberg.svg">
+				  </a>
+				  </section>
+			  </div>
+		  </section>
+		  <section id="t-alignment">
+		  <div>Alineación del texto</div>
+		  <div>
+			  <input type="radio" id="t-left" name="t-align">
+			  <label for="t-left"><button class="align-btn material-symbols">format_align_left</button></label>
+			  <input type="radio" id="t-center" name="t-align">
+			  <label for="t-center"><button class="align-btn material-symbols">format_align_center</button></label>
+			  <input type="radio" id="t-right" name="t-align">
+			  <label for="t-right"><button class="align-btn material-symbols">format_align_right</button></label>
+			  <input type="radio" id="t-justified" name="t-align" checked>
+			  <label for="t-justified"><button class="align-btn material-symbols">format_align_justify</button></label>
+		  </div>
+		  </section>
+		  <section id="featured-img">
+		  <img class="featured" src="/static/posts/20240810_como-la-transformada-de-fourier/featured.jpg">
+		  </section>
+		  <section id="post-content">
+		  <p>Cuando empezaron mis vacaciones de verano una de las cosas que me propuse fue comenzar con el <em>voice training</em>, que consiste en una serie de ejercicios útiles para que las mujeres trans tengan una voz más femenina. Busqué tutoriales y cursos en Internet, y casi todo lo que encontré repetía la misma idea de que, como aspecto más básico, lo importante para cambiar la voz no es el <em>tono</em>, sino la <em>resonancia</em>.</p>
 <p>Pero, ¿qué significa esto?</p>
 <h2>Tono vs resonancia</h2>
 <p>La gente comúnmente comete el error de asumir que la <em>masculinidad</em> o <em>feminidad</em> de una voz depende únicamente de su <em>tono</em>. El <em>tono</em> se refiere a qué tan aguda o grave es, cosa que en música y acústica se conoce como <em>nota</em> o <em>altura</em>. Muchas mujeres trans —y también muchos imitadores de voces novatos— suben su tono de voz lo más que pueden, y como resultado terminan sonando como Mickey Mouse o como Elmo. Incluso hay quienes utilizan la nariz para alcanzar un tono altísimo, haciendo así involuntariamente una voz como la de Cepillín.</p>
@@ -262,27 +260,27 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <p>Esta ha sido una historia muy larga, y me ha tomado mucho tiempo estudiar —y sobre todo entender— todo esto. Aunque es cierto que las matemáticas no son necesarias para lograr cambiar nuestra voz, es innegable que gracias a ellas yo logré hacerlo.</p>
 <p>Cuando los demás me preguntan sobre <em>tips</em> para cambiar la voz, no les suelo mencionar la parte matemática; les explico lo de la tos y el bostezo, y más cosas sencillas de aplicar para hacerse una idea de cómo funciona. Sin embargo, aquí quise sí mencionarla porque, además de que esto me enseñó que las matemáticas están en <em>todo</em> aunque no las percibamos, también me llevo el aprendizaje de que a veces una necesidad o un deseo nos puede llevar a lugares que nunca antes habíamos imaginado. ¡Sigamos aprendiendo, y sigamos compartiendo el conocimiento!</p>
 
-			</section>
-			<div class="separator" style="margin: 100px 0;"></div>
-			<h5>Comparte este post</h5>
-			<!-- AddToAny BEGIN -->
-			<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-			<a class="a2a_button_bluesky"></a>
-			<a class="a2a_button_mastodon"></a>
-			<a class="a2a_button_x"></a>
-			<a class="a2a_button_pinterest"></a>
-			<a class="a2a_button_email"></a>
-			<a class="a2a_button_copy_link"></a>
-			<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
-			</div>
-			<script>
-			var a2a_config = a2a_config || {};
-			a2a_config.locale = "es";
-			</script>
-			<script defer src="https://static.addtoany.com/menu/page.js"></script>
-			<!-- AddToAny END -->
-		</article>
-		<footer>
+		  </section>
+		  <div class="separator" style="margin: 100px 0;"></div>
+		  <h5>Comparte este post</h5>
+		  <!-- AddToAny BEGIN -->
+		  <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+		  <a class="a2a_button_bluesky"></a>
+		  <a class="a2a_button_mastodon"></a>
+		  <a class="a2a_button_x"></a>
+		  <a class="a2a_button_pinterest"></a>
+		  <a class="a2a_button_email"></a>
+		  <a class="a2a_button_copy_link"></a>
+		  <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+		  </div>
+		  <script>
+		  var a2a_config = a2a_config || {};
+		  a2a_config.locale = "es";
+		  </script>
+		  <script defer src="https://static.addtoany.com/menu/page.js"></script>
+		  <!-- AddToAny END -->
+	  </article>
+	  <footer>
 	<section id="badges">
 		<a href="https://www.fsf.org/" target="_blank"><img src="/static/badges/fsf_member.png"></a><a href="https://www.gnu.org/" target="_blank"><img src="/static/badges/gnu.png"></a>
 		<a href="https://www.bittorrent.org/" target="_blank"><img src="/static/badges/bittorrent.jpg"></a><a href="https://www.torproject.org/" target="_blank"><img src="/static/badges/tor.png"></a>
@@ -300,6 +298,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 	<p>Autumn64 CC BY 2023-2026. <a data-i18n="footer.a" href="https://codeberg.org/Autumn64/pages/src/branch/src" target="_blank">Código fuente</a></p>
 </footer>
 
-		</main>
+	  </main>
 	</body>
 </html>
