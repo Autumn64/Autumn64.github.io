@@ -4,7 +4,6 @@ title: El papel del Software Libre en la IA
 date: 2025-08-08
 permalink: "/blog/el-papel-del-software-libre-en-la-ia/"
 featured: "/static/posts/20250808_el-papel-del-software-libre-en-la-ia/featured.jpeg"
-activeLink: blog
 tags: post
 ---
 

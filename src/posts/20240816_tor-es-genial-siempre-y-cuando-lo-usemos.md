@@ -4,7 +4,6 @@ title: ¡Tor es genial! Siempre y cuando lo usemos de forma ética
 date: 2024-08-16
 permalink: "/blog/tor-es-genial-siempre-y-cuando-lo-usemos/"
 featured: "/static/posts/20240816_tor-es-genial-siempre-y-cuando-lo-usemos/featured.png"
-activeLink: blog
 tags: post
 ---
 

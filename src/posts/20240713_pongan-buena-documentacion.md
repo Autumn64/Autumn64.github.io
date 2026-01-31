@@ -4,7 +4,6 @@ title: ¡Pongan buena documentación, carajo!
 date: 2024-07-13
 permalink: "/blog/pongan-buena-documentacion/"
 featured: "/static/posts/20240713_pongan-buena-documentacion/featured.jpg"
-activeLink: blog
 tags: post
 ---
 

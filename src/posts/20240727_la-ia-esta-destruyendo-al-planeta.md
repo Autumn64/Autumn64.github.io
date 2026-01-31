@@ -4,7 +4,6 @@ title: La IA está destruyendo al planeta
 date: 2024-07-26
 permalink: "/blog/la-ia-esta-destruyendo-al-planeta/"
 featured: "/static/posts/20240727_la-ia-esta-destruyendo-al-planeta/featured.jpeg"
-activeLink: blog
 tags: post
 ---
 

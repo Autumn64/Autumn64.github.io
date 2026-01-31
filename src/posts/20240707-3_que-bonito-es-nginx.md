@@ -4,7 +4,6 @@ title: ¡Qué bonito es nginx!
 date: 2024-07-07
 permalink: "/blog/que-bonito-es-nginx/"
 featured: "/static/posts/20240707-3_que-bonito-es-nginx/featured.webp"
-activeLink: blog
 tags: post
 ---
 

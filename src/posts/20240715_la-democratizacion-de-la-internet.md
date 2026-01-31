@@ -4,7 +4,6 @@ title: La democratización de la Internet
 date: 2024-07-15
 permalink: "/blog/la-democratizacion-de-la-internet/"
 featured: "/static/posts/20240715_la-democratizacion-de-la-internet/featured.jpg"
-activeLink: blog
 tags: post
 ---
 

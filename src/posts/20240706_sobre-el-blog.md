@@ -4,7 +4,6 @@ title: Sobre el blog
 date: 2024-07-06
 permalink: "/blog/sobre-el-blog/"
 featured: "/static/posts/20240706_sobre-el-blog/featured.jpg"
-activeLink: blog
 tags: post
 ---
 

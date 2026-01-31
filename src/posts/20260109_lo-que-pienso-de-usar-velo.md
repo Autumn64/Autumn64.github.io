@@ -4,7 +4,6 @@ title: Lo que pienso de usar velo, como una persona que usa velo
 date: 2026-01-09
 permalink: "/blog/lo-que-pienso-de-usar-velo/"
 featured: "/static/posts/20260109_lo-que-pienso-de-usar-velo/featured.jpg"
-activeLink: blog
 tags: post
 ---
 

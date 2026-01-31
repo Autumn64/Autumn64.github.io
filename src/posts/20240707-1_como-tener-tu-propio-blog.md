@@ -4,7 +4,6 @@ title: Cómo tener tu propio blog con tecnologías libres
 date: 2024-07-07
 permalink: "/blog/como-tener-tu-propio-blog/"
 featured: "/static/posts/20240707_como-tener-tu-propio-blog/featured.jpeg"
-activeLink: blog
 tags: post
 ---
 

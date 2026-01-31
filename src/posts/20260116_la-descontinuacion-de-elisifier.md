@@ -4,7 +4,6 @@ title: 'Cerrando ciclos: La descontinuación de "Elisifier"'
 date: 2026-01-16
 permalink: "/blog/la-descontinuacion-de-elisifier/"
 featured: "/static/posts/20260116_la-descontinuacion-de-elisifier/featured.png"
-activeLink: blog
 tags: post
 ---
 

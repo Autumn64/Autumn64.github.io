@@ -4,7 +4,6 @@ title: La lectura nos dará conocimiento, y el conocimiento nos dará libertad
 date: 2024-07-28
 permalink: "/blog/la-lectura-nos-dara-conocimiento/"
 featured: "/static/posts/20240728_la-lectura-nos-dara-conocimiento/featured.jpg"
-activeLink: blog
 tags: post
 ---
 

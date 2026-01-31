@@ -4,7 +4,6 @@ title: La razón por la que no hay que preocuparnos del problema del año 2038
 date: 2024-08-28
 permalink: "/blog/el-problema-del-2038/"
 featured: "/static/posts/20240828_el-problema-del-2038/featured.webp"
-activeLink: blog
 tags: post
 ---
 

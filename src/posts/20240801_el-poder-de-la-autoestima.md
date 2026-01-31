@@ -4,7 +4,6 @@ title: El poder de la autoestima
 date: 2024-08-01
 permalink: "/blog/el-poder-de-la-autoestima/"
 featured: "/static/posts/20240801_el-poder-de-la-autoestima/featured.jpg"
-activeLink: blog
 tags: post
 ---
 

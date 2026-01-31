@@ -4,7 +4,6 @@ title: La odisea de autohostear
 date: 2024-07-23
 permalink: "/blog/la-odisea-de-autohostear/"
 featured: "/static/posts/20240723_la-odisea-de-autohostear/featured.webp"
-activeLink: blog
 tags: post
 ---
 

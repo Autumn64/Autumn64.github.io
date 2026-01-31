@@ -4,7 +4,6 @@ title: Como la transformada de Fourier ayudó a cambiar mi voz
 date: 2024-08-10
 permalink: "/blog/como-la-transformada-de-fourier/"
 featured: "/static/posts/20240810_como-la-transformada-de-fourier/featured.jpg"
-activeLink: blog
 tags: post
 ---
 

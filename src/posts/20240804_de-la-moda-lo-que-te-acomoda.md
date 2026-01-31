@@ -4,7 +4,6 @@ title: De la moda, lo que te acomoda
 date: 2024-08-04
 permalink: "/blog/de-la-moda-lo-que-te-acomoda/"
 featured: "/static/posts/20240804_de-la-moda-lo-que-te-acomoda/featured.jpg"
-activeLink: blog
 tags: post
 ---
 

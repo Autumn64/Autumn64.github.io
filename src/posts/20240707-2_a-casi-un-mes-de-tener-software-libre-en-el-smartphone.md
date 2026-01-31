@@ -4,7 +4,6 @@ title: A (casi) un mes de tener Software Libre en el smartphone
 date: 2024-07-07
 permalink: "/blog/a-casi-un-mes-de-tener-software-libre-en-el-smartphone/"
 featured: "/static/posts/20240707_a-casi-un-mes-de-tener-software-libre-en-el-smartphone/featured.jpg"
-activeLink: blog
 tags: post
 ---
 

@@ -4,7 +4,6 @@ title: ¡El blog está de vuelta!
 date: 2026-01-10
 permalink: "/blog/el-blog-esta-de-vuelta/"
 featured: "/static/posts/20260110_el-blog-esta-de-vuelta/featured.jpg"
-activeLink: blog
 tags: post
 ---
 

@@ -4,7 +4,6 @@ title: El viaje en el tiempo no es como te lo han contado
 date: 2024-09-18
 permalink: "/blog/el-viaje-en-el-tiempo/"
 featured: "/static/posts/20240918_el-viaje-en-el-tiempo/featured.jpg"
-activeLink: blog
 tags: post
 ---
 

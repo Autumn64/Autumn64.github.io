@@ -4,7 +4,6 @@ title: Los límites de nuestro universo y por qué nunca encontraremos extraterr
 date: 2024-07-11
 permalink: "/blog/nunca-encontraremos-extraterrestres/"
 featured: "/static/posts/20240711_nunca-encontraremos-extraterrestres/featured.jpeg"
-activeLink: blog
 tags: post
 ---
 
