@@ -1,6 +1,6 @@
 ---
 layout: post.njk
-title: Cómo la comunidad esperantista condenó al Esperanto.
+title: Cómo la comunidad esperantista condenó al Esperanto
 date: 2026-01-31
 permalink: "/blog/como-la-comunidad-condeno-al-esperanto/"
 featured: "/static/posts/20260131_como-la-comunidad-condeno-al-esperanto/featured.jpg"
@@ -66,7 +66,7 @@ Sé y entiendo que, en su mayoría, las intenciones de la comunidad son en todo 
 
 ## Conclusión: habla como se te cante
 
-Esto no significa que ahora odie al Esperanto o a su comunidad. Ya he hecho un video hablando de todas las cosas positivas que han llegado a mi vida desde que comencé a hablarlo de nuevo, y nunca dejaré de estar agradecida por las oportunidades que he conseguido gracias a este idioma, pero tambien reconozco que es necesario que la comunidad le baje dos rayitas a su obsesión con el Fundamento. Si queremos o al menos tenemos la mínima intención de que el Esperanto crezca (o por lo menos no se extinga), debemos reconocer y aceptar la diversidad dentro de él, y debemos entender que no podemos estar imponiendo nuestras opiniones a los demás.
+Esto no significa que ahora odie al Esperanto o a su comunidad. Ya he hecho un video hablando de todas las cosas positivas que han llegado a mi vida desde que comencé a hablarlo de nuevo, y nunca dejaré de estar agradecida por las oportunidades que he conseguido gracias a este idioma, pero también reconozco que es necesario que la comunidad le baje dos rayitas a su obsesión con el Fundamento. Si queremos o al menos tenemos la mínima intención de que el Esperanto crezca (o por lo menos no se extinga), debemos reconocer y aceptar la diversidad dentro de él, y debemos entender que no podemos estar imponiendo nuestras opiniones a los demás.
 
 Hace falta entender que la diversidad es necesaria para que un idioma realmente sea vivo, incluso si ya no podemos obtener el 100% absoluto de intercomprensión, que de todos modos nunca se obtiene porque en repetidas veces he visto a prescriptivistas usar palabras muy rebuscadas que ni siquiera aparecen en los diccionarios, y porque de todos modos es imposible conocer todas las palabras de un idioma (con excepción del [toki pona](https://es.wikipedia.org/wiki/Toki_pona)); siempre va a haber alguien que no conozca alguna palabra por más común que esta sea.
 
@@ -74,7 +74,7 @@ Y con esto, también me parece importante replantearse si el objetivo del Espera
 
 Quizás al final yo estoy mal y realmente debemos atenernos a lo que diga el Fundamento. Pero hacer eso hace que el hablar Esperanto para mí se sienta más como estar dentro de una jaula, que como un acto liberador. Este documento existe porque en un inicio las condiciones bajo las que surgió esta lengua lo volvieron necesario, pero, ¿en verdad sigue siendo absolutamente necesario hoy en día? ¿De verdad es una regla intocable que NO puede adaptarse al contexto material e histórico de la comunidad esperantista?
 
-Lo único que puedo decir es: hablen como quieran. Y esto aplica también al español mismo y a cualquier idioma. Las reglas no hacen las lenguas; los hablantes sí. Tampoco pienso que debamos hablar de maneras que ya ni siquiera tengan sentido; el Esperanto tiene una forma determinada que lo hace ser Esperanto y no chino o otomí, pero no podemos llenarnos la boca de "internacionalismo" y "libertad" si al mismo tiempo tenemos una mente cuadrada que no tolera la diversidad de expresión.
+Lo único que puedo decir es: hablen como quieran. Y esto aplica también al español mismo y a cualquier idioma. Las reglas no hacen las lenguas; los hablantes sí. Tampoco pienso que debamos hablar de maneras que ya ni siquiera tengan sentido; el Esperanto tiene una forma determinada que lo hace ser Esperanto y no chino ni otomí, pero no podemos llenarnos la boca de "internacionalismo" y "libertad" si al mismo tiempo tenemos una mente cuadrada que no tolera la diversidad de expresión.
 
 Me disculpo si esta entrada parece más un desahogo que otra cosa. Y es verdad que en cierto modo lo es, pero mi intención aquí no es quedar como una _víctima en decadencia_, sino que quiero invitar a la reflexión y al autocuestionamiento. Pronto publicaré la traducción al Esperanto de este texto para que el mensaje llegue a quienes realmente va dirigido, pero también quise agregar la versión en español, ya que en Esperanto no expreso mis pensamientos tan bien como en mi lengua materna.
 
