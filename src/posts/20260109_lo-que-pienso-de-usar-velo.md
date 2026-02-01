@@ -76,7 +76,7 @@ No desacredito a las personas que digan que "la religión musulmana dice que las
 Este relato de la "opresión" también explica parcialmente el por qué Occidente afirma que las musulmanas están "oprimidas", mientras que las monjas cristianas, que se cubren tanto o incluso más que estas, no lo están.
 
 <section class="post-image">
-<img src="/static/posts/20260110_lo-que-pienso-de-usar-velo/abrahamic-1.jpg" alt="Uso del velo en distintas religiones">
+<img src="/static/posts/20260109_lo-que-pienso-de-usar-velo/abrahamic-1.jpg" alt="Uso del velo en distintas religiones">
 <p>Uso del velo en distintas religiones</p>
 </section>
 
@@ -85,9 +85,9 @@ Debido a esta falsa y forzada asociación del velo con el islam, las dificultade
 Históricamente la vestimenta representó muchísimas cosas, desde significados espirituales, hasta muestras de estatus, e incluso como expresión cultural de una etnia o nación. La ropa también forma parte del concepto de belleza, y considero que el cubrirse no solamente no representa ninguna opresión, sino que puede utilizarse incluso para aumentar o hacer más visible nuestra belleza.
 
 <div class="center" style="flex-direction: row;">
-<img style="width: auto; max-height: 250px;" src="/static/posts/20240717_lo-que-pienso-de-usar-velo/selfie1.jpg" alt="Selfie">
-<img style="width: auto; max-height: 250px;" src="/static/posts/20240717_lo-que-pienso-de-usar-velo/selfie2.jpg" alt="Selfie">
-<img style="width: auto; max-height: 250px;" src="/static/posts/20240717_lo-que-pienso-de-usar-velo/selfie3.jpg" alt="Selfie">
+<img style="width: auto; max-height: 250px;" src="/static/posts/20260109_lo-que-pienso-de-usar-velo/selfie1.jpg" alt="Selfie">
+<img style="width: auto; max-height: 250px;" src="/static/posts/20260109_lo-que-pienso-de-usar-velo/selfie2.jpg" alt="Selfie">
+<img style="width: auto; max-height: 250px;" src="/static/posts/20260109_lo-que-pienso-de-usar-velo/selfie3.jpg" alt="Selfie">
 </div>
 
 <div class="center">
