@@ -17,6 +17,7 @@
 :root {
 	/* Colores globales */
 	--bg-color-1: #272727;
+	/* --bg-color-1: #ffff7f; */
 	--bg-color-2: #5c357e;
 	--bg-color-3: #251532;
 	--bg-color-4: #1e1e1e;
@@ -331,13 +332,20 @@ footer {
 	overflow: auto;
 }
 
-#badges img{
-	max-height: 30px;
-	margin: 5px;
+.badge {
+  display: block;
+  height: 30px;
+  overflow: hidden;
+  background-size: auto 100%;
+  background-image: url("/static/badges/badges-sprite.png");
+  margin: 5px;
 }
 
-#notbyai img{
-	max-height: 40px;
-	margin: 5px;
+.notbyai {
+  display: block;
+  height: 40px;
+  overflow: hidden;
+  background-size: auto 100%;
+  background-image: url("/static/badges/badges-sprite.png");
+  margin: 5px;
 }
-
