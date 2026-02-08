@@ -22,3 +22,12 @@ td a:hover, td a:visited:hover {
 td a:active, td a:visited:active {
     color: var(--link-active-color);
 }
+
+.activity {
+  display: block;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  background-size: 100% auto;
+  background-image: url("/static/misc/activities-sprite.png");
+}
