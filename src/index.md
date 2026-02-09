@@ -38,32 +38,4 @@ activeLink: index
     </tbody>
 </table>
 
-# Sígueme en mis redes sociales
-
-<section id="social-icons">
-    <a href="https://linktr.ee/autumn64" target="_blank">
-    <div class="social-icon" style="background-color: #43E55E;">
-    <img src="/static/social/linktree.svg">
-    </div>
-    </a>
-    <a href="/fediverse">
-    <div class="social-icon" style="background-color: #6364FF;">
-    <img src="/static/social/fediverse.svg">
-    </div>
-    </a>
-    <!--a href="https://www.instagram.com/autumn._64/" target="_blank">
-    <div class="social-icon" style="background-color: #FF0069;">
-    <img src="/static/social/instagram.svg">
-    </div>
-    </a-->
-    <a href="https://www.youtube.com/@autumn_64" target="_blank">
-    <div class="social-icon" style="background-color: #FF0000;">
-    <img src="/static/social/youtube.svg">
-    </div>
-    </a>
-    <a href="https://codeberg.org/autumn64" target="_blank">
-    <div class="social-icon" style="background-color: #2185D0;">
-    <img src="/static/social/codeberg.svg">
-    </div>
-    </a>
-</section>
+{% include 'social.njk' %}
