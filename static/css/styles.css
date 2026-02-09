@@ -282,18 +282,35 @@ a:active {
 	transition: filter 0.3s;
 }
 
-.social-icon img{
-	width: 55%;
-	height: auto;
+.social-icon {
+  width: 60px;
+  height: 60px;
 }
 
-.social-icon-small img{
-	width: 60%;
-	height: auto;
+.icon {
+  display: block;
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+  background-image: url("/static/social/social-spritesheet.png");
+  background-size: auto 100%;
+}
+
+.icon-small {
+  display: block;
+  width: 25px;
+  height: 25px;
+  overflow: hidden;
+  background-image: url("/static/social/social-spritesheet.png");
+  background-size: auto 100%;
 }
 
 .social-icon:hover, .social-icon-small:hover {
-	  filter: brightness(0.8);
+	  filter: brightness(0.7);
+}
+
+.social-icon:active, .social-icon-small:active {
+	  filter: brightness(0.5);
 }
 
 .pag-btn {
