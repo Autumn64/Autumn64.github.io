@@ -20,10 +20,12 @@
     font-size: 20px;
 }
 
-.fedaccount img {
-    height: 100%;
-    max-height: 100px;
-    width: auto;
+.account {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-size: auto 100%;
+  background-image: url("/static/spritesheets/fediverse-sprite.png");
 }
 
 .fedaccount a:link, .fedaccount a:visited {

@@ -282,17 +282,12 @@ a:active {
 	transition: filter 0.3s;
 }
 
-.social-icon {
-  width: 60px;
-  height: 60px;
-}
-
 .icon {
   display: block;
   width: 35px;
   height: 35px;
   overflow: hidden;
-  background-image: url("/static/social/social-spritesheet.png");
+  background-image: url("/static/spritesheets/social-sprite.png");
   background-size: auto 100%;
 }
 
@@ -301,7 +296,7 @@ a:active {
   width: 25px;
   height: 25px;
   overflow: hidden;
-  background-image: url("/static/social/social-spritesheet.png");
+  background-image: url("/static/spritesheets/social-sprite.png");
   background-size: auto 100%;
 }
 
@@ -354,7 +349,7 @@ footer {
   height: 30px;
   overflow: hidden;
   background-size: auto 100%;
-  background-image: url("/static/badges/badges-sprite.png");
+  background-image: url("/static/spritesheets/badges-sprite.png");
   margin: 5px;
 }
 
@@ -363,6 +358,6 @@ footer {
   height: 40px;
   overflow: hidden;
   background-size: auto 100%;
-  background-image: url("/static/badges/badges-sprite.png");
+  background-image: url("/static/spritesheets/badges-sprite.png");
   margin: 5px;
 }
