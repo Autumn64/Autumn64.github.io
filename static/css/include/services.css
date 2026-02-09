@@ -21,6 +21,14 @@
     margin-bottom: -20px;
 }
 
+.s-element {
+  display: block;
+  height: 50px;
+  background-size: auto 100%;
+  background-image: url("/static/spritesheets/services-sprite.png");
+  overflow: hidden;
+}
+
 .service img {
     max-width: 90%;
     height: auto;
