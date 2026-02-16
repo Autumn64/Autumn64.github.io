@@ -12,19 +12,19 @@ Me gusta hacer ocasionalmente dibujos digitales. Aún estoy aprendiendo y mi est
 
 # Dibujos destacados
 
-(click para ver en insta)
+(click para ver en Pixelfed)
 
 <section id="drawings-grid">
-    <a href="https://www.instagram.com/p/DP7rwm_DUbH" target="_blank">
+    <a href="https://pixelfed.social/p/autumn_64/928914980881990563" target="_blank">
+        <img src="/static/drawings/teodora.png">
+    </a>
+    <a href="https://pixelfed.social/p/autumn_64/888140796111171211" target="_blank">
         <img src="/static/drawings/maddy.png">
     </a>
-    <a href="https://www.instagram.com/p/DPXAXm8CRSN/" target="_blank">
+    <a href="https://pixelfed.social/p/autumn_64/888140796111171211" target="_blank">
         <img src="/static/drawings/nayeli.png">
     </a>
-    <a href="https://www.instagram.com/p/DOAbLDHDVGk/" target="_blank">
+    <a href="https://pixelfed.social/p/autumn_64/888140796111171211" target="_blank">
         <img src="/static/drawings/zoemira.png">
-    </a>
-    <a href="https://www.instagram.com/p/DNwizrA2j1i/" target="_blank">
-        <img src="/static/drawings/anatomia.png">
     </a>
 </section>
