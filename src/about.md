@@ -29,11 +29,10 @@ Mis hobbies incluyen al dibujo digital, a hacer música, a aprender nuevos idiom
 
 - Mi cumpleaños es el 11 de junio.
 - Soy una mujer trans, y uso pronombres femeninos.
-- Hablo español, inglés, esperanto y un poco de francés.
+- Hablo español, inglés y esperanto. Actualmente estoy aprendiendo japonés.
 - Me considero neopagana, y me interesa sobre todo la brujería ecléctica.
 - Soy "anarquista", aunque eso realmente abarca muchas cosas: anarcocomunismo (también llamado "comunismo libertario"), anarcoecologismo, anarquismo queer, anarquismo tecnológico, etcétera.
 - Me importa mucho el medio ambiente. ¡Sólo tenemos una Tierra!
-- Prefiero comer halal o vegano cuando se pueda (porque encontrar comida así en México está complicado o es caro).
 - ¡Me encanta el [Fediverso](https://es.wikipedia.org/wiki/Fediverso)! Es incluso el único lugar en la Internet en donde realmente me siento cómoda.
 - Soy activista por el Software Libre, y a veces subo videos largos y cortos sobre ello en la Internet.
 - Actualmente uso Debian (después de 4 años de usar Arch Linux btw).
@@ -49,6 +48,7 @@ Mis hobbies incluyen al dibujo digital, a hacer música, a aprender nuevos idiom
 - De géneros: K-Pop, DnB, R&B.
 - De canciones: WILDFLOWER de Billie Eilish, Glow de TWICE, El Necio de Silvio Rodríguez.
 - De grupos de K-Pop: TWICE, MAMAMOO, QWER.
+- De animes: Naruto, Shingeki No Kyojin, Ranma 1/2.
 - De artistas: Billie Eilish, AURORA, Silvio Rodríguez.
 - De lenguajes de programación: C, Python, PHP.
 - De distribuciones GNU/Linux: Arch Linux btw, Debian, Linux Mint.

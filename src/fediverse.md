@@ -15,10 +15,6 @@ Estas son mis cuentas en los servicios federados (como el Fediverso o Matrix). Â
         <a href="https://openfollow.social/@autumn64@mast.lat" target="_blank">Mastodon<br>@autumn64@mast.lat</a>
     </div>
     <div class="fedaccount">
-        <a href="https://openfollow.social/@autumn_64@esperanto.masto.host" target="_blank"><span class="account account-esperanto" style="background-position: -12px;"></a>
-        <a href="https://openfollow.social/@autumn_64@esperanto.masto.host" target="_blank">Mastodon<br>@autumn64@esperanto.masto.host</a>
-    </div>
-    <div class="fedaccount">
         <a href="https://openfollow.social/@autumn_64@blahaj.zone" target="_blank"><span class="account account-blahajzone" style="background-position: -133px;"></a>
         <a href="https://openfollow.social/@autumn_64@blahaj.zone" target="_blank">Sharkey<br>@autumn64@blahaj.zone</a>
     </div>

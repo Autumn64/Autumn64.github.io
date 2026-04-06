@@ -13,7 +13,7 @@ Si te gusta mi trabajo y quieres donar, este es el lugar. No es obligatorio, per
 
 # Donar con Liberapay
 
-[![Botón de donar de Liberapay](/static/badges/liberapay.svg)](https://liberapay.com/autumn64/)
+[![Botón de donar de Liberapay](/static/misc/liberapay-donate.svg)](https://liberapay.com/autumn64/)
 
 # Donar con Monero
 
