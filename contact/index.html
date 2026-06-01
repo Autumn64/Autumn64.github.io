@@ -61,11 +61,20 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
   <a href="https://www.youtube.com/@autumn64_ds" target="_blank">
     <div class="socialbtn" title="YouTube (@autumn64_ds)" style="background-position: -160.5px;"></div>
   </a>
+  <a href="" style="display: none;">
+    <div class="socialbtn" title="Comunidad de Discord" style="background-position: -200px;"></div>
+  </a>
   <a href="https://codeberg.org/Autumn64" target="_blank">
-    <div class="socialbtn" title="Codeberg (Autumn64)" style="background-position: -200px;"></div>
+    <div class="socialbtn" title="Codeberg (Autumn64)" style="background-position: -240.5px;"></div>
+  </a>
+  <a href="/contact/">
+    <div class="socialbtn" title="Contacto" style="background-position: -280px;"></div>
+  </a>
+  <a href="/donate/">
+    <div class="socialbtn" title="Donar" style="background-position: -320px;"></div>
   </a>
   <a href="/settings/">
-    <div class="socialbtn" title="Configuración" style="background-position: -240.5px;"></div>
+    <div class="socialbtn" title="Configuración" style="background-position: -360px;"></div>
   </a>
 </header>
 
@@ -75,19 +84,21 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
       </button>
     </section>
     <main>
-      <h1>Contacto</h1>
+      <style>
+#top-btn {
+    display: none;
+}
+</style>
+<h1>Contacto</h1>
 <p>Ya sea que desees trabajar conmigo, hacer una colaboración, darme un feedback o simplemente enviarme un mensaje, puedes hacerlo desde cualquiera de los medios de contacto proporcionados abajo. ¡Gracias!</p>
-<p><a href="mailto:autumn64@disroot.org">Correo electrónico</a><br>
-<a href="https://signal.me/#eu/ys5WAhJSfYe9X0mulXYR79u4d7g4tJC1uSK4wgBzYGwVaBQGc6FLsbwztHQmzWtM">Signal</a><br>
-<a href="https://conversations.im/i/autumn64@gnlug.org">XMPP</a></p>
-<h1>Clave PGP</h1>
-<h5>Mónica Nayely Flores Gómez (Autumn64) &lt;autumn64@disroot.org&gt;</h5>
-<p><a href="/static/autumn64_public_key.asc">Descargar clave</a><br>
-<a href="http://keyserver2.pgp.com/vkd/SubmitSearch.event?SearchCriteria=autumn64%40disroot.org">Ver clave</a></p>
+<div class="buttons" style="flex-direction: column;">
+    <a href="mailto:autumn64@disroot.org"><button title="Correo electrónico">Correo electrónico</button></a>
+    <a href="https://signal.me/#eu/ys5WAhJSfYe9X0mulXYR79u4d7g4tJC1uSK4wgBzYGwVaBQGc6FLsbwztHQmzWtM" target="_blank"><button title="Signal">Signal</button></a>
+</div>
 
       <footer>
   <hr>
-  <div class="buttons" style="margin: 30px">
+  <div class="buttons" id="top-btn" style="margin: 30px">
     <a onclick="window.scrollTo({top: 0, behavior: 'smooth'})"><button title="Ir hasta arriba">Ir hasta arriba</button></a>
   </div>
   <p>Autumn64 © 2023-2026. <a data-i18n="footer.a" href="https://codeberg.org/Autumn64/pages/src/branch/src" target="_blank">Código fuente</a></p>
