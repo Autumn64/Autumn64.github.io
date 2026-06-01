@@ -1,20 +1,19 @@
 ---
 layout: page.njk
 title: Contacto
-activeLink: contact
 ---
+
+<style>
+#top-btn {
+    display: none;
+}
+</style>
 
 # Contacto
 
 Ya sea que desees trabajar conmigo, hacer una colaboración, darme un feedback o simplemente enviarme un mensaje, puedes hacerlo desde cualquiera de los medios de contacto proporcionados abajo. ¡Gracias!
 
-[Correo electrónico](mailto:autumn64@disroot.org)\
-[Signal](https://signal.me/#eu/ys5WAhJSfYe9X0mulXYR79u4d7g4tJC1uSK4wgBzYGwVaBQGc6FLsbwztHQmzWtM)\
-[XMPP](https://conversations.im/i/autumn64@gnlug.org)
-
-# Clave PGP
-##### Mónica Nayely Flores Gómez (Autumn64) \<autumn64@disroot.org\>
-
-
-[Descargar clave](/static/autumn64_public_key.asc)\
-[Ver clave](http://keyserver2.pgp.com/vkd/SubmitSearch.event?SearchCriteria=autumn64%40disroot.org)
+<div class="buttons" style="flex-direction: column;">
+    <a href="mailto:autumn64@disroot.org"><button title="Correo electrónico">Correo electrónico</button></a>
+    <a href="https://signal.me/#eu/ys5WAhJSfYe9X0mulXYR79u4d7g4tJC1uSK4wgBzYGwVaBQGc6FLsbwztHQmzWtM" target="_blank"><button title="Signal">Signal</button></a>
+</div>

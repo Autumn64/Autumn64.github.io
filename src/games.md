@@ -5,7 +5,7 @@ title: Juegos
 
 <link rel="stylesheet" href="/static/css/item-box-layout.css">
 <style>
-.buttons {
+#top-btn {
     display: none;
 }
 .item-box {
