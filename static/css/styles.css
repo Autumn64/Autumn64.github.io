@@ -1,363 +1,177 @@
 /* Tipografía sacada de Google Fonts */
 @font-face {
-	font-family: "Chelsea";
-	src: url("/static/fonts/ChelseaMarket-Regular.ttf");
+  font-family: "Sour Gummy";
+  src: url("/static/fonts/SourGummy-Medium.ttf")
 }
 
-@font-face {
-	font-family: "Della";
-	src: url("/static/fonts/DellaRespira-Regular.ttf");
-}
-
-@font-face {
-	font-family: "Fira";
-	src: url("/static/fonts/FiraCode-Medium.ttf");
-}
-
+/* Colores globales, el tema predeterminado es el oscuro */
 :root {
-	/* Colores globales */
-	--bg-color-1: #272727;
-	/* --bg-color-1: #ffff7f; */
-	--bg-color-2: #5c357e;
-	--bg-color-3: #251532;
-	--bg-color-4: #1e1e1e;
-	--fg-color-1: #ffffff;
-	--fg-color-2: #c7b5d8;
-	--fg-color-3: #ba6bff;
+  --bg-color-1: #1c1c1c;
+  --bg-color-2: #292929;
+  --fg-color-1: #eaeaea;
+  --fg-color-2: #eaeaea;
+  --link-color-normal: #00aaff;
+  --link-color-active: #e60000;
+  --border-color-normal: #a17bc0;
+  --border-color-hover: #7978fc;
+  --border-color-active: #0c59c2;
 
-	/* Cursores */
-	--hachiware-normal: url("/static/hachiware/hachiware_cursor.png");
-	--hachiware-pointer: url("/static/hachiware/hachiware_link.png");
+  /* Cursores */
+  --hachiware-normal: url("/static/hachiware/hachiware_cursor.png");
+  --hachiware-pointer: url("/static/hachiware/hachiware_link.png");
+}
 
-	/* Variables globales para la forma del panel de navegación */
-	--wave-offset: 75%;
-	--wave-mask:
-	radial-gradient(178.89px at calc(100% - 240px) var(--wave-offset),#000 99%,#0000 101%) 0 calc(50% - 160px)/100% 320px,
-	radial-gradient(178.89px at calc(100% + 160px) var(--wave-offset),#0000 99%,#000 101%) calc(100% - 80px) 50%/100% 320px repeat-y;
+/* Colores globales para el tema claro */
+[data-theme="light"] {
+  --bg-color-1: #fff0f4;
+  --bg-color-2: #ffcdda;
+  --fg-color-1: #0f0f0f;
+  --fg-color-2: #eaeaea;
+  --link-color-normal: #1395d6;
+  --link-color-active: #e60000;
+  --border-color-normal: #ff89cb;
+  --border-color-hover: #6fb9d6;
+  --border-color-active: #61a0f6;
+
+  body {
+    background-image: url("/static/backgrounds/topography-light.svg");
+  }
 }
 
 /* Eliminamos los posibles bordes que pudiera tener la página */
 html, body {
-	margin: 0;
-	padding: 0;
-	overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-	display: flex;
-	font-family: "Chelsea";
-	/* El fondo de pantalla es un svg que se va a repetir a lo largo de toda la página */
-	background-color: var(--bg-color-1);
-	background-image: url("/static/backgrounds/topography-plain.svg");
-	background-repeat: repeat;
-	cursor: var(--hachiware-normal), auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 95%;
+  max-width: 1000px;
+  margin: auto;
+  background-color: var(--bg-color-1);
+  background-image: url("/static/backgrounds/topography-dark.svg");
+  background-repeat: repeat;
+  color: var(--fg-color-1);
+  font-family: "Sour Gummy", sans-serif;
+  font-size: 20px;
+  cursor: var(--hachiware-normal), auto;
 }
 
-a, button {
-    cursor: var(--hachiware-pointer), auto;
+/* Logo de Autumn64 */
+#autumn64_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
-header {
-	/* El panel de navegación debe iniciar en la esquina superior izquierda, y se quedará fijo incluso si el usuario hace scroll. La forma del panel depende del dispositivo. */
-	position: fixed;
-	top: 0;
-	left: 0;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	background-color: var(--bg-color-2);
+#autumn64_logo img {
+  max-width: 550px;
+  width: 95%;
+  transition: transform 0.2s ease;
+}
+
+#autumn64_logo img:hover {
+  transform: scale(1.1);
+}
+
+#autumn64_logo img:active{
+  transform: scale(0.9);
+}
+
+#back-btn {
+  margin-top: 50px;
 }
 
 main {
-	margin: 20px;
-	display: flex;
-	font-family: "Della";
-	font-size: 20px;
-	line-height: 1.5;
-	color: var(--fg-color-1);
-}
-
-code {
-	font-family: "Fira", monospace;
-	font-size: 16px;
-	padding: 5px 10px;
-	background-color: var(--bg-color-4);
-	border-radius: 10px;
-}
-
-/* El checkbox no se mostrará nunca. */
-#menu-toggle {
-	display: none;
-}
-
-/* El "#main-nav" va a contener los elementos de navegación del panel */
-#main-nav {
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	font-size: 24px;
-	font-family: "Chelsea";
-}
-
-h1, h2, h3, h4, h5, h6 {
-	font-family: "Chelsea";
-}
-
-h1 {
-	font-size: 42px;
-}
-
-h2 {
-	font-size: 36px;
-}
-
-h3 {
-	font-size: 32px;
-}
-
-h4 {
-	font-size: 28px;
-}
-
-h5 {
-	font-size: 22px;
-}
-
-a, a:visited {
-	color: var(--fg-color-2);
-}
-
-a:hover {
-	color: var(--fg-color-3);
-}
-
-a:active {
-	color: var(--fg-color-1);
-}
-
-/* Centra y da espaciado a los links de navegación. */
-#nav-links {
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	row-gap: 5px;
-}
-
-/* Por defecto los links de navegación tendrán un color no muy fuerte, excepto el de la página que en ese momento esté viendo el usuario (marcada por el parámetro "active"), en cuyo caso el color de ese link será más claro y, por ende, llamativo. */
-#nav-links a, #nav-links a:visited {
-	color: var(--fg-color-2);
-	text-decoration: none;
-}
-
-#nav-links a:hover{
-	color: var(--fg-color-3);
-}
-
-#nav-links a:active, #nav-links a[active] {
-	color: var(--fg-color-1);
-}
-
-/* Sección "wrapped" para una cantidad indefinida de elementos que deben colocarse horizontalmente y al centro. */
-.wrapped {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	gap: 20px;
-}
-
-.card-link {
-	display: flex;
-	width: 100%;
-	height: 400px;
-	max-width: 300px;
-	margin-bottom: 50px;
-}
-
-/* Estilo de tarjetas. */ 
-.card {
-	padding: 20px;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: start;
-	text-align: center;
-	background-color: var(--bg-color-4);
-	border-radius: 20px;
-}
-
-.card-thumbnail {
-	width: 80%;
-	height: 100px;
-	object-fit: cover;
-}
-
-.card-info {
-	font-family: "Chelsea";
-	margin-bottom: auto;
-}
-
-.card-title {
-	line-height: 1;
-	font-size: 28px;
-	overflow-wrap: break-word;
-	word-break: break-word;
-}
-
-.card-subtitle {
-	line-height: 1;
-	font-size: 20px;
-}
-
-.card-button {
-	width: 90%;
-	max-width: 150px;
-	height: 50px;
-	font-family: "Chelsea";
-	font-size: 24px;
-	color: var(--fg-color-1);
-	background-color: var(--bg-color-2);
-	border: none;
-	border-radius: 15px;
-}
-
-.card-link, .card-link:visited {
-	color: var(--fg-color-1);
-	text-decoration: none;
-}
-
-/* Efectos de hover para las tarjetas. */
-.card-link {
-	transition: transform 0.3s ease-out;
-}
-
-.card-link:hover {
-	transform: scale(1.03);
-}
-
-.card-link:hover .card-button {
-	filter: brightness(150%);
-}
-
-.card-link:active {
-	transform: scale(0.97);
-}
-
-.card-link:active .card-button {
-	background-color: var(--bg-color-3);
-}
-
-/* Botones de redes sociales. */
-#social-icons {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	width: 90%;
-	margin-left: auto;
-	margin-right: auto;
-	gap: 10px;
-}
-
-.social-icon {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 100%;
-	width: 60px;
-	height: 60px;
-	transition: filter 0.3s;
-}
-
-.social-icon-small {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 100%;
-	width: 30px;
-	height: 30px;
-	transition: filter 0.3s;
-}
-
-.icon {
-  display: block;
-  width: 35px;
-  height: 35px;
-  overflow: hidden;
-  background-image: url("/static/spritesheets/social-sprite.png");
-  background-size: auto 100%;
-}
-
-.icon-small {
-  display: block;
-  width: 25px;
-  height: 25px;
-  overflow: hidden;
-  background-image: url("/static/spritesheets/social-sprite.png");
-  background-size: auto 100%;
-}
-
-.social-icon:hover, .social-icon-small:hover {
-	  filter: brightness(0.7);
-}
-
-.social-icon:active, .social-icon-small:active {
-	  filter: brightness(0.5);
-}
-
-.pag-btn {
-	margin: 0 10px;
-	width: 45px;
-	height: 30px;
-	font-size: 20px;
-	color: var(--fg-color-1);
-	background-color: var(--bg-color-2);
-	border: none;
-	border-radius: 5px;
-}
-
-.pag-btn:hover {
-	filter: brightness(125%);
-}
-
-.pag-btn:active {
-  background-color: var(--bg-color-3);
+  margin: 20px auto;
 }
 
 footer {
-	width: 90%;
-	margin-top: 100px;
-	margin-left: auto;
-	margin-right: auto;
-	font-family: "Chelsea";
-	text-align: center;
+  margin-top: 50px;
 }
 
-#badges, #notbyai{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	overflow: auto;
+a, button {
+  cursor: var(--hachiware-pointer), auto;
 }
 
-.badge {
-  display: block;
-  height: 30px;
-  overflow: hidden;
-  background-size: auto 100%;
-  background-image: url("/static/spritesheets/badges-sprite.png");
-  margin: 5px;
+a, a:visited {
+  color: var(--link-color-normal);
+  text-decoration: none;
 }
 
-.notbyai {
-  display: block;
-  height: 40px;
-  overflow: hidden;
-  background-size: auto 100%;
-  background-image: url("/static/spritesheets/badges-sprite.png");
-  margin: 5px;
+/* El underline sólo se aplicará a los a que no contengan botón. */
+a:not(:has(button)):hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: var(--link-color-active);
+}
+
+a:hover button {
+  text-decoration: none;;
+}
+
+button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: var(--bg-color-2);
+  color: var(--fg-color-1);
+  font-family: "Sour Gummy", sans-serif;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  outline: 3px var(--border-color-normal) solid;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  outline: 3px var(--border-color-hover) solid;
+  transform: scale(1.07);
+}
+
+button:active {
+  outline: 3px var(--border-color-active) solid;
+  transform: scale(0.93);
+}
+
+/* Sección para centrar los botones. */
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 28px;
+}
+
+h5 {
+  font-size: 22px;
 }

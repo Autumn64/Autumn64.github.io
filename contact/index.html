@@ -20,44 +20,60 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="default light">
+    <script>
+    // Código que pone automáticamente el tema del sitio dependiendo de la configuración del usuario que se guarda en 
+    // el localStorage o, si no hay ninguna configuración guardada, del esquema preferido por el navegador.
+    // Va al inicio de todo porque dado que JavaScript es de naturaleza asíncrona, si pongo esto más abajo
+    // va a provocar que la pagina dé un flashazo blanco antes de cargar, y la idea es evitar eso porque es muy desagradable.
+    (() => {
+        const theme = localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+
+        document.documentElement.dataset.theme = theme;
+    })();
+    </script>
     <link rel="stylesheet" href="/static/css/styles.css">
-    <link rel="stylesheet" href="/static/css/layout-pc.css">
-    <link rel="stylesheet" href="/static/css/layout-mobile.css">
-    <link rel="stylesheet" href="/static/css/page.css">
+    <link rel="stylesheet" href="/static/css/header-layout.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols">
     <link rel="icon" type="image/x-icon" href="/static/misc/favicon.ico">
-        <link rel="me" href="https://mast.lat/@autumn64">
-    <link rel="me" href="https://kolektiva.social/home">
-    <link rel="me" href="https://esperanto.masto.host/@autumn_64">
-    <link rel="me" href="https://blahaj.zone/@autumn_64">
-    <link rel="me" href="https://pixelfed.social/autumn_64">
-
+    <link rel="me" href="https://mast.lat/@autumn64">
+<link rel="me" href="https://kolektiva.social/home">
+<link rel="me" href="https://blahaj.zone/@autumn_64">
+<link rel="me" href="https://pixelfed.social/autumn_64">
 
     <title>Contacto - Sitio de Autumn64</title>
   </head>
   <body>
-    <header>
-<nav id="main-nav">
-<a href="/" class="logo logo-desktop">
-	<img src="/static/logo/logo_square.svg">
-</a>
-<section id="mobile-header">
-	<a href="/" class="logo logo-mobile">
-		<img src="/static/logo/logo_line.svg">
-	</a>
-	<input type="checkbox" id="menu-toggle">
-	<label for="menu-toggle"><span id="menu-toggle-icon" class="material-symbols"></span></label>
-</section>
-<section id="nav-links">
-	<a href="/" >Inicio</a>
-	<a href="/about" >Acerca de</a>
-	<a href="/blog" >Blog</a>
-	<a href="/contact" active>Contacto</a>
-	<a href="/donate" >Donar</a>
-</section>
-</nav>
+    <section id="autumn64_logo"><a href="/"><img src="/static/logo/logo_line.svg" alt="Autumn64 Logo" title="Volver a la página principal"></a></section>
+<header>
+  <a href="/aboutme/">
+    <div class="socialbtn" title="Sobre mí" style="background-position: 0px;"></div>
+  </a>
+  <a href="https://www.instagram.com/autumn._64/" target="_blank">
+    <div class="socialbtn" title="Instagram (@autumn._64)" style="background-position: -40.5px;"></div>
+  </a>
+  <a href="https://openfollow.social/@autumn64@mast.lat" target="_blank">
+    <div class="socialbtn" title="Mastodon (@autumn64@mast.lat)" style="background-position: -80.5px;"></div>
+  </a>
+  <a href="https://bsky.app/profile/autumn64-ds.bsky.social" target="_blank">
+    <div class="socialbtn" title="Bluesky (@autumn64-ds.bsky.social)" style="background-position: -120.5px;"></div>
+  </a>
+  <a href="https://www.youtube.com/@autumn64_ds" target="_blank">
+    <div class="socialbtn" title="YouTube (@autumn64_ds)" style="background-position: -160.5px;"></div>
+  </a>
+  <a href="https://codeberg.org/Autumn64" target="_blank">
+    <div class="socialbtn" title="Codeberg (Autumn64)" style="background-position: -200px;"></div>
+  </a>
+  <a href="/settings/">
+    <div class="socialbtn" title="Configuración" style="background-position: -240.5px;"></div>
+  </a>
 </header>
 
+    <section id="back-btn">
+      <button title="Ir a la página anterior" onclick="history.back()">
+	<span class="material-symbols">arrow_back</span>
+      </button>
+    </section>
     <main>
       <h1>Contacto</h1>
 <p>Ya sea que desees trabajar conmigo, hacer una colaboración, darme un feedback o simplemente enviarme un mensaje, puedes hacerlo desde cualquiera de los medios de contacto proporcionados abajo. ¡Gracias!</p>
@@ -70,44 +86,11 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <a href="http://keyserver2.pgp.com/vkd/SubmitSearch.event?SearchCriteria=autumn64%40disroot.org">Ver clave</a></p>
 
       <footer>
-<section id="badges">
-  <a href="https://www.fsf.org/" target="_blank">
-    <span class="badge badge-fsf" style="width: 121px; background-position: -2px;"></span>
-  </a>
-  <a href="https://www.gnu.org/" target="_blank">
-    <span class="badge badge-gnu" style="width: 86px; background-position: -125px;"></span>
-  </a>
-  <a href="https://www.bittorrent.org/" target="_blank">
-    <span class="badge badge-bt" style="width: 86px; background-position: -214px;"></span>
-  </a>
-  <a href="https://www.torproject.org/" target="_blank">
-    <span class="badge badge-tor" style="width: 53px; background-position: -301px;"></span>
-  </a>
-  <a href="http://stopcpozlbfa4s4fuhisthyaivzbewe2rihsadarlkvqv5gaphkrvvyd.onion/" target="_blank">
-    <span class="badge badge-stopcp" style="width: 38px; background-position: -354px;"></span>
-  </a>
-  <a href="https://jointhefediverse.net/" target="_blank">
-    <span class="badge badge-fediverse" style="width: 29px; background-position: -395px;"></span>
-  </a>
-  <a href="https://es.anarchistlibraries.net/library/alexander-berkman-el-abc-del-comunismo-libertario" target="_blank">
-    <span class="badge badge-ancom" style="width: 30px; background-position: -427px;"></span>
-  </a>
-  <a href="https://anarchistfaq.org/afaq/index.html" target="_blank">
-    <span class="badge badge-transanarchist" style="width: 30px; background-position: -459px;"></span>
-  </a>
-  <a href="https://hillhouse.neocities.org/journal/notes/palestine" target="_blank">
-    <span class="badge badge-palestine" style="width: 86px; background-position: -492px;"></span>
-  </a>
-  <a href="https://lernu.net/" target="_blank">
-    <span class="badge badge-esperanto" style="width: 89px; background-position: -580px;"></span>
-  </a>
-</section>
-  <section id='notbyai'>
-    <span class="notbyai notbyai-es" style="width: 125px; background-position: -895px;"></span>
-    <span class="notbyai notbyai-en" style="width: 125px; background-position: -1023px;"></span>
-    <span class="notbyai notbyai-eo" style="width: 125px; background-position: -1152px;"></span>
-  </section>
-<p>Autumn64 CC BY 2023-2026. <a data-i18n="footer.a" href="https://codeberg.org/Autumn64/pages/src/branch/src" target="_blank">Código fuente</a></p>
+  <hr>
+  <div class="buttons" style="margin: 30px">
+    <a onclick="window.scrollTo({top: 0, behavior: 'smooth'})"><button title="Ir hasta arriba">Ir hasta arriba</button></a>
+  </div>
+  <p>Autumn64 © 2023-2026. <a data-i18n="footer.a" href="https://codeberg.org/Autumn64/pages/src/branch/src" target="_blank">Código fuente</a></p>
 </footer>
 
     </main>

@@ -20,49 +20,65 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="default light">
+    <script>
+    // Código que pone automáticamente el tema del sitio dependiendo de la configuración del usuario que se guarda en 
+    // el localStorage o, si no hay ninguna configuración guardada, del esquema preferido por el navegador.
+    // Va al inicio de todo porque dado que JavaScript es de naturaleza asíncrona, si pongo esto más abajo
+    // va a provocar que la pagina dé un flashazo blanco antes de cargar, y la idea es evitar eso porque es muy desagradable.
+    (() => {
+        const theme = localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+
+        document.documentElement.dataset.theme = theme;
+    })();
+    </script>
     <link rel="stylesheet" href="/static/css/styles.css">
-    <link rel="stylesheet" href="/static/css/layout-pc.css">
-    <link rel="stylesheet" href="/static/css/layout-mobile.css">
-    <link rel="stylesheet" href="/static/css/page.css">
+    <link rel="stylesheet" href="/static/css/header-layout.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols">
     <link rel="icon" type="image/x-icon" href="/static/misc/favicon.ico">
-        <link rel="me" href="https://mast.lat/@autumn64">
-    <link rel="me" href="https://kolektiva.social/home">
-    <link rel="me" href="https://esperanto.masto.host/@autumn_64">
-    <link rel="me" href="https://blahaj.zone/@autumn_64">
-    <link rel="me" href="https://pixelfed.social/autumn_64">
-
+    <link rel="me" href="https://mast.lat/@autumn64">
+<link rel="me" href="https://kolektiva.social/home">
+<link rel="me" href="https://blahaj.zone/@autumn_64">
+<link rel="me" href="https://pixelfed.social/autumn_64">
 
     <title>FOSS - Sitio de Autumn64</title>
   </head>
   <body>
-    <header>
-<nav id="main-nav">
-<a href="/" class="logo logo-desktop">
-	<img src="/static/logo/logo_square.svg">
-</a>
-<section id="mobile-header">
-	<a href="/" class="logo logo-mobile">
-		<img src="/static/logo/logo_line.svg">
-	</a>
-	<input type="checkbox" id="menu-toggle">
-	<label for="menu-toggle"><span id="menu-toggle-icon" class="material-symbols"></span></label>
-</section>
-<section id="nav-links">
-	<a href="/" >Inicio</a>
-	<a href="/about" >Acerca de</a>
-	<a href="/blog" >Blog</a>
-	<a href="/contact" >Contacto</a>
-	<a href="/donate" >Donar</a>
-</section>
-</nav>
+    <section id="autumn64_logo"><a href="/"><img src="/static/logo/logo_line.svg" alt="Autumn64 Logo" title="Volver a la página principal"></a></section>
+<header>
+  <a href="/aboutme/">
+    <div class="socialbtn" title="Sobre mí" style="background-position: 0px;"></div>
+  </a>
+  <a href="https://www.instagram.com/autumn._64/" target="_blank">
+    <div class="socialbtn" title="Instagram (@autumn._64)" style="background-position: -40.5px;"></div>
+  </a>
+  <a href="https://openfollow.social/@autumn64@mast.lat" target="_blank">
+    <div class="socialbtn" title="Mastodon (@autumn64@mast.lat)" style="background-position: -80.5px;"></div>
+  </a>
+  <a href="https://bsky.app/profile/autumn64-ds.bsky.social" target="_blank">
+    <div class="socialbtn" title="Bluesky (@autumn64-ds.bsky.social)" style="background-position: -120.5px;"></div>
+  </a>
+  <a href="https://www.youtube.com/@autumn64_ds" target="_blank">
+    <div class="socialbtn" title="YouTube (@autumn64_ds)" style="background-position: -160.5px;"></div>
+  </a>
+  <a href="https://codeberg.org/Autumn64" target="_blank">
+    <div class="socialbtn" title="Codeberg (Autumn64)" style="background-position: -200px;"></div>
+  </a>
+  <a href="/settings/">
+    <div class="socialbtn" title="Configuración" style="background-position: -240.5px;"></div>
+  </a>
 </header>
 
+    <section id="back-btn">
+      <button title="Ir a la página anterior" onclick="history.back()">
+	<span class="material-symbols">arrow_back</span>
+      </button>
+    </section>
     <main>
       <style>
 .image {
     margin: 10px auto;
-    width: 100%;
+    width: 90%;
     max-width: 500px;
     height: auto;
 }
@@ -75,87 +91,29 @@ iframe {
   margin: 0 auto;
 }
 </style>
-<h1>Activismo FOSS</h1>
+<h1>Difusión del Software Libre</h1>
 <h2>Historia</h2>
 <img class="image" src="/static/misc/fsf-social-image-03.svg" alt="Banner FSF">
 <p>A finales de 2023 me uní al <a href="https://jointhefediverse.net/">Fediverso</a> y a la <a href="https://www.fsf.org/">FSF</a>, y desde entonces me dedico al activismo por el movimiento del Software Libre. Comencé de forma exclusiva en redes sociales libres (como Mastodon y Peertube), y posteriormente me expandí a redes privativas (como Instagram, YouTube y TikTok) para aumentar la difusión. Me interesa concientizar sobre la necesidad de usar la tecnología como una herramienta para mejorar nuestras vidas, y no para controlarnos ni censurarnos bajo los intereses de algunas corporaciones. Pienso que el SL representa todo lo que la informática debió ser desde un inicio, y me esfuerzo por compartir esos ideales con los demás para aumentar la conciencia sobre el valor de proteger nuestra libertad y privacidad con el software.</p>
 <p>Cuando decidí comenzar en esto no sabía que mi vida estaba a punto de cambiar por completo. Me convertí en una de las primeras difusoras latinoamericanas del Software Libre de la Generación Z en Internet, y hasta se me otorgó el título de &quot;<em>influencer del Fediverso</em>&quot;. Conocí a gente espectacular de muchas partes de Latinoamérica y el mundo, colaboré en proyectos de Software Libre que me han enseñado muchísimo —y también comencé mis propios proyectos—, me hice de una comunidad fantástica, y hasta logré recibir un beneficio económico por mi trabajo.</p>
 <img class="image" src="/static/misc/collage-foss.png" alt="Collage con imágenes de eventos en los que he participado y figuras del SL con las que he convivido">
-<p>Ahora, sigo trabajando en expandirme y aumentar mi difusión, con el objetivo de hacer del SL una herramienta accesible y confiable para todas las personas. Tampoco me creo la gran <em>influencer</em> famosa; al final sólo soy un nodo más de difusión, pero quiero que mi trabajo tenga un gran impacto en los demás, y con ello traer un beneficio individual y colectivo.</p>
-<p>En la actualidad, me dedico principalmente a subir videos largos y cortos sobre el Software Libre y GNU/Linux en diversas plataformas.</p>
+<p>En la actualidad me he enfocado más en acompañar a personas en su viaje por el Software Libre de una manera más cercana, personalizada y acorde a sus habilidades y conocimientos. Si bien la difusión a gran escala ha pasado a un segundo plano para mí, sigo totalmente comprometida con utilizar y difundir el SL para que llegue a más rincones del mundo hispanohablante.</p>
+<div class="buttons" style="flex-direction: column">
+<a href="https://www.youtube.com/@autumn_64" target="_blank"><button title="Ver canal de YouTube">Ver canal de YouTube</button></a>
+<a href="https://video.hardlimit.com/c/autumn64/" target="_blank"><button title="Ver canal de PeerTube">Ver canal de PeerTube</button></a>
+</div>
 <h1>Video largo destacado</h1>
 <iframe title="Yo no pago Streaming. En su lugar hago esto." src="https://video.hardlimit.com/videos/embed/4b64YEMYUkw2tuKYMSXPZd" frameborder="0" allowfulscreen="" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
 <h1>Video corto destacado</h1>
 <iframe title="Cómo instalar programas en Linux Mint" src="https://video.hardlimit.com/videos/embed/stJWDZY25fGBHHTP6muDaX" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
-<div class="separator" style="margin: 10px 0;"></div>
-<h1>Sígueme en mis redes sociales</h1>
-<section id="social-icons">
-    <a href="https://linktr.ee/autumn64" target="_blank">
-    <div class="social-icon" style="background-color: #43E55E;">
-      <span class="icon icon-linktree" style="background-position: -2.5px;"></span>
-    </div>
-    </a>
-    <a href="/fediverse">
-    <div class="social-icon" style="background-color: #6364FF;">
-      <span class="icon icon-fediverse" style="background-position: -38px;"></span>
-    </div>
-    </a>
-    <!--a href="https://www.instagram.com/autumn._64/" target="_blank">
-    <div class="social-icon" style="background-color: #FF0069;">
-    <img src="/static/social/instagram.svg">
-    </div>
-    </a-->
-    <a href="https://www.youtube.com/@autumn_64" target="_blank">
-    <div class="social-icon" style="background-color: #FF0000;">
-      <span class="icon icon-youtube" style="background-position: -116px;"></span>
-    </div>
-    </a>
-    <a href="https://codeberg.org/autumn64" target="_blank">
-    <div class="social-icon" style="background-color: #2185D0;">
-      <span class="icon icon-codeberg" style="background-position: -194.5px;"></span>
-    </div>
-    </a>
-</section>
+<div class="separator" style="margin: 50px 0;"></div>
 
       <footer>
-<section id="badges">
-  <a href="https://www.fsf.org/" target="_blank">
-    <span class="badge badge-fsf" style="width: 121px; background-position: -2px;"></span>
-  </a>
-  <a href="https://www.gnu.org/" target="_blank">
-    <span class="badge badge-gnu" style="width: 86px; background-position: -125px;"></span>
-  </a>
-  <a href="https://www.bittorrent.org/" target="_blank">
-    <span class="badge badge-bt" style="width: 86px; background-position: -214px;"></span>
-  </a>
-  <a href="https://www.torproject.org/" target="_blank">
-    <span class="badge badge-tor" style="width: 53px; background-position: -301px;"></span>
-  </a>
-  <a href="http://stopcpozlbfa4s4fuhisthyaivzbewe2rihsadarlkvqv5gaphkrvvyd.onion/" target="_blank">
-    <span class="badge badge-stopcp" style="width: 38px; background-position: -354px;"></span>
-  </a>
-  <a href="https://jointhefediverse.net/" target="_blank">
-    <span class="badge badge-fediverse" style="width: 29px; background-position: -395px;"></span>
-  </a>
-  <a href="https://es.anarchistlibraries.net/library/alexander-berkman-el-abc-del-comunismo-libertario" target="_blank">
-    <span class="badge badge-ancom" style="width: 30px; background-position: -427px;"></span>
-  </a>
-  <a href="https://anarchistfaq.org/afaq/index.html" target="_blank">
-    <span class="badge badge-transanarchist" style="width: 30px; background-position: -459px;"></span>
-  </a>
-  <a href="https://hillhouse.neocities.org/journal/notes/palestine" target="_blank">
-    <span class="badge badge-palestine" style="width: 86px; background-position: -492px;"></span>
-  </a>
-  <a href="https://lernu.net/" target="_blank">
-    <span class="badge badge-esperanto" style="width: 89px; background-position: -580px;"></span>
-  </a>
-</section>
-  <section id='notbyai'>
-    <span class="notbyai notbyai-es" style="width: 125px; background-position: -895px;"></span>
-    <span class="notbyai notbyai-en" style="width: 125px; background-position: -1023px;"></span>
-    <span class="notbyai notbyai-eo" style="width: 125px; background-position: -1152px;"></span>
-  </section>
-<p>Autumn64 CC BY 2023-2026. <a data-i18n="footer.a" href="https://codeberg.org/Autumn64/pages/src/branch/src" target="_blank">Código fuente</a></p>
+  <hr>
+  <div class="buttons" style="margin: 30px">
+    <a onclick="window.scrollTo({top: 0, behavior: 'smooth'})"><button title="Ir hasta arriba">Ir hasta arriba</button></a>
+  </div>
+  <p>Autumn64 © 2023-2026. <a data-i18n="footer.a" href="https://codeberg.org/Autumn64/pages/src/branch/src" target="_blank">Código fuente</a></p>
 </footer>
 
     </main>

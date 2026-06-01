@@ -1,0 +1,12 @@
+#coverart {
+  max-width: 300px;
+  width: 85%;
+  margin: auto;
+}
+
+#buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}

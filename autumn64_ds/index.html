@@ -41,7 +41,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <link rel="me" href="https://blahaj.zone/@autumn_64">
 <link rel="me" href="https://pixelfed.social/autumn_64">
 
-    <title>Dibujos - Sitio de Autumn64</title>
+    <title>Autumn64 DS - Sitio de Autumn64</title>
   </head>
   <body>
     <section id="autumn64_logo"><a href="/"><img src="/static/logo/logo_line.svg" alt="Autumn64 Logo" title="Volver a la página principal"></a></section>
@@ -76,30 +76,54 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     </section>
     <main>
       <style>
-#drawings {
-  width: 80%;
-  max-width: 600px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
+#autumn64_featured {
+    position: relative;
+    margin: auto;
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+    background-image: url("/static/misc/autumn64_ds-banner.png");
+    background-size: contain;
+    border: 5px var(--border-color-normal) solid;
 }
 
-#drawings img {
-  width: 100%;
-  margin: 30px 0 30px 0;
+/* Hack que encontré en internet para hacer que el div se adaptara al
+tamaño de su fondo sin necesidad de tener a la imagen ahí */
+#autumn64_featured img {
+    width: 98%;
+    visibility: hidden;
+}
+
+.image {
+    margin: 10px auto;
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+}
+iframe {
+  width: 100vw;
+  aspect-ratio: 16 / 9;
+  max-width: 80%;
+  height: auto;
+  border: 0;
+  margin: 0 auto;
 }
 </style>
-<h1>Dibujos</h1>
-<p>Si bien no lo hago muy a menudo además de que mi técnica no es muy buena, de vez en cuando me gusta hacer dibujos digitales.</p>
-<h2>Dibujos destacados</h2>
-<section id="drawings">
-    <img src="/static/drawings/八割れとロゼッタ.png">
-    <img src="/static/drawings/リヴァイ・アッカーマン.png">
-</section>
-<section class="buttons" style="flex-direction: column;">
-    <a href="https://www.instagram.com/autumn._64/" target="_blank"><button title="Ver dibujos en Instagram">Ver dibujos en Instagram</button></a>
-    <a href="https://pixelfed.social/autumn_64" target="_blank"><button title="Ver dibujos en Pixelfed">Ver dibujos en Pixelfed</button></a>
-</section>
+<h1>Autumn64 DS</h1>
+<div id="autumn64_featured">
+<img src="/static/misc/autumn64_ds-banner.png" alt="Banner Autumn64 DS">
+</div>
+<p>Autumn64 DS es un espacio nintendero chill para las y los compis. Aquí encontrarás gameplays de los juegos de distintas consolas de Nintendo (y ocasionalmente de PC o de otras consolas), así como reacciones y opiniones de los Nintendo Direct, al igual que de los juegos y accesorios del ecosistema de Nintendo. También puede que de vez en cuando haga streams ;).</p>
+<p>Mi intención no es tener millones de suscriptores o vivir de esto (aunque no rechazaría la oportunidad si se me presenta), sino tener un espacio en el que yo pueda compartir con la Internet lo que quiera mediante interacciones genuinas, espontáneas y orgánicas, a manera de pasatiempo y siempre en un ambiente informal y cozy.</p>
+<p>Asimismo, este es un espacio seguro para mujeres, personas de la comunidad queer y especialmente trans. ¡Seamos nosotr@s mism@s sin miedo! Todas las personas con su autenticidad son bienvenidas aquí :D.</p>
+<p>La idea de <em>noentiendera®</em> viene de un meme que es el logo de Nintendo, pero en lugar de decir &quot;Nintendo&quot; dice &quot;Noentiendo&quot;. Me pareció gracioso y original agregarlo como parte de la identidad del canal, y por eso lo digo al inicio de todos mis videos. Además le agrego el símbolo de marca registrada (®) porque me da risa, pero no es una marca registrada xd.</p>
+<img class="image" src="/static/misc/noentiendo.jpg" alt="Logo de Noentiendo">
+<h3>¡Súmate a esta bonita comunidad nintendera!</h3>
+<div class="buttons">
+    <a href="https://www.youtube.com/@autumn64_ds" target="_blank"><button title="Ver canal de YouTube">Ver canal de YouTube</button></a>
+</div>
+<h1>Video destacado</h1>
+<iframe src="https://www.youtube-nocookie.com/embed/LT8W7UJvV8Y?si=sXV3okhN-HbLaFEv" title="Jugando Super Mario Odyssey POR PRIMERA VEZ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
       <footer>
   <hr>

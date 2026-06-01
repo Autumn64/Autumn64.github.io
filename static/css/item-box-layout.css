@@ -1,0 +1,73 @@
+/* Contenedor de cada caja */
+#items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* Caja de cada item, el background-image debe definirse manualmente. */
+.item-box {
+  position: relative;
+  outline: 5px transparent solid;
+  border-radius: 20px;
+  margin: 10px;
+  background-size: cover;
+  transition: transform 0.2s ease;
+}
+
+#items a, #items a:visited {
+  color: var(--fg-color-2);
+  cursor: var(--hachiware-pointer), auto;
+}
+
+/* Sección de texto que se muestra dentro de cada caja */
+.item-text {
+  opacity: 0%;
+  position: absolute;
+  bottom: 0px;
+  width: 90%;
+  height: 30%;
+  padding: 10px 5% 10px 5%;
+  /* El aa del final es la transparencia. */
+  background-color: #2d2d2daa;
+  transition: opacity 0.2s ease;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.item-box:hover {
+  outline: 5px var(--border-color-hover) solid;
+  transform: scale(1.02);
+}
+
+.item-box:active {
+  outline: 5px var(--border-color-active) solid;
+  transform: scale(0.98);
+}
+
+.item-box:hover .item-text {
+  opacity: 100%;
+}
+
+@media screen and (width >= 350px) {
+  .item-box {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+/* El texto de la caja siempre se va a mostrar siempre y cuando el tamaño de la pantalla sea menor a 750 px, ya que se asume que se trata de una pantalla táctil. */
+@media screen and (width <= 750px) {
+  .item-text {
+    opacity: 100%;
+  }
+}
+
+@media screen and (width < 350px) {
+  .item-box {
+    width: 90vw;
+    height: 90vw;
+  }
+}
