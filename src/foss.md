@@ -1,12 +1,11 @@
 ---
 layout: page.njk
 title: FOSS
-activeLink: none
 ---
 <style>
 .image {
     margin: 10px auto;
-    width: 100%;
+    width: 90%;
     max-width: 500px;
     height: auto;
 }
@@ -20,7 +19,7 @@ iframe {
 }
 </style>
 
-# Activismo FOSS
+# Difusión del Software Libre
 
 ## Historia
 
@@ -32,10 +31,12 @@ Cuando decidí comenzar en esto no sabía que mi vida estaba a punto de cambiar 
 
 <img class="image" src="/static/misc/collage-foss.png" alt="Collage con imágenes de eventos en los que he participado y figuras del SL con las que he convivido">
 
-Ahora, sigo trabajando en expandirme y aumentar mi difusión, con el objetivo de hacer del SL una herramienta accesible y confiable para todas las personas. Tampoco me creo la gran _influencer_ famosa; al final sólo soy un nodo más de difusión, pero quiero que mi trabajo tenga un gran impacto en los demás, y con ello traer un beneficio individual y colectivo.
+En la actualidad me he enfocado más en acompañar a personas en su viaje por el Software Libre de una manera más cercana, personalizada y acorde a sus habilidades y conocimientos. Si bien la difusión a gran escala ha pasado a un segundo plano para mí, sigo totalmente comprometida con utilizar y difundir el SL para que llegue a más rincones del mundo hispanohablante.
 
-
-En la actualidad, me dedico principalmente a subir videos largos y cortos sobre el Software Libre y GNU/Linux en diversas plataformas.
+<div class="buttons" style="flex-direction: column">
+<a href="https://www.youtube.com/@autumn_64" target="_blank"><button title="Ver canal de YouTube">Ver canal de YouTube</button></a>
+<a href="https://video.hardlimit.com/c/autumn64/" target="_blank"><button title="Ver canal de PeerTube">Ver canal de PeerTube</button></a>
+</div>
 
 # Video largo destacado
 
@@ -45,6 +46,4 @@ En la actualidad, me dedico principalmente a subir videos largos y cortos sobre 
 
 <iframe title="Cómo instalar programas en Linux Mint" src="https://video.hardlimit.com/videos/embed/stJWDZY25fGBHHTP6muDaX" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
 
-<div class="separator" style="margin: 10px 0;"></div>
-
-{% include 'social.njk' %}
+<div class="separator" style="margin: 50px 0;"></div>

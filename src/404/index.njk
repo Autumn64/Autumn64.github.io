@@ -1,7 +1,6 @@
 ---
 permalink: /404/
 title: Recurso no encontrado
-activeLink: none
 ---
 <!--
 Autumn64's pages
@@ -22,29 +21,28 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 -->
 <!DOCTYPE html>
 <html lang="es-MX">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="/static/css/styles.css">
-		<link rel="stylesheet" href="/static/css/page.css">
-		<link rel="stylesheet" href="/static/css/layout-pc.css">
-		<link rel="stylesheet" href="/static/css/layout-mobile.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols">
-		<link rel="icon" type="image/x-icon" href="/static/misc/favicon.ico">
-		<link rel="me" href="https://mast.lat/@autumn64">
-		<link rel="me" href="https://esperanto.masto.host/@autumn_64">
-		<link rel="me" href="https://blahaj.zone/@autumn_64">
-		<link rel="me" href="https://pixelfed.social/autumn_64">
-		<title>{{ title | safe  }} - Sitio de Autumn64</title>
-	</head>
-	<body>
-		{% include 'header.njk' %}
-		<main style="max-width: 100%;">
-			<h1 style="font-size: 60px;">404</h1>
-			<h4>¡Ups! No se encontró la URL. Inténtalo de nuevo más tarde.</h4>
-			<h5><a href="/">Volver a inicio</a></h5>
-			{% include 'footer.njk' %}
-		</main>
-	</body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/css/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols">
+  <link rel="icon" type="image/x-icon" href="/static/misc/favicon.ico">
+  {% include 'fediverse.njk' %}
+  <title>{{ title | safe  }} - Sitio de Autumn64</title>
+</head>
+<body>
+  {% include 'header.njk' %}
+  <main>
+  <style>
+  .buttons {
+    display: none;
+  }
+  </style>
+    <h1 style="font-size: 60px;">404</h1>
+    <h4>¡Ups! No se encontró la URL. Inténtalo de nuevo más tarde.</h4>
+    <h5><a href="/">Volver a la página principal</a></h5>
+    {% include 'footer.njk' %}
+  </main>
+</body>
 </html>
 

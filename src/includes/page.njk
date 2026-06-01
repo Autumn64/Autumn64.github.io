@@ -20,10 +20,20 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="default light">
+    <script>
+    // Código que pone automáticamente el tema del sitio dependiendo de la configuración del usuario que se guarda en 
+    // el localStorage o, si no hay ninguna configuración guardada, del esquema preferido por el navegador.
+    // Va al inicio de todo porque dado que JavaScript es de naturaleza asíncrona, si pongo esto más abajo
+    // va a provocar que la pagina dé un flashazo blanco antes de cargar, y la idea es evitar eso porque es muy desagradable.
+    (() => {
+        const theme = localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+
+        document.documentElement.dataset.theme = theme;
+    })();
+    </script>
     <link rel="stylesheet" href="/static/css/styles.css">
-    <link rel="stylesheet" href="/static/css/layout-pc.css">
-    <link rel="stylesheet" href="/static/css/layout-mobile.css">
-    <link rel="stylesheet" href="/static/css/page.css">
+    <link rel="stylesheet" href="/static/css/header-layout.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols">
     <link rel="icon" type="image/x-icon" href="/static/misc/favicon.ico">
     {% include 'fediverse.njk' %}
@@ -31,6 +41,11 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
   </head>
   <body>
     {% include 'header.njk' %}
+    <section id="back-btn">
+      <button title="Ir a la página anterior" onclick="history.back()">
+	<span class="material-symbols">arrow_back</span>
+      </button>
+    </section>
     <main>
       {{ content | safe  }}
       {% include 'footer.njk' %}

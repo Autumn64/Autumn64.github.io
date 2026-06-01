@@ -1,0 +1,40 @@
+/* Cabecera de redes sociales */
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: var(--bg-color-2);
+  border-radius: 50px;
+  padding: 10px 15px;
+}
+
+/* Imagen de cada botón, el background-position debe definirse manualmente. */
+.socialbtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-image: url("/static/spritesheets/social-spritesheet-dark.png");
+  background-size: cover;
+  outline: 1px transparent solid;
+  transition: transform 0.2s ease;
+}
+
+.socialbtn:hover {
+  outline: 2px var(--border-color-hover) solid;
+  transform: scale(1.1);
+}
+
+.socialbtn:active {
+  outline: 2px var(--border-color-active) solid;
+  transform: scale(0.9);
+}
+
+/* En el tema claro la spritesheet cambia. */
+[data-theme="light"] {
+  .socialbtn {
+  background-image: url("/static/spritesheets/social-spritesheet-light.png");
+  }
+}

@@ -1,7 +1,6 @@
 ---
 layout: page.njk
 title: Donar
-activeLink: donate
 ---
 
 Si te gusta mi trabajo y quieres donar, este es el lugar. No es obligatorio, pero todas las donaciones son bienvenidas. ¡Gracias!

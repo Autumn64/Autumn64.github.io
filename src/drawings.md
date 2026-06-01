@@ -1,30 +1,35 @@
 ---
 layout: page.njk
 title: Dibujos
-activeLink: none
 ---
 
-<link rel="stylesheet" href="/static/css/include/drawings.css">
+<style>
+#drawings {
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#drawings img {
+  width: 100%;
+  margin: 30px 0 30px 0;
+}
+</style>
 
 # Dibujos
 
-Me gusta hacer ocasionalmente dibujos digitales. Aún estoy aprendiendo y mi estilo no es tan bueno, pero lo hago con el corazón! <3
+Si bien no lo hago muy a menudo además de que mi técnica no es muy buena, de vez en cuando me gusta hacer dibujos digitales.
 
-# Dibujos destacados
+## Dibujos destacados
 
-(click para ver en Pixelfed)
+<section id="drawings">
+    <img src="/static/drawings/八割れとロゼッタ.png">
+    <img src="/static/drawings/リヴァイ・アッカーマン.png">
+</section>
 
-<section id="drawings-grid">
-    <a href="https://pixelfed.social/p/autumn_64/946244136919975006" target="_blank">
-        <img src="/static/drawings/八割れとロゼッタ.png">
-    </a>
-    <a href="https://pixelfed.social/p/autumn_64/945225701680387356" target="_blank">
-        <img src="/static/drawings/リヴァイ・アッカーマン.png">
-    </a>
-    <a href="https://pixelfed.social/p/autumn_64/939032746196426956" target="_blank">
-        <img src="/static/drawings/あたしの問題を抱える八割れ.png">
-    </a>
-    <a href="https://pixelfed.social/p/autumn_64/928914980881990563" target="_blank">
-        <img src="/static/drawings/teodora.png">
-    </a>
+<section class="buttons" style="flex-direction: column;">
+    <a href="https://www.instagram.com/autumn._64/" target="_blank"><button title="Ver dibujos en Instagram">Ver dibujos en Instagram</button></a>
+    <a href="https://pixelfed.social/autumn_64" target="_blank"><button title="Ver dibujos en Pixelfed">Ver dibujos en Pixelfed</button></a>
 </section>
