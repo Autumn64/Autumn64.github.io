@@ -62,4 +62,4 @@ La idea de _noentiendera®_ viene de un meme que es el logo de Nintendo, pero en
 
 # Video destacado
 
-<iframe src="https://www.youtube-nocookie.com/embed/LT8W7UJvV8Y?si=sXV3okhN-HbLaFEv" title="Jugando Super Mario Odyssey POR PRIMERA VEZ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/pb7sCEdA3WE?si=el9t5ixgh_Ygs0m0" title="Jugando Super Mario Odyssey POR PRIMERA VEZ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
