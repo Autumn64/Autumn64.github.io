@@ -26,11 +26,8 @@ Mis hobbies incluyen a los videojuegos, al dibujo digital, a hacer música, a ap
 
 - Mi cumpleaños es el 11 de junio.
 - Soy una mujer trans, y uso pronombres femeninos.
-- Hablo español, inglés y esperanto.
-- Me considero neopagana, y me interesa sobre todo la brujería ecléctica.
-- Soy "anarquista", aunque eso realmente abarca muchas cosas: anarcocomunismo (también llamado "comunismo libertario"), anarcoecologismo, anarquismo queer, anarquismo tecnológico, etcétera.
+- Hablo español e inglés, y mastico algunos otros idiomas.
 - Me importa mucho el medio ambiente. ¡Sólo tenemos una Tierra!
-- ¡Me encanta el [Fediverso](https://es.wikipedia.org/wiki/Fediverso)!
 - Soy activista por el Software Libre, y a veces subo videos largos y cortos sobre ello en la Internet.
 - Actualmente uso Linux Mint XFCE (después de 4 años de usar Arch Linux btw y después de 6 meses usando Debian 12 y 13 con KDE Plasma). Hice el cambio porque a mi PC ya le cuesta trabajar con escritorios pesados y ya se trababa con la mayoría de mis actividades cotidianas.
 - Mi principal interés es el desarrollo backend, y actualmente aprendo Flask y PHP. En cuanto al frontend, me siento cómoda con Bootstrap y también me gustaría aprender Svelte.
