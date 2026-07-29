@@ -16,7 +16,7 @@ li {
 
 # Sobre mí
 
-<img id="selfie" src="/static/misc/avatar2.png">
+<img id="selfie" src="/static/misc/avatar.png">
 
 Soy Mónica, y nací en el 2004 en la Ciudad de México. Mis principales intereses son la tecnología (especialmente el Software Libre), la ciencia, la música, la historia y la lingüística. Actualmente soy estudiante de último semestre de la Ingeniería en Sistemas Computacionales.
 
