@@ -29,7 +29,8 @@ Mis hobbies incluyen a los videojuegos, al dibujo digital, a hacer música, a ap
 - Hablo español e inglés, y mastico algunos otros idiomas.
 - Me importa mucho el medio ambiente. ¡Sólo tenemos una Tierra!
 - Soy activista por el Software Libre, y a veces subo videos largos y cortos sobre ello en la Internet.
-- Actualmente uso Linux Mint XFCE (después de 4 años de usar Arch Linux btw y después de 6 meses usando Debian 12 y 13 con KDE Plasma). Hice el cambio porque a mi PC ya le cuesta trabajar con escritorios pesados y ya se trababa con la mayoría de mis actividades cotidianas.
+- Actualmente uso Debian 13 con KDE Plasma (después de 4 años de usar Arch Linux btw).
+- Debo admitir que me gustan los [Flatpak](https://es.wikipedia.org/wiki/Flatpak) y los [AppImage](https://es.wikipedia.org/wiki/AppImage), mas no me gustan para nada los [Snap](https://es.wikipedia.org/wiki/Snap_(gestor_de_paquetes)).
 - Mi principal interés es el desarrollo backend, y actualmente aprendo Flask y PHP. En cuanto al frontend, me siento cómoda con Bootstrap y también me gustaría aprender Svelte.
 - Juego a los videojuegos desde que tengo memoria, y llevo el mismo tiempo siendo noentiendera® (o sea, fan de las sagas de Nintendo, mas no de la empresa misma).
 - Tengo un [portafolio](https://codeberg.org/Autumn64/portfolio) en donde subo algunos proyectos web bonitos.
