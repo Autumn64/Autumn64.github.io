@@ -16,7 +16,7 @@ li {
 
 # Sobre mí
 
-<img id="selfie" src="/static/misc/avatar2.png">
+<img id="selfie" src="/static/misc/avatar.png">
 
 Soy Mónica, y nací en el 2004 en la Ciudad de México. Mis principales intereses son la tecnología (especialmente el Software Libre), la ciencia, la música, la historia y la lingüística. Actualmente soy estudiante de último semestre de la Ingeniería en Sistemas Computacionales.
 
@@ -40,11 +40,11 @@ Mis hobbies incluyen a los videojuegos, al dibujo digital, a hacer música, a ap
 - De comidas: Ramen, [Tacos de canasta](https://es.wikipedia.org/wiki/Tacos_de_canasta), Pizza.
 - De colores: Rosa, Amarillo, Morado.
 - De películas: Interstellar, K-Pop Demon Hunters, la saga de Star Wars.
-- De géneros: K-Pop, DnB, Rock y derivados (como el Ska, Punk, Metal, etcétera, si bien no me he metido a fondo en ninguno).
-- De canciones: WILDFLOWER de Billie Eilish, Glow de TWICE, El Necio de Silvio Rodríguez.
-- De grupos de K-Pop: TWICE, MAMAMOO, QWER.
+- De géneros: Todo lo alternativo (especialmente el Heavy Metal y el Goth Rock) K-Pop, DnB.
+- De canciones: Motionless In White - Another Life, System Of A Down - Toxicity, TWICE - Glow.
+- De grupos de K-Pop: TWICE, aespa, MAMAMOO.
+- De bandas de Goth Rock: Bauhaus, The Sisters Of Mercy, Siouxsie And The Banshees.
 - De animes: Naruto, Shingeki No Kyojin, Ranma 1/2.
-- De artistas: Billie Eilish, AURORA, Silvio Rodríguez.
 - De sagas de videojuegos: Super Mario, Halo, Kirby.
 - De lenguajes de programación: C, Python, PHP.
 - De distribuciones GNU/Linux: Arch Linux btw, Debian, Linux Mint.
